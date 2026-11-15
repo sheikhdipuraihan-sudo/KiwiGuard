@@ -1,1 +1,16 @@
 releases/
+dist/
+*.crx
+*.zip
+
+# Extension signing material — never commit private keys
+*.pem
+*.key
+signing-key.pem
+kiwiguard-signing-key.b64
+
+# Local dependencies and OS/editor noise
+node_modules/
+.DS_Store
+*.swp
+*.swo

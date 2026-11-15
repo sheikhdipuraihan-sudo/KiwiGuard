@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">KiwiGuard shield</title><desc id="desc">A green kiwi eye inside a dark protective shield.</desc>
+<defs><linearGradient id="shield" x1="18" y1="8" x2="110" y2="120" gradientUnits="userSpaceOnUse"><stop stop-color="#23494a"/><stop offset="1" stop-color="#102326"/></linearGradient><linearGradient id="kiwi" x1="35" y1="30" x2="96" y2="98" gradientUnits="userSpaceOnUse"><stop stop-color="#a7ffd1"/><stop offset="1" stop-color="#3ecb9a"/></linearGradient></defs>
+<path fill="url(#shield)" d="M64 5 113 21v37c0 29-19 51-49 65C34 109 15 87 15 58V21L64 5Z"/>
+<path fill="#84f4bf" d="M64 16 103 29v29c0 22-13 40-39 53-26-13-39-31-39-53V29l39-13Z" opacity=".12"/>
+<path fill="url(#kiwi)" d="M36 61c7-18 22-27 39-23 12 3 21 12 25 23-4 15-15 27-30 31-15 4-28-6-34-31Z"/>
+<path fill="#17383a" d="M43 60c6-8 13-12 21-12s15 4 21 12c-6 8-13 12-21 12s-15-4-21-12Z"/>
+<circle cx="64" cy="60" r="7" fill="#f1fff9"/><circle cx="64" cy="60" r="3.5" fill="#102326"/><circle cx="65.5" cy="58.5" r="1.2" fill="#fff"/>
+<path fill="none" stroke="#123435" stroke-linecap="round" stroke-width="4" d="M52 83c7 5 17 5 24 0"/>
+<path fill="#84f4bf" d="m64 24 5 7-5 7-5-7 5-7Z"/>
+</svg>

@@ -6,6 +6,8 @@ KiwiGuard is a Kiwi Browser-focused, mobile-first content blocker based on the c
 
 This release rebases the extension package on the current upstream uBlock Origin Chromium MV2 build. Kiwi-specific changes are layered on top: the KiwiGuard name and popup treatment, Kiwi update metadata, and a curated mobile/privacy first-run filter profile.
 
+The toolbar, dashboard, and extension page icons now use the custom KiwiGuard shield/kiwi mark. Upstream GPLv3 license text and copyright notices remain preserved; see [`NOTICE.md`](NOTICE.md) for the project-specific attribution summary.
+
 KiwiGuard is designed for Kiwi Browser on Android. It is not a replacement for the upstream project on desktop browsers. Filter lists and the blocking engine retain upstream attribution and licensing.
 
 ## Install

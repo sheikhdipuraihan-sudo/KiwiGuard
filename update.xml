@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
   <app appid="hmmhcobbicibhinojinlgdnaeidggbnk">
-    <updatecheck codebase="https://github.com/sheikhdipuraihan-sudo/uBlock-Kiwi/releases/download/v1.76.2.1/KiwiGuard-Kiwi.crx" version="1.76.2.1" prodversionmin="98.0" />
+    <updatecheck codebase="https://github.com/sheikhdipuraihan-sudo/uBlock-Kiwi/releases/download/v1.76.2.2/KiwiGuard-Kiwi.crx" version="1.76.2.2" prodversionmin="98.0" />
   </app>
 </gupdate>
