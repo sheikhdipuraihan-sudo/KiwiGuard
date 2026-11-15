@@ -12,11 +12,11 @@
     "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
-    "message": "Pozor! Spremembe niso shranjene",
+    "message": "Pozor: spremembe niso shranjene!",
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
-    "message": "Ostani",
+    "message": "Ostani tu",
     "description": "Label for button to prevent navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningIgnore": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "O razširitvi",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "Podpora",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "Pojdi na dnevnik omrežnih zahtev",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "Prijavi napako na tej strani",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "Vklop/Izklop blokiranja vseh pojavnih oken za to stran",
@@ -267,13 +275,13 @@
     "message": "Različica",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "Poudari vrstice, ki uporabljajo skripte tretjih oseb",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "skripta",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "Poudari vrstice, ki uporabljajo okvirje tretjih oseb",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "okvir",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Ustvari",
@@ -327,24 +335,32 @@
     "message": "Način prijazen barvno slepim uporabnikom",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Izgled",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Tema",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Barva akcenta po meri",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Omogoči podporo za shrambo v oblaku",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
     "message": "Sem napreden uporabnik (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Potrebno branje</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "napredne nastavitve",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Onemogoči prednalaganje strani (da se prepreči kakršno koli povezavo za blokirane zahteve omrežja)",
     "description": "English: "
   },
   "settingsHyperlinkAuditingDisabledPrompt": {
-    "message": "Onemogoči revizijo hiperlinkov (Hyperlink-auditing)",
+    "message": "Onemogoči sledenje hiperpovezavam",
     "description": "English: "
   },
   "settingsWebRTCIPAddressHiddenPrompt": {
@@ -364,7 +380,7 @@
     "description": ""
   },
   "settingsNoLargeMediaPrompt": {
-    "message": "Blokiraj medijske elemente večje kot {input:number} kB",
+    "message": "Blokiraj medijske elemente večje kot {{input}} KB",
     "description": ""
   },
   "settingsNoRemoteFontsPrompt": {
@@ -380,8 +396,20 @@
     "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
-    "message": "Uncloak canonical names",
+    "message": "Razkrij kanonična imena",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "Napredno",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Funkcije primerne zgolj za napredne uporabnike",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "napredne nastavitve",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": "Zadnja obnovitev:",
@@ -412,7 +440,7 @@
     "description": "A button in the in the _3rd-party filters_ pane"
   },
   "3pParseAllABPHideFiltersPrompt1": {
-    "message": "Razčleni in uveljavi kozmetične filtre.",
+    "message": "Razčleni in uveljavi kozmetične filtre",
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
@@ -427,6 +455,10 @@
     "message": "<p>Generični vizualni filtri so vizualni filtri, ki naj bi bili uporabljeni na vseh spletnih straneh.<p>Kljub temu, da je njihova uporaba v KiwiGuard učinkovita, generični vizualni filtri lahko, na nekaterih spletnih straneh (še posebno na velikih in starih), pripomorejo k opazni dodatni porabi pomnilnika in uporabi CPE.<p>Omogočitev te funkcije bo zmanjšala porabo pomnilnika in uporabo CPE, ki nastane kot rezultat dodajanja generičnih vizualnih filtrov, in tudi zmanjšala porabo pomnilnika dodatka KiwiGuard.<p>Priporočeno je, da omogočite to možnost na manj zmogljivih napravah.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Prekini aktivnosti omrežja, dokler niso naloženi vsi filtri",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "Seznam blokiranih gostiteljev",
     "description": "English: Lists of blocked hosts"
@@ -437,42 +469,50 @@
   },
   "3pGroupDefault": {
     "message": "Lokalno",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Oglasi",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Zasebnost",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Zlonamerne domene",
-    "description": "English: Malware domains"
+    "message": "Zaščita pred zlonamerno programsko opremo, varnost",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Družbeni gradniki",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Obvestila o piškotkih",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "\t\nNadlegovanje",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Večnamenski",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Regije, jeziki",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Po meri",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
-    "message": "Uvozi ...",
+    "message": "Uvozi…",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
-    "message": "En URL na vrstico. Vrstice s predpono &lsquo;!&rsquo; in neveljavni URL-ji bodo prezrti.",
+    "message": "En URL na vrstico. Neveljavni URL-ji bodo tiho prezrti.",
     "description": "Short information about how to use the textarea to import external filter lists by URL"
   },
   "3pExternalListObsolete": {
@@ -484,28 +524,36 @@
     "description": "used as a tooltip for eye icon beside a list"
   },
   "3pLastUpdate": {
-    "message": "Zadnja posodobitev: {{ago}}",
+    "message": "Zadnja posodobitev: {{ago}}. Kliknite za prisilno posodobitev.",
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "Posodabljanje ...",
+    "message": "Posodabljanje…",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
     "message": "Omrežna napaka je preprečila posodobitev virov.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "En filter na vrstico. Filter je lahko navadno ime gostitelja, ali pa Adblock Plus kompatibilen filter. Vrstice z znakom &lsquo;!&rsquo; bodo ignorirane.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Ne dodajajte filtrov iz nezaupanja vrednih virov.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Omogoči moje filtre po meri",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Dovoli filtre po meri, ki zahtevajo zaupanje",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
-    "message": "Uvozi in dodaj",
-    "description": "English: Import and append"
+    "message": "Uvozi in dodaj …",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
-    "message": "Izvozi",
-    "description": "English: Export"
+    "message": "Izvozi…",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "moji-ublock-staticni-filtri_{{datetime}}.txt",
@@ -544,12 +592,12 @@
     "description": "Will discard manually-edited content and exit manual-edit mode"
   },
   "rulesImport": {
-    "message": "Uvozi iz datoteke...",
+    "message": "Uvozi iz datoteke…",
     "description": ""
   },
   "rulesExport": {
-    "message": "Izvozi v datoteko",
-    "description": ""
+    "message": "Izvozi v datoteko…",
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "moji-ublock-dinamicna-pravila_{{datetime}}.txt",
@@ -564,7 +612,7 @@
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
-    "message": "Razvrsti",
+    "message": "Razvrsti:",
     "description": "English: label for sort option."
   },
   "rulesSortByType": {
@@ -580,16 +628,16 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Vaš seznam gostiteljskih naslovov, za katere želite, da je KiwiGuard izklopljen. En vnos na vrstico. Neveljavna gostiteljska imena bodo brez opozoril ignorirana.",
-    "description": "The name of the trusted sites pane."
+    "message": "Vaš seznam gostiteljskih naslovov, za katere želite, da je KiwiGuard izklopljen. En vnos na vrstico.",
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "Uvozi in dodaj",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "Izvozi",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "moj-ublock-seznam-dovoljenih_{{datetime}}.txt",
@@ -847,6 +895,126 @@
     "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "Odpri",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Ustvari novo poročilo",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Najdi podobna poročila",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Dokumentacija",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Preberi dokumentacijo na <code>uBlock/wiki</code>, da izveš vse o funkcijah KiwiGuard.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Vprašanja in podpora",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Odgovori na vprašanja in druga pomoč so na voljo na forumu <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Težave s filtrom/stran ne deluje",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Prijavi težave s filtrom na posameznih straneh v <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> sledilnik težav. <u>Zahteva GitHub račun.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Pomembno:</b> Izogibajte se sočasni uporabi podobnih orodij za blokiranje, to lahko povzroči težave s filtrom na posameznih straneh.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Tips:</b> Preverjajte, da so vaši seznami filtrov redno posodobljeni. <span data-url=\"logger-ui.html#_\">Zapisovalnik</span> je glavno orodje za diagnostiko težav s filtri.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Prijavi napako",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Prijavi težave z KiwiGuard na <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code>sledilnik težav</span>. <u>Potreben je GitHub račun.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Informacije za odpravljanje težav",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Spodaj so tehnične informacije, ki so lahko v pomoč prostovoljcem, ko vam skušajo rešiti težavo.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Prijavi napako filtra",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Zaradi preprečitve obremenjevanja prostovoljcev s podvojenimi poročili prosim preveri da težava še ni bila sporočena.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Seznami filtrov se posodabljajo dnevno. Prepričajte se, da vaša težava še ni bila rešena v najnovejših seznamih filtrov.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Preverite, ali težava še vedno obstaja po ponovnem nalaganju problematične spletne strani.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Naslov spletne strani:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "Spletna stran…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- Izberi vnos --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Prikaže reklame ali ostanke reklam",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Ima prekrivne elemente ali druge nadloge",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Zazna KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Ima probleme povezane z zasebnostjo",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Ne deluje pravilno, ko je KiwiGuard omogočen",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Odpre neželene zavihke ali okna",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Vodi do zlonamerne programske opreme, lažnega predstavljanja",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Označi spletno stran kot “NSFW” (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">“Ni primerno za delo”</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
     "message": "Pravilnik o zasebnosti",
     "description": "Link to privacy policy on GitHub (English)"
@@ -854,18 +1022,6 @@
   "aboutChangelog": {
     "message": "Dnevnik sprememb",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Wiki",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Podpora",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Sledilec težav",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Izvorna koda (GPLv3)",
@@ -892,11 +1048,11 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "uBO-jevi lastni seznami filtrov so brezplačno gostovani na naslednjih <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN-ih</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "Ob posodobitvi seznama filtrov se uporabi naključno izbran CDN.",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "Ne morem se povezati do {{url}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: Dodam sledeči URL na listo lastnih filtrov?\n\nNaslov: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Naročite se",
@@ -975,12 +1127,16 @@
     "message": "izklop",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Stran blokirana",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard je preprečil nalaganje naslednje strani:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {
-    "message": "Zaradi sledečega filtra",
+    "message": "To se je zgodilo zaradi sledečega filtra:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedNoParamsPrompt": {
@@ -999,6 +1155,10 @@
     "message": "Zapri to okno",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Ne opozarjaj me več za to spletno mesto",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Onemogoči striktno blokiranje za {{hostname}}",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Trajno",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Nadaljuj",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "Blokirana stran želi preusmeriti na drugo spletno mesto. Če izberete nadaljevanje, boste neposredno preusmerjeni na: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Razlog:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Zlonamerno",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Sledilnik",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Slab sloves",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Izvozi v shrambe oblaka",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1052,16 +1236,20 @@
     "description": ""
   },
   "contextMenuBlockElementInFrame": {
-    "message": "Blokiraj element v okvirju",
+    "message": "Blokiraj element v okvirju …",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Naroči se na seznam filtrov..",
+    "message": "Naroči se na seznam filtrov…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "Začasno dovoli velike medijske elemente",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "Prikaži izvorno kodo…",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "Vnesite bližnjico",
@@ -1075,13 +1263,21 @@
     "message": "Kopiraj v odložišče",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Toggle blocking profile",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Izberi vse",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Preklopi lepotno filtriranje",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Preklopi JavaScript",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
-    "message": "Sprostite način blokiranja.",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "message": "Sprostite način blokiranja",
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "Uporabljena shramba: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "Kliknite za prikaz",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Napake: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Ob zagonu brskalnika filtriranje ni potekalo pravilno. Ponovno naložite stran, da zagotovite pravilno filtriranje.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

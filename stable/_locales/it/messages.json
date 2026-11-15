@@ -28,7 +28,7 @@
     "description": "appears as tab name in dashboard"
   },
   "3pPageName": {
-    "message": "Filtri di terze parti",
+    "message": "Liste dei filtri",
     "description": "appears as tab name in dashboard"
   },
   "1pPageName": {
@@ -40,7 +40,7 @@
     "description": "appears as tab name in dashboard"
   },
   "whitelistPageName": {
-    "message": "Whitelist",
+    "message": "Siti affidabili",
     "description": "appears as tab name in dashboard"
   },
   "shortcutsPageName": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "Info",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "Supporto",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -72,7 +76,7 @@
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Clicca per attivare KiwiGuard in questo sito.",
+    "message": "Fai clic per attivare KiwiGuard per questo sito.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "Vai al registro delle richieste",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "Segnala un problema su questo sito",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "Disabilita/abilita il blocco di tutti i popup per questo sito",
@@ -267,13 +275,13 @@
     "message": "Versione",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Evidenzia righe con script di terze parti",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "script",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Evidenzia righe con frame di terze parti",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "frame",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Crea",
@@ -327,17 +335,25 @@
     "message": "Adatto ai daltonici",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Aspetto",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Tema",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Colore di risalto personalizzato",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Abilita supporto salvataggio nel cloud",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
     "message": "Sono un utente avanzato (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Lettura obbligatoria</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "impostazioni avanzate",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Disattiva pre-fetching (per evitare qualsiasi connessione per le richieste di rete bloccate)",
@@ -364,7 +380,7 @@
     "description": ""
   },
   "settingsNoLargeMediaPrompt": {
-    "message": "Blocca elementi multimediali di dimensioni maggiori di {{input}} KB",
+    "message": "Blocca gli elementi multimediali di dimensioni maggiori di {{input}} KB",
     "description": ""
   },
   "settingsNoRemoteFontsPrompt": {
@@ -382,6 +398,18 @@
   "settingsUncloakCnamePrompt": {
     "message": "Rivela i nomi canonici",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "Avanzate",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Funzionalità adatte solo per gli utenti tecnici.",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "impostazioni avanzate",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": "Ultimo ripristino:",
@@ -412,11 +440,11 @@
     "description": "A button in the in the _3rd-party filters_ pane"
   },
   "3pParseAllABPHideFiltersPrompt1": {
-    "message": "Utilizza Adblock+ element hiding filters.",
+    "message": "Analizza e applica i filtri cosmetici",
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
-    "message": "\nI filtri cosmetici servono a nascondere gli elementi in una pagina web che sono considerati un fastidio visivo, e che non possono essere bloccati dai motori di filtraggio basati sulla richiesta di rete.",
+    "message": "I filtri cosmetici servono a nascondere elementi in una pagina web che sono considerati visivamente fastidiosi e che non possono essere bloccati dai motori di filtraggio basati sulle richieste di rete.",
     "description": "Describes the purpose of the 'Parse and enforce cosmetic filters' feature."
   },
   "3pIgnoreGenericCosmeticFilters": {
@@ -426,6 +454,10 @@
   "3pIgnoreGenericCosmeticFiltersInfo": {
     "message": "<p>I filtri cosmetici generici sono i filtri cosmetici intesi per essere applicati a tutti i siti Web.<p>Benché questi siano gestiti in modo efficiente da KiwiGuard, i filtri cosmetici generici potrebbero contribuire a un carico elevato in termini di memoria e CPU su alcune pagine Web, in particolare quelle di notevoli dimensioni e a lunga scadenza.<p>L'attivazione di quest'opzione eliminerà il carico elevato in termini di memoria e CPU aggiunto alle pagine Web in conseguenza della gestione dei filtri cosmetici generici, e inoltre ridurrà l'impatto sulla memoria di KiwiGuard stesso.<p>È raccomandato abilitare quest'opzione sui dispositivi meno potenti.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
+  },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Sospendi l'attività di rete finché tutte le liste dei filtri sono caricate",
+    "description": "A checkbox in the 'Filter lists' pane"
   },
   "3pListsOfBlockedHostsHeader": {
     "message": "Lista degli hosts bloccati",
@@ -437,42 +469,50 @@
   },
   "3pGroupDefault": {
     "message": "Integrati",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Pubblicità",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Privacy",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Domini con Malware",
-    "description": "English: Malware domains"
+    "message": "Protezione dai malware, sicurezza",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Widget dei social",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Avvisi sui cookie",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "Elementi fastidiosi",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Multiuso",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Regioni, lingue",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Personalizzate",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
     "message": "Importa...",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
-    "message": "Un URL per riga. URL non validi verranno silenziosamente ignorati.",
+    "message": "Un URL per riga. Gli URL non validi saranno silenziosamente ignorati.",
     "description": "Short information about how to use the textarea to import external filter lists by URL"
   },
   "3pExternalListObsolete": {
@@ -495,17 +535,25 @@
     "message": "Un errore di rete ha impedito l'aggiornamento della risorsa.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "Un filtro per ogni riga. Un filtro può essere un hostname, o un filtro compatibile con Adblock Plus. Ogni riga che comincia con <code>!</code> verrà ignorata.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Non aggiungere filtri da fonti non attendibili.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Abilita i miei filtri personalizzati",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Consenti i filtri personalizzati che richiedono affidabilità",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
     "message": "Importa e aggiungi",
-    "description": "English: Import and append"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "Esporta",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "ublock-filtri-statici-personalizzati_{{datetime}}.txt",
@@ -549,7 +597,7 @@
   },
   "rulesExport": {
     "message": "Esporta in file",
-    "description": ""
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "ublock-filtri-dinamici-personalizzati_{{datetime}}.txt",
@@ -581,15 +629,15 @@
   },
   "whitelistPrompt": {
     "message": "Lista dei siti dove uBlock è disattivato. Un sito per ogni riga. Le voci non valide verranno silenziosamente ignorate.",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "Importa e aggiungi",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "Esporta",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "ublock-whitelist_{{datetime}}.txt",
@@ -640,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "KiwiGuard Wiki: Registro",
+    "message": "Wiki di KiwiGuard: Il registro",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -788,7 +836,7 @@
     "description": "Below this sentence, the filter list(s) in which the filter was found"
   },
   "loggerStaticFilteringFinderSentence2": {
-    "message": "Non è stato possibile trovare il filtro statico in nessuno degli elenchi di filtri attualmente abilitati",
+    "message": "Non è stato possibile trovare il filtro statico in alcuna delle liste dei filtri attualmente abilitate",
     "description": "Message to show when a filter cannot be found in any filter lists"
   },
   "loggerSettingDiscardPrompt": {
@@ -847,25 +895,133 @@
     "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "Apri",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Crea una nuova segnalazione",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Trova segnalazioni simili",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Documentazione",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Leggi la documentazione su <code>uBlock/wiki</code> per conoscere tutte le funzionalità di KiwiGuard.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Domande e supporto",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Le risposte alle domande e ad altri tipi di supporto sono fornite sul subreddit <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Problemi dei filtri/siti malfunzionanti",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Segnala problemi dei filtri con siti specifici al <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uAssets</code></span>. Richiede un account GitHub.",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Importante:</b> Evita di utilizzare altre estensioni simili insieme a KiwiGuard, poiché ciò potrebbe causare problemi di filtraggio su specifici siti.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Suggerimenti:</b> Assicurati che le tue liste di filtri siano aggiornate. <span data-url=\"logger-ui.html#_\">Il registro</span> è lo strumento principale per diagnosticare i problemi relativi ai filtri.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Segnalazione di errori",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Segnala problemi di KiwiGuard stesso al <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uBlock-issue</code></span>. Richiede un account GitHub.",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Informazioni sulla risoluzione dei problemi",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Di seguito sono riportate informazioni tecniche che potrebbero essere utili quando i volontari cercheranno di aiutarti a risolvere un problema.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Segnala un problema con un filtro",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Per evitare di gravare sui volontari con segnalazioni duplicate, verifica che il problema non sia già stato segnalato. <b>Nota:</b> cliccando il pulsante l'origine della pagina sarà inviata a GitHub.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Gli elenchi dei filtri vengono aggiornati quotidianamente. Assicurati che il tuo problema non sia già stato risolto negli elenchi di filtri più recenti.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Verifica che il problema sussista ancora dopo aver ricaricato la pagina web problematica.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Indirizzo della pagina web:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "La pagina web...",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "Scegli una voce",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Mostra pubblicità o avanzi di pubblicità",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Ha sovrapposizioni o altri fastidi",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Rileva KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Ha problemi relativi alla privacy",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Si rompe quando KiwiGuard è attivato",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Apre schede o finestre indesiderate",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Porta a badware, phishing",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Etichetta la pagina web come &ldquo;NSFW&rdquo; (<a href=\"https://it.wikipedia.org/wiki/NSFW\">&ldquo;Not Safe For Work&rdquo;</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Codice di condotta sulla privacy",
+    "message": "Informativa sulla privacy",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
-    "message": "Changelog",
+    "message": "Registro delle modifiche",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Wiki",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Supporto",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Problemi segnalati",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Codice sorgente (GPLv3)",
@@ -892,7 +1048,7 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "Gli elenchi di filtri di uBO sono liberamente ospitati sul seguente <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN</a>:",
+    "message": "Gli elenchi di filtri di uBO sono liberamente ospitati sui seguenti <a href=\"https://it.wikipedia.org/wiki/Content_Delivery_Network\">CDN</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
@@ -912,7 +1068,7 @@
     "description": "English: Restore from file..."
   },
   "aboutResetDataButton": {
-    "message": "Riparti da zero...",
+    "message": "Ripristina le impostazioni predefinite…",
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "Errore di rete: {{msg}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: Aggiungere il seguente URL alla tua lista dei filtri personalizzata?\n\nTitolo: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Sottoscrivi",
@@ -975,6 +1127,10 @@
     "message": "disattivato",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Pagina bloccata",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard ha impedito alla seguente pagina di caricarsi:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "Chiudi questa finestra",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Non avvisarmi di nuovo riguardo questo sito",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Disabilita blocco assoluto per {{hostname}}",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Permanentemente",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Procedi",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "La pagina bloccata tenta di reindirizzare a un altro sito. Se scegli di procedere, navigherai direttamente verso: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Motivo:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Maligno",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Localizzatore",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Disdicevole",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Esporta nel cloud",
@@ -1063,6 +1247,10 @@
     "message": "Consenti temporaneamente elementi multimediali di grandi dimensioni",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
   },
+  "contextMenuViewSource": {
+    "message": "Visualizza il codice sorgente…",
+    "description": "A context menu entry, to view the source code of the target resource"
+  },
   "shortcutCapturePlaceholder": {
     "message": "Digita una scorciatoia",
     "description": "Placeholder string for input field used to capture a keyboard shortcut"
@@ -1075,13 +1263,21 @@
     "message": "Copia negli appunti",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Attiva / disattiva il profilo di blocco",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Seleziona tutto",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Attiva/Disattiva il filtraggio cosmetico",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Attiva o disattiva JavaScript",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "Rilassa la modalità di blocco",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "Spazio utilizzato: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "Clicca per caricare",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Errori: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Non è stato effettuato correttamente il filtraggio all'avvio del browser. Ricarica la pagina per garantire un filtraggio adeguato.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

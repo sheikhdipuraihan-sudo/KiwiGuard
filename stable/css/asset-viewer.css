@@ -22,32 +22,32 @@ body {
     border: 0;
     display: flex;
     flex-direction: column;
-    height: 100%;  /* LOCAL CHANGES */
+    height: 100vh;
+        height: 100svh;
     margin: 0;
     overflow: hidden;
     padding: 0;
     width: 100vw;
-    position: absolute;  /* LOCAL CHANGES */
     }
 #subscribe {
-    background-color: var(--bg-transient-notice);
     display: flex;
     flex-shrink: 0;
-    padding: 4px;
     justify-content: space-between;
     max-height: 6em;
+    padding-inline-end: 0.5em;
     }
 #subscribe.hide {
     display: none;
     }
 .logo {
+    background-color: #fffa;
     flex-shrink: 0;
     width: 2em;
     }
 #subscribePrompt {
     display: inline-flex;
     flex-direction: column;
-    padding: 0 0.5em;
+    padding: 0.5em;
     }
 #subscribePrompt > span {
     font-weight: bold;
@@ -60,6 +60,8 @@ body {
     align-self: center;
     }
 #subscribe > .fa-icon {
+    color: var(--accent-ink-1);
+        fill: var(--accent-ink-1);
     font-size: 20px;
     }
 body.loading #subscribe > button,

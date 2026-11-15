@@ -1,12 +1,13 @@
 {
-  "author": "Reforget-id, Raymond Hill & contributors",
+  "author": "Raymond Hill & contributors",
   "background": {
     "page": "background.html"
   },
   "browser_action": {
     "default_icon": {
       "16": "img/icon_16.png",
-      "32": "img/icon_32.png"
+      "32": "img/icon_32.png",
+      "64": "img/icon_64.png"
     },
     "default_popup": "popup-fenix.html",
     "default_title": "KiwiGuard for Kiwi Browser"
@@ -26,6 +27,12 @@
     },
     "relax-blocking-mode": {
       "description": "__MSG_relaxBlockingMode__"
+    },
+    "toggle-cosmetic-filtering": {
+      "description": "__MSG_toggleCosmeticFiltering__"
+    },
+    "toggle-javascript": {
+      "description": "__MSG_toggleJavascript__"
     }
   },
   "content_scripts": [
@@ -57,6 +64,18 @@
         "https://*.github.io/*"
       ],
       "run_at": "document_idle"
+    },
+    {
+      "all_frames": false,
+      "js": [
+        "/js/scriptlets/updater.js"
+      ],
+      "matches": [
+        "https://github.com/uBlockOrigin/*",
+        "https://ublockorigin.github.io/*",
+        "https://*.reddit.com/r/uBlockOrigin/*"
+      ],
+      "run_at": "document_idle"
     }
   ],
   "content_security_policy": "script-src 'self'; object-src 'self'",
@@ -70,13 +89,14 @@
   },
   "incognito": "split",
   "manifest_version": 2,
-  "minimum_chrome_version": "55.0",
+  "minimum_chrome_version": "98.0",
   "name": "__MSG_extName__",
   "options_ui": {
     "open_in_tab": true,
     "page": "dashboard.html"
   },
   "permissions": [
+    "alarms",
     "contextMenus",
     "privacy",
     "storage",
@@ -91,9 +111,9 @@
   "storage": {
     "managed_schema": "managed_storage.json"
   },
-  "update_url": "https://raw.githubusercontent.com/sheikhdipuraihan-sudo/uBlock-Kiwi/main/update.xml",
-  "version": "1.38.0.0",
+  "version": "1.76.2.1",
   "web_accessible_resources": [
     "/web_accessible_resources/*"
-  ]
+  ],
+  "update_url": "https://raw.githubusercontent.com/sheikhdipuraihan-sudo/uBlock-Kiwi/main/update.xml"
 }

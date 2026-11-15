@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-    uBlock Origin - a browser extension to block requests.
+    uBlock Origin - a comprehensive, efficient content blocker
     Copyright (C) 2017-present Raymond Hill
 
     This program is free software: you can redistribute it and/or modify
@@ -19,41 +19,8 @@
     Home: https://github.com/gorhill/uBlock
 */
 
-/******************************************************************************/
-
-'use strict';
-
-/******************************************************************************/
-
-µBlock.canUseShortcuts = vAPI.commands instanceof Object;
-
-// https://github.com/uBlockOrigin/uBlock-issues/issues/386
-//   Firefox 74 and above has complete shotcut assignment user interface.
-µBlock.canUpdateShortcuts =
-    µBlock.canUseShortcuts &&
-    vAPI.webextFlavor.soup.has('firefox') &&
-    typeof vAPI.commands.update === 'function';
-
-if ( µBlock.canUpdateShortcuts ) {
-    self.addEventListener(
-        'webextFlavor',
-        ( ) => {
-            const µb = µBlock;
-            µb.canUpdateShortcuts = vAPI.webextFlavor.major < 74;
-            if ( µb.canUpdateShortcuts === false ) { return; }
-            vAPI.storage.get('commandShortcuts').then(bin => {
-                if ( bin instanceof Object === false ) { return; }
-                const shortcuts = bin.commandShortcuts;
-                if ( Array.isArray(shortcuts) === false ) { return; }
-                µb.commandShortcuts = new Map(shortcuts);
-                for ( const [ name, shortcut ] of shortcuts ) {
-                    vAPI.commands.update({ name, shortcut });
-                }
-            });
-        },
-        { once: true }
-    );
-}
+import { hostnameFromURI } from './uri-utils.js';
+import µb from './background.js';
 
 /******************************************************************************/
 
@@ -62,7 +29,7 @@ if ( µBlock.canUpdateShortcuts ) {
 // *****************************************************************************
 // start of local namespace
 
-if ( µBlock.canUseShortcuts === false ) { return; }
+if ( vAPI.commands instanceof Object === false ) { return; }
 
 const relaxBlockingMode = (( ) => {
     const reloadTimers = new Map();
@@ -70,12 +37,11 @@ const relaxBlockingMode = (( ) => {
     return function(tab) {
         if ( tab instanceof Object === false || tab.id <= 0 ) { return; }
 
-        const µb = µBlock;
-        const normalURL = µb.normalizePageURL(tab.id, tab.url);
+        const normalURL = µb.normalizeTabURL(tab.id, tab.url);
 
-        if ( µb.getNetFilteringSwitch(normalURL) === false ) { return; }
+        if ( µb.isTrustedSite(normalURL) ) { return; }
 
-        const hn = µb.URI.hostnameFromURI(normalURL);
+        const hn = hostnameFromURI(normalURL);
         const curProfileBits = µb.blockingModeFromHostname(hn);
         let newProfileBits;
         for ( const profile of µb.liveBlockingProfiles ) {
@@ -141,30 +107,37 @@ const relaxBlockingMode = (( ) => {
         if ( noReload ) { return; }
 
         // Reload: use a timer to coalesce bursts of reload commands.
-        let timer = reloadTimers.get(tab.id);
-        if ( timer !== undefined ) {
-            clearTimeout(timer);
-        }
-        timer = vAPI.setTimeout(
-            tabId => {
+        const timer = reloadTimers.get(tab.id) || (( ) => {
+            const t = vAPI.defer.create(tabId => {
                 reloadTimers.delete(tabId);
                 vAPI.tabs.reload(tabId);
-            },
-            547,
-            tab.id
-        );
-        reloadTimers.set(tab.id, timer);
+            });
+            reloadTimers.set(tab.id, t);
+            return t;
+        })();
+        timer.offon(547, tab.id);
     };
 })();
 
 vAPI.commands.onCommand.addListener(async command => {
-    const µb = µBlock;
+    // Generic commands
+    if ( command === 'open-dashboard' ) {
+        µb.openNewTab({
+            url: 'dashboard.html',
+            select: true,
+            index: -1,
+        });
+        return;
+    }
+    // Tab-specific commands
+    const tab = await vAPI.tabs.getCurrent();
+    if ( tab instanceof Object === false ) { return; }
 
     switch ( command ) {
     case 'launch-element-picker':
+        if ( µb.userFiltersAreEnabled() === false ) { break; }
+        /* fall through */
     case 'launch-element-zapper': {
-        const tab = await vAPI.tabs.getCurrent();
-        if ( tab instanceof Object === false ) { return; }
         µb.epickerArgs.mouse = false;
         µb.elementPickerExec(
             tab.id,
@@ -175,8 +148,6 @@ vAPI.commands.onCommand.addListener(async command => {
         break;
     }
     case 'launch-logger': {
-        const tab = await vAPI.tabs.getCurrent();
-        if ( tab instanceof Object === false ) { return; }
         const hash = tab.url.startsWith(vAPI.getURL(''))
             ? ''
             : `#_+${tab.id}`;
@@ -187,16 +158,21 @@ vAPI.commands.onCommand.addListener(async command => {
         });
         break;
     }
-    case 'open-dashboard': {
-        µb.openNewTab({
-            url: 'dashboard.html',
-            select: true,
-            index: -1,
+    case 'relax-blocking-mode':
+        relaxBlockingMode(tab);
+        break;
+    case 'toggle-cosmetic-filtering':
+        µb.toggleHostnameSwitch({
+            name: 'no-cosmetic-filtering',
+            hostname: hostnameFromURI(µb.normalizeTabURL(tab.id, tab.url)),
         });
         break;
-    }
-    case 'relax-blocking-mode':
-        relaxBlockingMode(await vAPI.tabs.getCurrent());
+    case 'toggle-javascript':
+        µb.toggleHostnameSwitch({
+            name: 'no-scripting',
+            hostname: hostnameFromURI(µb.normalizeTabURL(tab.id, tab.url)),
+        });
+        vAPI.tabs.reload(tab.id);
         break;
     default:
         break;

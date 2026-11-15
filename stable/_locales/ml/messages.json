@@ -16,7 +16,7 @@
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
-    "message": "താമസിക്കുക",
+    "message": "ഇവിടെ തുടരുക",
     "description": "Label for button to prevent navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningIgnore": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "ഇതിനെ കുറിച്ച്",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "സഹായം ",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "അപേക്ഷാ ലോഗിലേക്ക് പോകുക",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "ഈ വെബ്‌സൈറ്റിൽ ഉള്ള പ്രശ്നങ്ങൾ അറിയിക്കുക ",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "ഈ സൈറ്റിലെ എല്ലാ പോപ്‌അപ്പുകളും ബ്ലോക്ക്‌ ചെയ്യുന്നത് ടോഗ്ഗിള്‍ ചെയ്യുക",
@@ -212,7 +220,7 @@
     "description": "Tooltip when hovering the top-most cell of the global-rules column."
   },
   "popupTipLocalRules": {
-    "message": "പ്രാദേശിക നിയമങ്ങൾ: ഈ കോളത്തിലെ നിയമങ്ങൾ നിലവിലെ സൈറ്റിലെ മാത്രം പ്രയോഗിക്കുന്ന.\nപ്രാദേശിക നിയമങ്ങൾ ആഗോള നിയമങ്ങൾ അതിലംഘിച്ച് പ്രവർത്തിക്കുന്നതായിരിക്കും.",
+    "message": "പ്രാദേശിക നിയമങ്ങൾ: ഈ കോളത്തിലെ നിയമങ്ങൾ നിലവിലെ സൈറ്റിലെ മാത്രം പ്രയോഗിക്കുന്ന.",
     "description": "Tooltip when hovering the top-most cell of the local-rules column."
   },
   "popupTipSaveRules": {
@@ -267,13 +275,13 @@
     "message": "പതിപ്പ്",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party scripts",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "സ്ക്രിപ്റ്റ്",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party frames",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "ഫ്രെയിം",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "ക്രിയേറ്റ് ചെയ്യുക",
@@ -327,17 +335,25 @@
     "message": "വർണ്ണാന്ധതാ സൗഹാര്‍ദ്ദപരമായത്",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "രൂപഭാവം",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "തീം",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "ഇഷ്ടാനുസൃത ആക്സന്റ് നിറം",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "ക്ലൌഡ് സ്റ്റോറെജ് സപ്പോര്‍ട്ട് എനേബിള്‍ ചെയ്യുക",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
     "message": "ഞാന്‍ ഒരു അഡ്വാന്‍സ്ഡ് യൂസര്‍ ആണ് (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'> വായിക്കേണ്ടത്</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "വിപുലമായ ക്രമീകരണങ്ങൾ",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "പ്രീ-ഫെച്ചിംഗ് ഡിസേബിള്‍ ചെയ്യുക (ബ്ലോക്ക് ചെയ്ത നെറ്റ്‌വര്‍ക്ക് അപേക്ഷകള്‍ക്ക് കണക്ഷന്‍ ലഭിക്കുന്നത് തടയുന്നതിന്)",
@@ -383,6 +399,18 @@
     "message": "കാനോനിക്കൽ പേരുകൾ അൺലോക്ക് ചെയ്യുക",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
   },
+  "settingsAdvanced": {
+    "message": "വിപുലമായ ക്രമീകരണങ്ങൾ",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "സാങ്കേതിക ഉപയോക്താക്കൾക്ക് മാത്രം അനുയോജ്യമായ സവിശേഷതകൾ",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "വിപുലമായ ക്രമീകരണങ്ങൾ",
+    "description": "For the tooltip of a link which gives access to advanced settings"
+  },
   "settingsLastRestorePrompt": {
     "message": "അവസാന റീസ്റ്റോര്‍:",
     "description": "English: Last restore:"
@@ -427,6 +455,10 @@
     "message": "എല്ലാ വെബ് സൈറ്റുകളിലും പ്രയോഗിക്കാൻ ഉദ്ദേശിക്കുന്ന കോസ്മെറ്റിക് ഫിൽട്ടറുകളാണ് ജനറിക് കോസ്മെറ്റിക് ഫിൽട്ടറുകൾ. ഈ ഓപ്ഷൻ പ്രവർത്തനക്ഷമമാക്കുന്നത് ജനറിക് കോസ്മെറ്റിക് ഫിൽട്ടറുകൾ കൈകാര്യം ചെയ്യുന്നതിന്റെ ഫലമായി വെബ് പേജുകളിൽ ചേർത്ത മെമ്മറിയും സിപിയു ഓവർഹെഡും ഇല്ലാതാക്കും.\n\nശക്തി കുറഞ്ഞ ഉപകരണങ്ങളിൽ ഈ ഓപ്‌ഷൻ പ്രവർത്തനക്ഷമമാക്കാൻ ശുപാർശ ചെയ്യുന്നു.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "എല്ലാ ഫിൽറ്റർ ലിസ്റ്റുകളും ലോഡ് ആകുന്നത് വരെ നെറ്റ്വർക്ക് പ്രവർത്തനം താൽക്കാലികമായി നിർത്തുക",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "Lists of blocked hosts",
     "description": "English: Lists of blocked hosts"
@@ -437,35 +469,43 @@
   },
   "3pGroupDefault": {
     "message": "അന്തർനിർമ്മിതം",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "പരസ്യങ്ങള്‍",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "സ്വകാര്യത",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "മാല്‍വെയര്‍ ഡൊമൈനുകള്‍",
-    "description": "English: Malware domains"
+    "message": "മാൽവെയർ സംരക്ഷണം, സുരക്ഷ",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "സോഷ്യൽ വിഡ്ജറ്റുകൾ",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "കുക്കി അറിയിപ്പുകൾ",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "ശല്യപ്പെടുത്തലുകൾ",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "മള്‍ട്ടിപര്‍പ്പസ്",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "പ്രാദേശികം, ഭാഷകള്‍",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "കസ്റ്റം",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
     "message": "ഇറക്കുമതി ചെയ്യുക ...",
@@ -488,24 +528,32 @@
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "അപ്‌ഡേറ്റുചെയ്യുന്നു ...",
+    "message": "അപ്‌ഡേറ്റുചെയ്യുന്നു...",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
     "message": "ഒരു നെറ്റ്‌വർക്ക് പിശക് ഉറവിടം അപ്‌ഡേറ്റുചെയ്യുന്നതിൽ നിന്ന് തടഞ്ഞു.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "ഒരു വരിയില്‍ ഒരു ഫില്‍റ്റര്‍ എന്ന രീതിയില്‍. ഒരു ഫില്‍റ്റര്‍ എന്നത്, ഹോസ്റ്റ് നെയിം, അല്ലെങ്കില്‍ ആഡ് ബ്ലോക്ക് പ്ലസ്‌-നോട്‌ കംപാറ്റബിള്‍ ആയ ഫില്‍റ്റര്‍ എന്നിവ ആകാം. &lsquo;!&rsquo; എന്നിവയില്‍ ആരംഭിക്കുന്ന വരികള്‍ ഇഗ്നോര്‍ ചെയ്യപ്പെടും.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "വിശ്വസനീയമല്ലാത്ത ഉറവിടങ്ങളിൽ നിന്ന് ഫിൽറ്ററുകൾ ചേർക്കരുത്.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "എന്റെ ഇഷ്ടാനുസൃത ഫിൽറ്ററുകൾ പ്രവർത്തനക്ഷമമാക്കുക",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "വിശ്വാസം ആവശ്യമുള്ള ഇഷ്ടാനുസൃത ഫിൽറ്ററുകൾ അനുവദിക്കുക",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
     "message": "ഇമ്പോര്‍ട്ടും കൂട്ടിചേര്‍ക്കലും ചെയ്യുക",
-    "description": "English: Import and append"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "എക്സ്പോര്‍ട്ട്‌",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "എന്‍റെ-യുബ്ലോക്ക്-സ്റ്റാറ്റിക്ക്-ഫില്‍ട്ടറുകള്‍_{{datetime}}.txt",
@@ -549,7 +597,7 @@
   },
   "rulesExport": {
     "message": "ഫയലിലേക്ക് എക്സ്പോര്‍ട്ട്‌ ചെയ്യുക",
-    "description": ""
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "എന്‍റെ-യുബ്ലോക്ക്-ഡൈനാമിക്-നിയമങ്ങള്‍_{{datetime}}.txt",
@@ -581,15 +629,15 @@
   },
   "whitelistPrompt": {
     "message": "യുബ്ലോക്ക്ഒ ഡിസേബിള്‍ ചെയ്യപ്പെടേണ്ട ഹോസ്റ്റ് നെയിമുകള്‍. ഒരു വരിയില്‍ ഒരു എന്‍ട്രി എന്ന രീതിയില്‍ ചേര്‍ക്കുക. ഇന്‍വാലിഡ്‌ ഹോസ്റ്റ് നെയിമുകള്‍ നിശബ്ദമായി ഇഗ്നോര്‍ ചെയ്യപെടും.",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "ഇമ്പോര്‍ട്ടും കൂട്ടിചേര്‍ക്കലും ചെയ്യുക",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "എക്സ്പോര്‍ട്ട്‌",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "എന്‍റെ-യുബ്ലോക്ക്-വൈറ്റ്ലിസ്റ്റ്_{{datetime}}.txt",
@@ -847,25 +895,133 @@
     "message": "മാർക്ക്ഡ .ൺ",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "തുറക്കുക",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "പുതിയ റിപ്പോർട്ട് നിർമ്മിക്കുക",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "സമാനമായ റിപോർട്ടുകൾ കാണുക",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "പ്രമാണീകരണം",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "KiwiGuard-ന്റെ എല്ലാ സവിശേഷതകളെക്കുറിച്ചും അറിയാൻ <code>uBlock/wiki</code>-ൽ ഡോക്യുമെന്റേഷൻ വായിക്കുക.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "ചോദ്യങ്ങളും പിന്തുണയും",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "ചോദ്യങ്ങൾക്കുള്ള ഉത്തരങ്ങളും മറ്റ് തരത്തിലുള്ള സഹായ പിന്തുണയും <code>/r/uBlockOrigin</code> സബ്റെഡിറ്റിൽ ലഭ്യമാണ്.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "ഫിൽറ്റർ പ്രശ്നങ്ങൾ/വെബ്സൈറ്റ് പ്രവർത്തിക്കുന്നില്ല",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "പ്രത്യേക വെബ്സൈറ്റുകളിലെ ഫിൽറ്റർ പ്രശ്നങ്ങൾ <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ഇഷ്യു ട്രാക്കറിൽ</span> റിപ്പോർട്ട് ചെയ്യുക. <u>ഒരു GitHub അക്കൗണ്ട് ആവശ്യമാണ്.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>പ്രധാനം:</b> KiwiGuard-നൊപ്പം സമാനമായ ഉദ്ദേശ്യമുള്ള മറ്റ് ബ്ലോക്കറുകൾ ഉപയോഗിക്കുന്നത് ഒഴിവാക്കുക, കാരണം ഇത് പ്രത്യേക വെബ്സൈറ്റുകളിൽ ഫിൽട്ടർ പ്രശ്നങ്ങൾ ഉണ്ടാക്കിയേക്കാം.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>നുറുങ്ങുകൾ:</b> നിങ്ങളുടെ ഫിൽറ്റർ ലിസ്റ്റുകൾ അപ്ഡേറ്റ് ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക. ഫിൽറ്ററുമായി ബന്ധപ്പെട്ട പ്രശ്നങ്ങൾ നിർണ്ണയിക്കാനുള്ള പ്രാഥമിക ഉപകരണമാണ് <span data-url=\"logger-ui.html#_\">ലോഗർ</span>.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "ബഗ് റിപ്പോർട്ട്",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "KiwiGuard-മായി ബന്ധപ്പെട്ട പ്രശ്നങ്ങൾ <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ഇഷ്യു ട്രാക്കറിൽ</span> റിപ്പോർട്ട് ചെയ്യുക. <u>ഒരു GitHub അക്കൗണ്ട് ആവശ്യമാണ്.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "പ്രശ്നപരിഹാര വിവരങ്ങൾ",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "ഒരു പ്രശ്നം പരിഹരിക്കാൻ സന്നദ്ധപ്രവർത്തകർ ശ്രമിക്കുമ്പോൾ ഉപയോഗപ്രദമായേക്കാവുന്ന സാങ്കേതിക വിവരങ്ങൾ ചുവടെ നൽകിയിരിക്കുന്നു.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "ഒരു ഫിൽട്ടർ പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "ആവർത്തിച്ചുള്ള റിപ്പോർട്ടുകൾ ഉപയോഗിച്ച് സന്നദ്ധപ്രവർത്തകരെ ബുദ്ധിമുട്ടിക്കുന്നത് ഒഴിവാക്കാൻ, പ്രശ്നം നേരത്തെ റിപ്പോർട്ട് ചെയ്തിട്ടില്ലെന്ന് ദയവായി ഉറപ്പാക്കുക. <b>ശ്രദ്ധിക്കുക:</b> ബട്ടൺ ക്ലിക്ക് ചെയ്യുന്നത് പേജിന്റെ ഉത്ഭവം GitHub-ലേക്ക് അയയ്ക്കുന്നതിന് കാരണമാകും.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "ഫിൽറ്റർ ലിസ്റ്റുകൾ ദിവസവും അപ്ഡേറ്റ് ചെയ്യപ്പെടുന്നു. ഏറ്റവും പുതിയ ഫിൽറ്റർ ലിസ്റ്റുകളിൽ നിങ്ങളുടെ പ്രശ്നം ഇതിനകം പരിഹരിച്ചിട്ടില്ലെന്ന് ഉറപ്പാക്കുക.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "പ്രശ്നമുള്ള വെബ് പേജ് വീണ്ടും ലോഡ് ചെയ്ത ശേഷം പ്രശ്നം നിലനിൽക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുക.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "വെബ് പേജിന്റെ വിലാസം:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "വെബ് പേജ്…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- ഒരു എൻട്രി തിരഞ്ഞെടുക്കുക --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "പരസ്യങ്ങളോ പരസ്യ അവശിഷ്ടങ്ങളോ കാണിക്കുന്നു",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "ഓവർലേകളോ മറ്റ് ശല്യങ്ങളോ ഉണ്ട്",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "KiwiGuard-നെ കണ്ടെത്തുന്നു",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "സ്വകാര്യത-സംബന്ധമായ പ്രശ്നങ്ങൾ ഉണ്ട്",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "KiwiGuard പ്രവർത്തനക്ഷമമാകുമ്പോൾ തകരാറിലാകുന്നു",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "അനാവശ്യ ടാബുകളോ വിൻഡോകളോ തുറക്കുന്നു",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "ബാഡ്വെയർ, ഫിഷിംഗ് എന്നിവയിലേക്ക് നയിക്കുന്നു",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "വെബ് പേജിനെ “NSFW” എന്ന് ലേബൽ ചെയ്യുക (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">“ജോലിക്ക് സുരക്ഷിതമല്ല”</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Privacy policy",
+    "message": "സ്വകാര്യതാ നയം",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
     "message": "മാറ്റങ്ങളുടെ ലോഗ്",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "വിക്കി",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "പിന്തുണ",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "ഇഷ്യു ട്രാക്കർ",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "സോര്‍സ് കോഡ് (ജിപിഎല്‍വി3)",
@@ -892,11 +1048,11 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "uBO- യുടെ സ്വന്തം ഫിൽട്ടർ ലിസ്റ്റുകൾ ഇനിപ്പറയുന്നവയിൽ സ്വതന്ത്രമായി ഹോസ്റ്റുചെയ്യുന്നു <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "ഒരു ഫിൽട്ടർ ലിസ്റ്റ് അപ്ഡേറ്റ് ചെയ്യേണ്ടിവരുമ്പോൾ ക്രമരഹിതമായി തിരഞ്ഞെടുത്ത CDN ഉപയോഗിക്കുന്നു",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "{{url}} എന്നതിലേക്ക് കണക്റ്റ് ചെയ്യാനാകുന്നില്ല",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "യുബ്ലോക്ക്ഒ: താഴെ പറയുന്ന യുആര്‍എല്‍ താങ്കളുടെ കസ്റ്റം ഫില്‍റ്ററില്‍ ചേര്‍ക്കട്ടേയോ?\n\nടൈറ്റില്‍: \"{{title}}\"\nയുആര്‍എല്‍: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "സബ്‌സ്‌ക്രൈബുചെയ്യുക",
@@ -975,6 +1127,10 @@
     "message": "ഓഫ്",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "പേജ് തടഞ്ഞു",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "താഴെ പറയുന്ന പേജ് ലോഡ് ചെയ്യുന്നത് യുബ്ലോക്ക് ഒറിജിന്‍ തടഞ്ഞിരിക്കുന്നു:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "ഈ വിന്‍ഡോ ക്ലോസ് ചെയ്യുക",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "ഈ സൈറ്റിനെക്കുറിച്ച് വീണ്ടും എന്നെ മുന്നറിയിപ്പ് നൽകരുത്",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "{{hostname}}ലേക്ക് കര്‍ശന ബ്ലോക്കിംഗ് ഡിസേബിള്‍ ചെയ്യുക",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "സ്ഥിരമായി",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "മുന്നോട്ട് പോകുക",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "തടഞ്ഞ പേജ് മറ്റൊരു സൈറ്റിലേക്ക് റീഡയറക്ട് ചെയ്യാൻ ആഗ്രഹിക്കുന്നു. നിങ്ങൾ മുന്നോട്ട് പോകാൻ തിരഞ്ഞെടുക്കുകയാണെങ്കിൽ, നിങ്ങൾ നേരിട്ട് ഇങ്ങോട്ട് നാവിഗേറ്റ് ചെയ്യും: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "കാരണം:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "ക്ഷുദ്രകരം",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "ട്രാക്കർ",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "അപ്രശസ്തമായ",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "ക്ലൌഡ് സ്റ്റോറേജിലേക്ക് എക്സ്പോര്‍ട്ട്‌ ചെയ്യുക",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1056,12 +1240,16 @@
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Subscribe to filter list...",
+    "message": "ഫിൽട്ടർ ലിസ്റ്റിലേക്ക് സബ്സ്ക്രൈബ് ചെയ്യുക ...",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "താൽക്കാലികമായി വലിയ മീഡിയ അനുവദിക്കുക",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "സോഴ്സ് കോഡ് കാണുക…",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "ഒരു കുറുക്കുവഴി ടൈപ്പുചെയ്യുക",
@@ -1075,13 +1263,21 @@
     "message": "ക്ലിപ്പ്ബോർഡിലേയ്ക്ക് പകർത്തുക",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "തടയൽ പ്രൊഫൈൽ ടോഗിൾ ചെയ്യുക",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "എല്ലാം തിരഞ്ഞെടുക്കുക",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "കോസ്മെറ്റിക് ഫിൽട്ടറിംഗ് ടോഗിൾ ചെയ്യുക",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "JavaScript ടോഗിൾ ചെയ്യുക",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "തടയൽ മോഡ് വിശ്രമിക്കുക",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "ഉപയോഗിച്ച സംഭരണം: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "ലോഡുചെയ്യാൻ ക്ലിക്കുചെയ്യുക",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "പിശകുകൾ: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "ബ്രൗസർ ആരംഭിക്കുമ്പോൾ ശരിയായി ഫിൽട്ടർ ചെയ്യാനായില്ല. ശരിയായ ഫിൽട്ടറിംഗ് ഉറപ്പാക്കാൻ പേജ് വീണ്ടും ലോഡ് ചെയ്യുക.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

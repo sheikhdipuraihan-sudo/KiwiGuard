@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-    uBlock Origin - a browser extension to block requests.
+    uBlock Origin - a comprehensive, efficient content blocker
     Copyright (C) 2021-present Raymond Hill
 
     This program is free software: you can redistribute it and/or modify
@@ -19,32 +19,24 @@
     Home: https://github.com/gorhill/uBlock
 */
 
-'use strict';
+import { StaticExtFilteringHostnameDB } from './static-ext-filtering-db.js';
+import { entityFromHostname } from './uri-utils.js';
+import logger from './logger.js';
+import { sessionFirewall } from './filtering-engines.js';
+import µb from './background.js';
 
 /******************************************************************************/
 
-{
-// >>>>> start of local scope
-
-/******************************************************************************/
-
-const µb = µBlock;
 const duplicates = new Set();
-const filterDB = new µb.staticExtFilteringEngine.HostnameBasedDB(1);
-const sessionFilterDB = new µb.staticExtFilteringEngine.SessionDB();
-
-const $headers = new Set();
-const $exceptions = new Set();
+const filterDB = new StaticExtFilteringHostnameDB();
 
 let acceptedCount = 0;
 let discardedCount = 0;
 
-const headerIndexFromName = function(name, headers) {
-    let i = headers.length;
-    while ( i-- ) {
-        if ( headers[i].name.toLowerCase() === name ) {
-            return i;
-        }
+const headerIndexFromName = function(name, headers, start = 0) {
+    for ( let i = start; i < headers.length; i++ ) {
+        if ( headers[i].name.toLowerCase() !== name ) { continue; }
+        return i;
     }
     return -1;
 };
@@ -57,12 +49,12 @@ const logOne = function(isException, token, fctxt) {
             modifier: true,
             result: isException ? 2 : 1,
             source: 'extended',
-            raw: `${(isException ? '#@#' : '##')}^responseheader(${token})`
+            raw: `${(isException ? '#@#' : '##')}^responseheader(${token})`,
         })
         .toLogger();
 };
 
-const api = {
+const httpheaderFilteringEngine = {
     get acceptedCount() {
         return acceptedCount;
     },
@@ -71,31 +63,31 @@ const api = {
     }
 };
 
-api.reset = function() {
+httpheaderFilteringEngine.reset = function() {
     filterDB.clear();
     duplicates.clear();
     acceptedCount = 0;
     discardedCount = 0;
 };
 
-api.freeze = function() {
+httpheaderFilteringEngine.freeze = function() {
     duplicates.clear();
     filterDB.collectGarbage();
 };
 
-api.compile = function(parser, writer) {
-    writer.select(µb.compiledHTTPHeaderSection);
+httpheaderFilteringEngine.compile = function(parser, writer) {
+    writer.select('HTTPHEADER_FILTERS');
 
-    const { compiled, exception } = parser.result;
-    const headerName = compiled.slice(15, -1);
+    const isException = parser.isException();
+    const headerName = parser.getResponseheaderName();
 
     // Tokenless is meaningful only for exception filters.
-    if ( headerName === '' && exception === false ) { return; }
+    if ( headerName === '' && isException === false ) { return; }
 
     // Only exception filters are allowed to be global.
     if ( parser.hasOptions() === false ) {
-        if ( exception ) {
-            writer.push([ 64, '', 1, compiled ]);
+        if ( isException ) {
+            writer.push([ 64, '', 1, headerName ]);
         }
         return;
     }
@@ -104,24 +96,11 @@ api.compile = function(parser, writer) {
     //   Ignore instances of exception filter with negated hostnames,
     //   because there is no way to create an exception to an exception.
 
-    for ( const { hn, not, bad } of parser.extOptions() ) {
+    for ( const { hn, not, bad } of parser.getExtFilterDomainIterator() ) {
         if ( bad ) { continue; }
-        let kind = 0;
-        if ( exception ) {
-            if ( not ) { continue; }
-            kind |= 1;
-        } else if ( not ) {
-            kind |= 1;
-        }
-        writer.push([ 64, hn, kind, compiled ]);
+        const prefix = ((isException ? 1 : 0) ^ (not ? 1 : 0)) ? '-' : '+';
+        writer.push([ 64, hn, `${prefix}${headerName}` ]);
     }
-};
-
-api.compileTemporary = function(parser) {
-    return {
-        session: sessionFilterDB,
-        selector: parser.result.compiled.slice(15, -1),
-    };
 };
 
 // 01234567890123456789
@@ -129,8 +108,8 @@ api.compileTemporary = function(parser) {
 //                ^   ^
 //               15  -1
 
-api.fromCompiledContent = function(reader) {
-    reader.select(µb.compiledHTTPHeaderSection);
+httpheaderFilteringEngine.fromCompiledContent = function(reader) {
+    reader.select('HTTPHEADER_FILTERS');
 
     while ( reader.next() ) {
         acceptedCount += 1;
@@ -141,66 +120,61 @@ api.fromCompiledContent = function(reader) {
         }
         duplicates.add(fingerprint);
         const args = reader.args();
-        if ( args.length < 4 ) { continue; }
-        filterDB.store(args[1], args[2], args[3].slice(15, -1));
+        filterDB.store(args[1], args[2]);
     }
 };
 
-api.getSession = function() {
-    return sessionFilterDB;
-};
-
-api.apply = function(fctxt, headers) {
+httpheaderFilteringEngine.apply = function(fctxt, headers) {
     if ( filterDB.size === 0 ) { return; }
 
     const hostname = fctxt.getHostname();
     if ( hostname === '' ) { return; }
 
-    const domain = fctxt.getDomain();
-    let entity = µb.URI.entityFromDomain(domain);
-    if ( entity !== '' ) {
-        entity = `${hostname.slice(0, -domain.length)}${entity}`;
-    } else {
-        entity = '*';
-    }
-
-    $headers.clear();
-    $exceptions.clear();
-
-    if ( sessionFilterDB.isNotEmpty ) {
-        sessionFilterDB.retrieve([ null, $exceptions ]);
-    }
-    filterDB.retrieve(hostname, [ $headers, $exceptions ]);
-    filterDB.retrieve(entity, [ $headers, $exceptions ], 1);
-    if ( $headers.size === 0 ) { return; }
+    const all = new Set();
+    filterDB.retrieveSpecifics(all, hostname);
+    const entity = entityFromHostname(hostname, fctxt.getDomain());
+    filterDB.retrieveSpecifics(all, entity);
+    filterDB.retrieveSpecificsByRegex(all, hostname, fctxt.url);
+    filterDB.retrieveGenerics(all);
+    if ( all.size === 0 ) { return; }
 
     // https://github.com/gorhill/uBlock/issues/2835
     //   Do not filter response headers if the site is under an `allow` rule.
-    if (
-        µb.userSettings.advancedUserEnabled &&
-        µb.sessionFirewall.evaluateCellZY(hostname, hostname, '*') === 2
-    ) {
-        return;
+    if ( µb.userSettings.advancedUserEnabled ) {
+        if ( sessionFirewall.evaluateCellZY(hostname, hostname, '*') === 2 ) { return; }
     }
 
-    const hasGlobalException = $exceptions.has('');
-    const loggerEnabled = µb.logger.enabled;
+    // Split filters in different groups
+    const filters = new Set();
+    const exceptions = new Set();
+    for ( const s of all ) {
+        const selector = s.slice(1);
+        if ( s.charCodeAt(0) === 0x2D /* - */ ) {
+            exceptions.add(selector);
+        } else {
+            filters.add(selector);
+        }
+    }
+
+    const hasGlobalException = exceptions.has('');
 
     let modified = false;
+    let i = 0;
 
-    for ( const name of $headers ) {
-        for (;;) {
-            const i = headerIndexFromName(name, headers);
-            if ( i === -1 ) { break; }
-            const isExcepted = hasGlobalException || $exceptions.has(name);
-            if ( isExcepted ) {
-                if ( loggerEnabled ) {
-                    logOne(true, hasGlobalException ? '' : name, fctxt);
-                }
-                break;
+    for ( const name of filters ) {
+        const isExcepted = hasGlobalException || exceptions.has(name);
+        if ( isExcepted ) {
+            if ( logger.enabled ) {
+                logOne(true, hasGlobalException ? '' : name, fctxt);
             }
+            continue;
+        }
+        i = 0;
+        for (;;) {
+            i = headerIndexFromName(name, headers, i);
+            if ( i === -1 ) { break; }
             headers.splice(i, 1);
-            if ( loggerEnabled ) {
+            if ( logger.enabled ) {
                 logOne(false, name, fctxt);
             }
             modified = true;
@@ -210,19 +184,16 @@ api.apply = function(fctxt, headers) {
     return modified;
 };
 
-api.toSelfie = function() {
+httpheaderFilteringEngine.toSelfie = function() {
     return filterDB.toSelfie();
 };
 
-api.fromSelfie = function(selfie) {
+httpheaderFilteringEngine.fromSelfie = function(selfie) {
     filterDB.fromSelfie(selfie);
 };
 
-µb.httpheaderFilteringEngine = api;
-
 /******************************************************************************/
 
-// <<<<< end of local scope
-}
+export default httpheaderFilteringEngine;
 
 /******************************************************************************/

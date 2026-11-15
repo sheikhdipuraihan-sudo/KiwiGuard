@@ -16,7 +16,7 @@
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
-    "message": "ఉండు",
+    "message": "ఇక్కడే ఉండండి",
     "description": "Label for button to prevent navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningIgnore": {
@@ -40,7 +40,7 @@
     "description": "appears as tab name in dashboard"
   },
   "whitelistPageName": {
-    "message": "నేను నమ్మే సైట్ల జాబితా",
+    "message": "నమ్మే సైట్లు",
     "description": "appears as tab name in dashboard"
   },
   "shortcutsPageName": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "మా గురించి",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "సహాయం",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -123,6 +127,10 @@
     "message": "అభ్యర్ధనల చిట్టా తెరువుము",
     "description": "Tooltip used for the logger icon in the panel"
   },
+  "popupTipReport": {
+    "message": "ఈ వెబ్‌సైట్‌లో సమస్యను నివేదించండి",
+    "description": "Tooltip used for the 'chat' icon in the panel"
+  },
   "popupTipNoPopups": {
     "message": "ఈ వెబ్సైట్ లో అన్ని పాప్అప్స్ ని నిషేధించు/అనుమతించు",
     "description": "Tooltip for the no-popups per-site switch"
@@ -188,7 +196,7 @@
     "description": "Caption for the no-large-media per-site switch"
   },
   "popupNoCosmeticFiltering_v2": {
-    "message": "సౌందర్య వడపోత",
+    "message": "నిశ్చలాత్మక వడపోత",
     "description": "Caption for the no-cosmetic-filtering per-site switch"
   },
   "popupNoRemoteFonts_v2": {
@@ -200,7 +208,7 @@
     "description": "Caption for the no-scripting per-site switch"
   },
   "popupMoreButton_v2": {
-    "message": "ఎక్కువ",
+    "message": "మరిన్ని",
     "description": "Label to be used to show popup panel sections"
   },
   "popupLessButton_v2": {
@@ -267,13 +275,13 @@
     "message": "సంస్కరణ",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: 3 వ పార్టీ స్క్రిప్ట్స్ కలిగి ఉన్న వరుసలను నొక్కి చెప్పండి",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "స్క్రిప్ట్",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: 3 వ పార్టీ ఫ్రేమ్లను కలిగి ఉన్న వరుసలను నొక్కి చెప్పండి",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "ఫ్రేమ్",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "సృష్టించు",
@@ -327,17 +335,25 @@
     "message": "వర్ణ అంధులకనుకూలమైన",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "స్వరూపం",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "థీమ్",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "అనుకూల యాస రంగు",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "క్లౌడ్ లో పొందుపర్చడాన్న్ది అనుమతించు",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "మీరు నిపుణత కలిగిన వినియోగాదారులితే (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>ఇది తప్పనిసరిగా చదవాలి</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "అధునాతన అమరికలు",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "message": "మీరు నిపుణత కలిగిన వినియోగాదారులైతే (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>అవసరమైన సమాచారం</a>)",
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "అంశాలను ముందుగానే తీసుకురావడాన్ని నిషేధించు (ఎవైనా అవాంఛనీయ అనుసంధానాలను నివారించడానికి)",
@@ -383,6 +399,18 @@
     "message": "కానానికల్ పేర్లను తెరవండి",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
   },
+  "settingsAdvanced": {
+    "message": "ఆధునిక",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "సాంకేతిక వినియోగదారులకు మాత్రమే సరిపోయే ఫీచర్లు",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "అధునాతన అమరికలు",
+    "description": "For the tooltip of a link which gives access to advanced settings"
+  },
   "settingsLastRestorePrompt": {
     "message": "గత పునరుద్ధారణ:",
     "description": "English: Last restore:"
@@ -427,6 +455,10 @@
     "message": "<p>సాధారణ కాస్మెటిక్ ఫిల్టర్లు అన్ని సైట్లపై ఉపయోగించబడుతాయి.<p>వీటిని KiwiGuard సమర్థవంతంగా ఉపయోగించగలిగినా, కొన్ని భారీ లేదా దీర్ఘకాలికంగా వీక్షిస్తున్న పేజీలలో CPU ఇంకా RAM వాడుకను ఇవి పెంచగలవు.<p>ఈ ఎంపికను ఎంచుకోవడంవలన, సాధారణ కాస్మెటిక్ ఫిల్టర్లు కొరకు అదనపు CPU ఉపయోగాన్ని నివారిస్తుంది, పైగా KiwiGuard యొక్క RAM వాడుక తగ్గడానికి తోడ్పడుతుంది.<p>అల్పసామర్ధ్య పరికరాలలో దీన్ని ఎంచుకోవడం శ్రేయస్కరం.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "అన్ని ఫిల్టర్ జాబితాలు లోడ్ అయ్యే వరకు నెట్‌వర్క్ కార్యాచరణను నిలిపివేయండి",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "నిరోధించబడిన చిరునామాల జాబితా",
     "description": "English: Lists of blocked hosts"
@@ -437,35 +469,43 @@
   },
   "3pGroupDefault": {
     "message": "అంతర్నిర్మితం",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "ప్రకటనలు",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "గోప్యత",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
     "message": "మాల్వేర్ డొమైన్లు",
-    "description": "English: Malware domains"
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "సామాజిక విడ్జెట్లు",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "కుకీ నోటీసులు",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "అసౌకర్యాల పట్టిక",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "బహూలార్ధక",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "ప్రాంతాలు, భాషలు",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "సొంత నిర్దేషణ",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
     "message": "దిగుమతిచేయు...",
@@ -488,24 +528,32 @@
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "నవీకరిస్తున్నది...",
+    "message": "నవీకరిస్తోంది...",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
     "message": "ఈ చిట్టా అనుసంధాన వైఫల్యం వలన నవికరించబడలేదు.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "ఒక్కో పంక్తిలో ఒక ఫిల్టర్ నమోదు. పేర్కొనబడే ఫిల్టర్, కేవలం హోస్టుపేరు లేదా Adblock Plusకి అనువైన ఫిల్టర్ కావొచ్చు. పంక్తిలో మొదట &lsquo;!&rsquo; ఉన్నచో ఆ పంక్తి పరిగణలోకి తీసుకొబడదు.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "అవిశ్వసనీయ మూలాల నుండి ఫిల్టర్‌లను జోడించవద్దు.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "నా అనుకూల ఫిల్టర్లను ప్రారంభించండి",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "విశ్వాసం అవసరమయ్యే అనుకూల ఫిల్టర్లను అనుమతించండి",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
     "message": "దిగుమతిచేసి పోడిగించుము",
-    "description": "English: Import and append"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "ఎగుమతి చేయు",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "my-ublock-static-filters_{{datetime}}.txt",
@@ -549,7 +597,7 @@
   },
   "rulesExport": {
     "message": "ఫైల్కు ఎగుమతి చేయుము",
-    "description": ""
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "my-ublock-dynamic-rules_{{datetime}}.txt",
@@ -581,15 +629,15 @@
   },
   "whitelistPrompt": {
     "message": "KiwiGuard అచేతనబడించిన హోస్టూల జాబితా, ఇది మీరు కూర్చినది,. ఒక్కో పంక్తికి ఒక్కో నమోదు. చెల్లని నమోదులు మౌనంగా విస్మరించబడుతాయి.",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "దిగుమతిచేసి పోడిగించుము",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "ఎగుమతి",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "my-ublock-whitelist_{{datetime}}.txt",
@@ -847,25 +895,133 @@
     "message": "మార్క్డౌన్",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "తెరవండి",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "కొత్త నివేదికను సృష్టించండి",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "సారూప్య నివేదికలను కనుగొనండి",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "డాక్యుమెంటేషన్",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "uBlock ఆరిజిన్ యొక్క అన్ని లక్షణాల గురించి తెలుసుకోవడానికి <code>uBlock/wiki</code> వద్ద డాక్యుమెంటేషన్ చదవండి.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "ప్రశ్నలు మరియు మద్దతు",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "ప్రశ్నలకు సమాధానాలు మరియు ఇతర రకాల సహాయ మద్దతు <code>/r/uBlockOrigin</code> సబ్రెడిట్‌లో అందించబడుతుంది.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "ఫిల్టర్ సమస్యలు/వెబ్‌సైట్ పనిచేయడం లేదు",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "నిర్దిష్ట వెబ్‌సైట్లతో ఫిల్టర్ సమస్యలను <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ఇష్యూ ట్రాకర్‌కు</span> నివేదించండి. <u>GitHub ఖాతా అవసరం.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>ముఖ్యం:</b> KiwiGuardతో పాటు ఇతర సారూప్య ప్రయోజనాల బ్లాకర్లను ఉపయోగించడం మానుకోండి, ఎందుకంటే ఇది నిర్దిష్ట వెబ్‌సైట్లలో ఫిల్టర్ సమస్యలకు కారణం కావచ్చు.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>చిట్కాలు:</b> మీ ఫిల్టర్ జాబితాలు తాజాగా ఉన్నాయని నిర్ధారించుకోండి. <span data-url=\"logger-ui.html#_\">లాగర్</span> ఫిల్టర్-సంబంధిత సమస్యలను నిర్ధారించడానికి ప్రాథమిక సాధనం.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "బగ్ నివేదిక",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "KiwiGuardతో సంబంధించిన సమస్యలను <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ఇష్యూ ట్రాకర్‌కు</span> నివేదించండి. <u>GitHub ఖాతా అవసరం.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "సమస్య పరిష్కార సమాచారం",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "క్రింద సాంకేతిక సమాచారం ఉంది, ఇది స్వచ్ఛంద సేవకులు మీ సమస్యను పరిష్కరించడానికి ప్రయత్నిస్తున్నప్పుడు ఉపయోగపడవచ్చు.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "ఫిల్టర్ సమస్యను నివేదించండి",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "నకిలీ నివేదికలతో స్వచ్ఛంద సేవకులకు భారం కలగకుండా ఉండటానికి, సమస్య ఇప్పటికే నివేదించబడలేదని ధృవీకరించండి. <b>గమనిక:</b> బటన్‌ను క్లిక్ చేయడం వలన పేజీ యొక్క మూలం GitHubకు పంపబడుతుంది.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "ఫిల్టర్ జాబితాలు ప్రతిరోజూ నవీకరించబడతాయి. మీ సమస్య ఇటీవలి ఫిల్టర్ జాబితాలలో ఇప్పటికే పరిష్కరించబడలేదని నిర్ధారించుకోండి.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "సమస్యాత్మక వెబ్ పేజీని తిరిగి లోడ్ చేసిన తర్వాత సమస్య ఇప్పటికీ ఉందని ధృవీకరించండి.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "వెబ్ పేజీ చిరునామా:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "వెబ్ పేజీ…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- ఒక ఎంపికను ఎంచుకోండి --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "ప్రకటనలు లేదా ప్రకటన అవశేషాలను చూపిస్తుంది",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "ఓవర్లేలు లేదా ఇతర అసౌకర్యాలు ఉన్నాయి",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "KiwiGuardను గుర్తిస్తుంది",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "గోప్యత-సంబంధిత సమస్యలు ఉన్నాయి",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "KiwiGuard ప్రారంభించబడినప్పుడు పనిచేయకపోవడం",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "అనవసరమైన ట్యాబ్‌లు లేదా విండోలను తెరుస్తుంది",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "చెడు సాఫ్ట్‌వేర్, ఫిషింగ్‌కు దారితీస్తుంది",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "వెబ్ పేజీని “NSFW”గా లేబుల్ చేయండి (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">“పని కోసం సురక్షితం కాదు”</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Privacy policy",
+    "message": "గోప్యతా విధానం",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
     "message": "మార్పుల సంచిక",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "వికి",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "సహాయము",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "సమస్యా సంచిక",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "మూలం (GPLv3)",
@@ -892,11 +1048,11 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "uBO యొక్క సొంత ఫిల్టర్ జాబితాలు కింది వాటిలో ఉచితంగా హోస్ట్ చేయబడతాయి <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "ఫిల్టర్ జాబితాను అప్‌డేట్ చేయాల్సిన అవసరం వచ్చినప్పుడు యాదృచ్ఛికంగా ఎంచుకున్న CDN ఉపయోగించబడుతుంది",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -912,7 +1068,7 @@
     "description": "English: Restore from file..."
   },
   "aboutResetDataButton": {
-    "message": "సంస్థాపన ఐచ్చికాలను పునరుద్దరించు...",
+    "message": "సంస్థాపన అమరికలను పునరుద్దరించు...",
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "అనుసంధాన వైఫల్యం: {{msg}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: ఈ URLని మీ నిర్దేశిత ఫిల్టర్ పట్టికకు జతపరచాలా?\n\nశీర్షిక: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "సభ్యత్వాన్ని పొందండి",
@@ -975,6 +1127,10 @@
     "message": "అచేతనం",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "పేజీ బ్లాక్ చేయబడింది",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "ఈ తరువాయి పేజిని KiwiGuard బ్రౌజరులోకి ఎక్కిన్చనివ్వలేదు:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "విండో మూయుము",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "ఈ సైట్ గురించి మళ్ళీ నాకు హెచ్చరించవద్దు",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "{{hostname}} తో అనుసంధానాన్ని అనుమతించాలా?",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "శాశ్వతంగా",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "కొనసాగించండి",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "నిరోధించబడిన పేజీ మరొక సైట్‌కు దారి మళ్ళించాలనుకుంటుంది. మీరు కొనసాగించాలని ఎంచుకుంటే, మీరు నేరుగా ఇక్కడికి నావిగేట్ చేస్తారు: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "కారణం:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "హానికరమైనది",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "ట్రాకర్",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "ప్రతిష్ట లేని",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "క్లౌడ్ లో పొందుపరచు",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1056,12 +1240,16 @@
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Subscribe to filter list...",
+    "message": "ఫిల్టర్ జాబితాకు సభ్యత్వం పొందండి ...",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "భారి దృశ్య/శ్రవణ అంశాలను తాత్కాలికంగా అనుమతించు",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "సోర్స్ కోడ్ చూడండి…",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "షార్ట్కట్ టైప్ చేయండి",
@@ -1075,13 +1263,21 @@
     "message": "క్లిప్‌బోర్డ్‌కు కాపీ చేయండి",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "నిరోధించే ప్రొఫైల్‌ను టోగుల్ చేయండి",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "అన్నీ ఎంచుకోండి",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "కాస్మెటిక్ ఫిల్టరింగ్‌ను టోగుల్ చేయండి",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "జావాస్క్రిప్ట్‌ను టోగుల్ చేయండి",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "నిరోధించే మోడ్‌ను రిలాక్స్ చేయండి",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "ఉపయోగించిన నిల్వ: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "లోడ్ చేయడానికి క్లిక్ చేయండి",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "లోపాలు: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "బ్రౌజర్ ప్రారంభంలో సరిగ్గా ఫిల్టర్ చేయలేకపోయింది. సరైన ఫిల్టరింగ్ కోసం పేజీని తిరిగి లోడ్ చేయండి.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "ఇది అంతిమంగా వుండాల్సిన నమోదు",

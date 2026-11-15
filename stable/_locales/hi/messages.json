@@ -4,7 +4,7 @@
     "description": "extension name."
   },
   "extShortDesc": {
-    "message": "आख़िरकार, क्रोमियम-बेस्ड ब्राउज़रों के लिए एक कुशल अवरोधक। CPU और स्मृति पर आसान।",
+    "message": "आख़िरकार, क्रोमियम-बेस्ड ब्राउज़रों के लिए एक कुशल अवरोधक। सीपीयू और मेमोरी पर कम भार के साथ।\n",
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
@@ -12,15 +12,15 @@
     "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
-    "message": "Savdhan! Apke badlav abhi save nahi hue hai",
+    "message": "चेतावनी! आपके कुछ परिवर्तनों को सहेजना अभी बाकी है",
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
-    "message": "रुको",
+    "message": "यहाँ रुकें",
     "description": "Label for button to prevent navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningIgnore": {
-    "message": "नज़रअंदाज़ करो ",
+    "message": "नज़रअंदाज़ करें ",
     "description": "Label for button to ignore unsaved changes"
   },
   "settingsPageName": {
@@ -36,11 +36,11 @@
     "description": "appears as tab name in dashboard"
   },
   "rulesPageName": {
-    "message": "मेरे नियम",
+    "message": "मेरे नियमों",
     "description": "appears as tab name in dashboard"
   },
   "whitelistPageName": {
-    "message": "सफेद सूची",
+    "message": "विश्वस्त साइट सूची",
     "description": "appears as tab name in dashboard"
   },
   "shortcutsPageName": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "जानकारी",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "सहायता",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -96,23 +100,23 @@
     "description": "English: or"
   },
   "popupBlockedOnThisPage_v2": {
-    "message": "इस पेज पर ब्लॉक होगइ हुई ",
+    "message": "इस पेज पर ब्लॉक किया गया ",
     "description": "For the new mobile-friendly popup design"
   },
   "popupBlockedSinceInstall_v2": {
-    "message": "इंस्टाल के समय से ब्लॉक किया हुआ ",
+    "message": "स्थापना के समय से ब्लॉक किया हुआ",
     "description": "For the new mobile-friendly popup design"
   },
   "popupDomainsConnected_v2": {
-    "message": "कनेक्ट हुई साइटें",
+    "message": "कनेक्ट हुई डोमेंस",
     "description": "For the new mobile-friendly popup design"
   },
   "popupTipDashboard": {
-    "message": "डैशबोर्ड को खोलने के लिए क्लिक करें",
+    "message": "डैशबोर्ड खोलें",
     "description": "English: Click to open the dashboard"
   },
   "popupTipZapper": {
-    "message": "चीजें मिटाने के मोड में जाएं ",
+    "message": "चीजें मिटाने के मोड में जाएं",
     "description": "Tooltip for the element-zapper icon in the popup panel"
   },
   "popupTipPicker": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "लॉगर खोलें",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "इस वेबसाइट पर किसी समस्या की रिपोर्ट करें",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "इस साईट के लिए कोई पॉपअप नहीं",
@@ -232,7 +240,7 @@
     "description": ""
   },
   "popup3pAnyRulePrompt": {
-    "message": "तृतीय-पक्ष",
+    "message": "तीसरे पक्ष",
     "description": ""
   },
   "popup3pPassiveRulePrompt": {
@@ -267,13 +275,13 @@
     "message": "वर्जन",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party scripts",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "स्क्रिप्ट",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party frames",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "फ़्रेम",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "बनाएँ",
@@ -327,17 +335,25 @@
     "message": "वरणांध अनुकूलित ",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "दिखावट",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "थीम",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "निर्मित किए हुए उच्चारण रंग",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "क्लाउड स्टोरेज सपोर्ट चालू करें",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "मैं एक उच्च उपयोगकर्ता हूँ (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>आवश्यक पठन</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "उन्नत सेटिंग्स",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "message": "मैं एक उन्नत प्रयोक्ता हूँ",
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "प्री-फ़ेचिंग बंद करें (कोई भी ब्लॉक किये गए कनेक्शंनो से संपर्क न करने लिए)",
@@ -380,8 +396,20 @@
     "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
-    "message": "Uncloak canonical names",
+    "message": "विहित नाम अनलॉक करें",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "उन्नत",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "केवल तकनीकी उपयोगकर्ताओं के लिए उपयुक्त सुविधाएँ.",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "उन्नत सेटिंग्स",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": " पिछला रिस्टोर:",
@@ -427,6 +455,10 @@
     "message": "जेनेरिक कॉस्मेटिक फिल्टरस वो कॉस्मेटिक फिल्टरस हैं जो सब वेब साइट्स पर लागू होते हैं। यह विकल्प को चालू कराने से मेमोरी और सीपीयू पर जो उपर का दबाव पड़ता है वो नहीं रहेगा जो कॉस्मेटिक फिल्टरों को जारी करने से हुआ था।\n\nइस विकल्प को कमज़ोर डिवाइसों पर चालू कराने की सलाह दी जाती है।",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "सभी फ़िल्टर सूचियाँ लोड होने तक नेटवर्क गति-विधि को निलंबित करें",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "Lists of blocked hosts",
     "description": "English: Lists of blocked hosts"
@@ -437,38 +469,46 @@
   },
   "3pGroupDefault": {
     "message": "बिल्ट-इन ",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "विज्ञापन",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "गोपनीयता",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "मैलवेयर डोमेन",
-    "description": "English: Malware domains"
+    "message": "मैलवेयर सुरक्षा, सिक्योरिटी",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "सोशल विज़ेट्स",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "कुकी सूचनाएं",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "सतानेवाले विज्ञापन",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "बहुउद्देशीय",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "क्षेत्र, भाषा",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "कस्टम",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
-    "message": "इम्पोर्ट ",
+    "message": "इम्पोर्ट...",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
@@ -484,7 +524,7 @@
     "description": "used as a tooltip for eye icon beside a list"
   },
   "3pLastUpdate": {
-    "message": "अन्तिम अद्यातन: {{ago}}. कृत्रिम नवीकरण के लिए क्लिक की जिए",
+    "message": "अन्तिम अद्यातन: {{ago}}. \nकृत्रिम नवीकरण के लिए क्लिक की जिए",
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
@@ -495,17 +535,25 @@
     "message": "एक नेटवर्क त्रुटि ने रिसोर्स को अपडेट होने से रोक दिया। ",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "एक लाइन में एक फ़िल्टर। एक फ़िल्टर सीधा होस्टनाम, या एक Adblock Plus- योग्य फ़िल्टर हो सकता है। <code>!<code></code>से  शुरू होने वाली लाइनों को नज़रअंदाज किया जायेगा।",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "अविश्वसनीय स्रोतों से फ़िल्टर न जोड़ें.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "मेरे कस्टम फ़िल्टर सक्षम करें",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "विश्वास की आवश्यकता वाले कस्टम फ़िल्टर की अनुमति दें",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
-    "message": "इम्पोर्ट करें और जोड़ें",
-    "description": "English: Import and append"
+    "message": "इम्पोर्ट करें और जोड़ें...",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "निर्यात करें",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "मेरे-ublock-स्‍थिर-फिल्टेरें_{{datetime}}.txt",
@@ -548,8 +596,8 @@
     "description": ""
   },
   "rulesExport": {
-    "message": "फाइल में एक्सपोर्ट करें ",
-    "description": ""
+    "message": "फाइल में एक्सपोर्ट करें...",
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "मेरे-ublock-डायनामिक-नियम_{{datetime}}.txt",
@@ -564,32 +612,32 @@
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
-    "message": "Sort:",
+    "message": "क्रम में लगाये:",
     "description": "English: label for sort option."
   },
   "rulesSortByType": {
-    "message": "Rule type",
+    "message": "नियम प्रकार",
     "description": "English: a sort option for list of rules."
   },
   "rulesSortBySource": {
-    "message": "Source",
+    "message": "मूल",
     "description": "English: a sort option for list of rules."
   },
   "rulesSortByDestination": {
-    "message": "Destination",
+    "message": "गंतव्य",
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
     "message": "वाइटलिस्ट के नियम यह बताते हैं कि KiwiGuard को किस वेब पेज पर बंद करना चाहिए। एक एंट्री हर लाइन में। अमान्य नियमों को सीधे-सीधे नजरअंदाज कर दिया जाएगा।",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
-    "message": "इम्पोर्ट करें और जोड़ें",
-    "description": "English: Import and append"
+    "message": "इम्पोर्ट करें और जोड़ें...",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
-    "message": "निर्यात करें",
-    "description": "English: Export"
+    "message": "निर्यात करें...",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "मेरे-उबलॉक-व्हाइटलिस्ट_{{datetime}}.txt",
@@ -684,7 +732,7 @@
     "description": "A keyword in the built-in row filtering expression"
   },
   "loggerRowFiltererBuiltinModified": {
-    "message": "modified",
+    "message": "परिवर्तित",
     "description": "A keyword in the built-in row filtering expression"
   },
   "loggerRowFiltererBuiltin1p": {
@@ -847,25 +895,133 @@
     "message": "मार्कडाउन",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "खोलें",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "नई रिपोर्ट बनाएं",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "ऐसी ही रिपोर्ट खोजें",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "प्रलेखन",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "uBlock की सभी विशेषताओं के बारे में जानने के लिए <code>uBlock/wiki</code> पर दस्तावेज़ पढ़ें।",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "प्रश्न और समर्थन",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "सबरेडिट <code>/r/uBlockOrigin</code>. पर सवालों के जवाब और अन्य प्रकार की सहायता सहायता प्रदान की जाती है",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "फ़िल्टर समस्याएं/वेबसाइट टूट गई है",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "विशिष्ट वेबसाइटों के साथ फ़िल्टर समस्याओं की रिपोर्ट<span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> इश्यू ट्रैकर</span>. <u>GitHub खाते की आवश्यकता है।</u> ",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>ध्यान दें :</b>KiwiGuard के साथ समान उद्देश्य वाले अन्य अवरोधकों का उपयोग करने से बचें, क्योंकि इससे विशिष्ट वेबसाइटों पर फ़िल्टर समस्याएँ हो सकती हैं।",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>युक्तियाँ :</b> सुनिश्चित करें कि आपकी फ़िल्टर सूचियाँ नवीनतम हैं। <span data-url=\"logger-ui.html#_\">लॉगर</span> आपकी फ़िल्टर से संबंधित समस्याओं के निदान के लिए प्राथमिक टूल है।",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "बग रिपोर्ट",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "KiwiGuard के साथ समस्याओं की रिपोर्ट यहाँ <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code>इश्यू ट्रैकर</span> पर करें। <u>इसके लिए GitHub खाते की आवश्यकता है।</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "समस्या निवारक जानकारी",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "नीचे तकनीकी जानकारी दी गई है जो तब उपयोगी हो सकती है जब स्वयंसेवक किसी समस्या का समाधान करने में आपकी सहायता करने का प्रयास कर रहे हों।",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "फ़िल्टर समस्या की रिपोर्ट करें",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "स्वयंसेवकों पर डुप्लीकेट रिपोर्ट का बोझ डालने से बचने के लिए, कृपया सत्यापित करें कि समस्या की रिपोर्ट पहले ही नहीं की गई है।",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "फ़िल्टर सूचियों को रोजाना अपडेट किया जाता है। सुनिश्चित करें कि आपकी समस्या का समाधान पहले से ही नवीनतम फ़िल्टर सूचियों में नहीं किया गया है।",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "सत्यापित करें कि समस्यात्मक वेबपेज को रीलोड करने के बाद समस्या अभी भी बनी हुई है।",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "वेब पेज का पता:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "वेब पेज...",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- एक प्रविष्टि चुनें --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "विज्ञापन या बचा हुआ विज्ञापन दिखाता है",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "ओवरले या अन्य उपद्रव हैं",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "KiwiGuard का पता लगाता है",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "गोपनीयता से संबंधित समस्याएं हैं",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "KiwiGuard सक्षम होने पर खराबी",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "अवांछित टैब या विंडो खोलता है",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "बैडवेयर, फ़िशिंग की ओर ले जाता है",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "वेब पेज को इस रूप में लेबल करें “NSFW” (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">“काम करने के लिए सुरक्षित नहीं”</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Privacy policy",
+    "message": "गोपनीयता नीति",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
     "message": "परिवर्तन सूची",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "विकी",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "मदद",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "समस्या खोजी",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "सोर्स कोड {GPLv3}",
@@ -892,11 +1048,11 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "uBO's स्वयं की फ़िल्टर सूचियाँ निम्नलिखित पर स्वतंत्र रूप से होस्ट की जाती हैं <a href=\"https://wikipedia.org/wiki/Content_delivery_network\"> CDNs </a>",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "बेतरतीब ढंग से चुनी गई सीडीएन का उपयोग तब किया जाता है जब फ़िल्टर सूची को अद्यतन करने की आवश्यकता होती है",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -928,27 +1084,23 @@
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
-    "message": "नेटवर्क त्रुटि : {{msg}}",
+    "message": "नेटवर्क त्रुटि: {{msg}}",
     "description": "English: Network error: {{msg}}"
   },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: इस यूआरएल को अपने कस्टम लिस्ट में डालें?\n\nTitle: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
-  },
   "subscribeButton": {
-    "message": "Subscribe",
+    "message": "फ़िल्टर सूची का उपयोग करें",
     "description": "For the button used to subscribe to a filter list"
   },
   "elapsedOneMinuteAgo": {
-    "message": "एक मिनट पहले",
+    "message": "एक मिनट पेहेले ",
     "description": "English: a minute ago"
   },
   "elapsedManyMinutesAgo": {
-    "message": "{{value}} मिनट पहले",
+    "message": "{{value}} मिनट पेहेले ",
     "description": "English: {{value}} minutes ago"
   },
   "elapsedOneHourAgo": {
-    "message": "एक घंटे पहले",
+    "message": "एक घंटे पेहेले ",
     "description": "English: an hour ago"
   },
   "elapsedManyHoursAgo": {
@@ -975,6 +1127,10 @@
     "message": "बंद",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "पृष्ठ प्रतिबंधित है",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard ने इस पेज को लोड होने से रोक दिया हैं:",
     "description": "Used in the strict-blocking page"
@@ -992,12 +1148,16 @@
     "description": "English: List of filter list names follows"
   },
   "docblockedBack": {
-    "message": "वापस जाएँ",
+    "message": "पीछे जाएं",
     "description": "English: Go back"
   },
   "docblockedClose": {
     "message": "इस विंडो को बंद करे",
     "description": "English: Close this window"
+  },
+  "docblockedDontWarn": {
+    "message": "इस साइट के बारे में मुझे दोबारा चेतावनी न दें",
+    "description": "Label for checkbox in document-blocked page"
   },
   "docblockedProceed": {
     "message": "स्ट्रिक्ट ब्लॉकिंग को बंद करें इस साइट पर {{hostname}}",
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "स्थायी",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "आगे बढ़ें",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "ब्लॉक किया गया पेज किसी दूसरी साइट पर ले जाना चाहता है. अगर आप आगे बढ़ना चुनते हैं, तो आप सीधे इस लिंक को खोल सकते हैं: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "कारण:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "दुर्भावनापूर्ण",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "ट्रैकर",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "जर्जर",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "क्लाउड स्टोरेज में भेजें",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1052,16 +1236,20 @@
     "description": ""
   },
   "contextMenuBlockElementInFrame": {
-    "message": "Block element in frame...",
+    "message": "फ्रेम में तत्व को ब्लॉक करें...",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Subscribe to filter list...",
+    "message": "फ़िल्टर सूची की सदस्यता लें...",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "कुछ समय के लिए विशाल तत्वोंको चलने की अनुमति दे",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "स्रोत कोड देखें",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "शॉर्टकट को टाइप करें ",
@@ -1075,13 +1263,21 @@
     "message": "क्लिपबोर्ड में कॉपी करें",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "ब्लॉकिंग प्रोफ़ाइल क्को टॉगल करें ",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "सभी चुनें",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "कॉस्मेटिक फ़िल्टरिंग टॉगल करें",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "जावास्क्रिप्ट टॉगल करें",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "ब्लैकिंग मोड को ढील दें",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "इस्तेमाल हुई स्टोरेज:{{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "लोड करने के लिए क्लिक करें",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "त्रुटियाँ : {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "ब्राउज़र खोलने पर ठीक से फ़िल्टर नहीं कर सका। उचित फ़िल्टरिंग सुनिश्चित करने के लिए वेबपेज को रीलोड करें।",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

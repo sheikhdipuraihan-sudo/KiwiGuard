@@ -12,7 +12,7 @@
     "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
-    "message": "Peringatan! Anda memiliki perubahan yang belum disimpan",
+    "message": "Peringatan! Anda memiliki ubahan yang belum disimpan",
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "Tentang",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "Dukungan",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "Buka pencatat log",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "Laporkan masalah di situs web ini",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "Alihkan pemblokiran semua popup untuk situs ini",
@@ -212,7 +220,7 @@
     "description": "Tooltip when hovering the top-most cell of the global-rules column."
   },
   "popupTipLocalRules": {
-    "message": "Aturan lokal: kolom ini untuk aturan yang diterapkan ke situs yang sedang dikunjungi saja.\nAturan lokal menimpa aturan global.",
+    "message": "Aturan lokal: kolom ini untuk aturan yang diterapkan ke situs yang sedang dikunjungi saja.",
     "description": "Tooltip when hovering the top-most cell of the local-rules column."
   },
   "popupTipSaveRules": {
@@ -267,13 +275,13 @@
     "message": "Versi",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Menampilkan baris yang memiliki skrip pihak ke-3",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "skrip",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Menampilkan baris yang memiliki frame pihak ke-3",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "frame",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Buat",
@@ -304,7 +312,7 @@
     "description": "English: Click, Ctrl-click"
   },
   "pickerContextMenuEntry": {
-    "message": "Blok elemen...",
+    "message": "Blok elemen",
     "description": "An entry in the browser's contextual menu"
   },
   "settingsCollapseBlockedPrompt": {
@@ -327,17 +335,25 @@
     "message": "Ramah buta warna",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Tampilan",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Tema",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Warna aksen khusus",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Aktifkan dukungan penyimpanan awan",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Saya pengguna tingkat lanjut (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>bacaan wajib</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "pengaturan lanjutan",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "message": "Saya pengguna tingkat lanjut",
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Nonaktifkan pra-ambil (untuk mencegah sambungan apapun untuk permintaan jaringan yang diblokir)",
@@ -383,6 +399,18 @@
     "message": "Ungkap nama kanonis",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
   },
+  "settingsAdvanced": {
+    "message": "Tingkat lanjut",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Fitur ditujukan untuk pengguna tingkat lanjut.",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "pengaturan lanjutan",
+    "description": "For the tooltip of a link which gives access to advanced settings"
+  },
   "settingsLastRestorePrompt": {
     "message": "Pemulihan terakhir:",
     "description": "English: Last restore:"
@@ -427,6 +455,10 @@
     "message": "Filter tampilan generik adalah filter tampilan yang dibuat untuk diterapkan pada semua situs web. Mengaktifkan opsi ini akan menghilangkan peningkatan overhead memori ram dan CPU pada halaman web akibat diterapkannya filter tampilan generik.\n\nDirekomendasikan untuk mengaktifkan opsi ini pada perangkat dengan performa rendah.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Tunda aktivitas jaringan sampai semua daftar filter dimuat",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "Daftar host yang diblokir",
     "description": "English: Lists of blocked hosts"
@@ -437,38 +469,46 @@
   },
   "3pGroupDefault": {
     "message": "Bawaan",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Iklan",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Privasi",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Domain malware",
-    "description": "English: Malware domains"
+    "message": "Perlindungan malware, keamanan",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Gawai sosial",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Pemberitahuan cookie",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "Gangguan",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Serbaguna",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Wilayah, bahasa",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Khusus",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
-    "message": "Impor...",
+    "message": "Impor…",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
@@ -488,24 +528,32 @@
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "Memperbarui...",
+    "message": "Memperbarui…",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
     "message": "Galat jaringan mencegah sumber daya diperbarui.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "Satu filter per baris. Filter dapat berupa nama hos, atau filter yang kompatibel dengan EasyList. Baris yang diawali dengan <code>!</code> akan diabaikan.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Jangan tambah filter dari sumber yang tidak terpercaya.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Aktifkan filter kustom saya",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Izinkan filter kustom yang memerlukan kepercayaan",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
-    "message": "Impor dan tambahkan",
-    "description": "English: Import and append"
+    "message": "Impor dan tambahkan…",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
-    "message": "Ekspor",
-    "description": "English: Export"
+    "message": "Ekspor…",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "my-ublock-static-filters_{{datetime}}.txt",
@@ -544,12 +592,12 @@
     "description": "Will discard manually-edited content and exit manual-edit mode"
   },
   "rulesImport": {
-    "message": "Impor dari berkas...",
+    "message": "Impor dari berkas…",
     "description": ""
   },
   "rulesExport": {
-    "message": "Ekspor ke berkas",
-    "description": ""
+    "message": "Ekspor ke berkas…",
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "my-ublock-dynamic-rules_{{datetime}}.txt",
@@ -580,16 +628,16 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Berisi domain atau halaman situs terpercaya, KiwiGuard akan dinonaktifkan. Satu entri per baris. Entri yang tidak valid akan diabaikan dan dijadikan komentar.",
-    "description": "The name of the trusted sites pane."
+    "message": "Arahan situs tepercaya menentukan halaman web mana yang KiwiGuard harus dinonaktifkan. Satu entri per baris.",
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
-    "message": "Impor dan tambahkan",
-    "description": "English: Import and append"
+    "message": "Impor dan tambahkan…",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
-    "message": "Ekspor",
-    "description": "English: Export"
+    "message": "Ekspor…",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "my-ublock-trusted-sites_{{datetime}}.txt",
@@ -847,6 +895,126 @@
     "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "Buka",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Buat laporan baru di Github",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Temukan laporan serupa di Github",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Dokumentasi",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Baca dokumentasi di <code>uBlock/wiki</code> untuk mempelajari semua fitur KiwiGuard.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Pertanyaan dan dukungan",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Jawaban pertanyaan dan dukungan bantuan lainnya tersedia di subreddit <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Masalah filter/situs web rusak",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Laporkan masalah filter pada situs web ke <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\">pelacak masalah <code>uBlockOrigin/uAssets</code></span>. <u>Membutuhkan akun GitHub.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Penting:</b> Hindari menggunakan pemblokir sejenis bersamaan dengan KiwiGuard, karena mungkin akan mengakibatkan terjadinya masalah filter pada situs web tertentu.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Tips:</b> Pastikan filter Anda selalu yang terbaru. <span data-url=\"logger-ui.html#_\">Pencatat log</span> adalah utilitas utama untuk mendiagnosis masalah yang terkait dengan filter.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Laporan bug",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Laporkan masalah ekstensi KiwiGuard ke <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\">pelacak masalah <code>uBlockOrigin/uBlock-issue</code></span>. <u>Membutuhkan akun GitHub.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Informasi penyelesaian masalah",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Di bawah ini adalah informasi teknis yang mungkin berguna saat sukarelawan berusaha membantu memecahkan masalah Anda.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Laporkan masalah filter",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Untuk menghindari membebani sukarelawan dengan laporan duplikat, harap verifikasi bahwa masalah tersebut belum dilaporkan.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Daftar filter diperbarui setiap hari. Pastikan masalah Anda belum teratasi dalam daftar filter terbaru.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Verifikasi bahwa masalah masih ada setelah memuat ulang halaman web yang bermasalah.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Alamat laman web:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "Laman web…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- Pilih entri --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Menampilkan iklan atau sejenisnya",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Memiliki overlay atau gangguan lainnya",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Mendeteksi KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Memiliki masalah terkait privasi",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Rusak saat KiwiGuard aktif",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Membuka tab atau jendela yang tidak diinginkan",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Mengarah ke perangkat lunak jahat, pengelabuan",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Beri label halaman web sebagai “TAUSB” (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">“Tidak Aman Untuk Saat Bekerja”</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
     "message": "Kebijakan privasi",
     "description": "Link to privacy policy on GitHub (English)"
@@ -854,18 +1022,6 @@
   "aboutChangelog": {
     "message": "Catatan perubahan",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Wiki",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Dukungan",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Pelacak masalah",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Kode sumber (GPLv3)",
@@ -892,15 +1048,15 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "Daftar filter bawaan uBO dihosting secara gratis di <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN</a> berikut:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "CDN yang dipilih secara acak digunakan saat daftar filter perlu diperbarui",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
-    "message": "Cadangkan ke berkas",
+    "message": "Cadangkan ke berkas…",
     "description": "Text for button to create a backup of all settings"
   },
   "aboutBackupFilename": {
@@ -908,11 +1064,11 @@
     "description": "English: my-ublock-backup_{{datetime}}.txt"
   },
   "aboutRestoreDataButton": {
-    "message": "Pulihkan dari berkas...",
+    "message": "Pulihkan dari berkas…",
     "description": "English: Restore from file..."
   },
   "aboutResetDataButton": {
-    "message": "Kembalikan ke pengaturan bawaan...",
+    "message": "Kembalikan ke pengaturan bawaan…",
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "Galat jaringan: {{msg}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "Tambah URL berikut ke ke daftar filter khusus Anda?\n\nJudul: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Berlangganan",
@@ -975,6 +1127,10 @@
     "message": "mati",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Halaman diblokir",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard telah mencegah halaman berikut dimuat:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "Tutup jendela ini",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Jangan ingatkan saya lagi tentang situs ini",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Nonaktifkan pemblokiran ketat untuk {{hostname}}",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Permanen",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Lanjutkan",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "Halaman yang terblokir ingin dialihkan ke situs lain. Jika Anda memilih untuk melanjutkan, Anda akan langsung menuju ke: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Penyebab",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Berbahaya",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Pelacak",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Tidak bisa dipercaya",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Ekspor ke penyimpanan awan",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1056,12 +1240,16 @@
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Berlangganan daftar filter...",
+    "message": "Berlangganan daftar filter…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "Sementara izinkan elemen media besar",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "Lihat kode sumber…",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "Ketik pintasan",
@@ -1075,13 +1263,21 @@
     "message": "Salin ke papan klip",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Aktif/Nonaktifkan pemblokiran profil",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Pilih semua",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Aktif/Nonaktifkan filter tampilan",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Aktif/Nonaktifkan JavaScript",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "Perlonggar mode pemblokiran",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "Penyimpanan terpakai: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "Klik untuk memuat",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Galat: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Filter tidak dapat bekerja dengan baik saat peramban dimulai.\nMuat ulang halaman agar filter dapat bekerja dengan baik.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "Entri ini harus menjadi yang terakhir",

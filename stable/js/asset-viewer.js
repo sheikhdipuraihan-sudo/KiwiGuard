@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-    uBlock Origin - a browser extension to block requests.
+    uBlock Origin - a comprehensive, efficient content blocker
     Copyright (C) 2014-present Raymond Hill
 
     This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,8 @@
 
 /* global CodeMirror, uBlockDashboard */
 
-'use strict';
+import './codemirror/ubo-static-filtering.js';
+import { dom, qs$ } from './dom.js';
 
 /******************************************************************************/
 
@@ -31,27 +32,33 @@
     const assetKey = subscribeParams.get('url');
     if ( assetKey === null ) { return; }
 
-    const subscribeElem = subscribeParams.get('subscribe') !== null
-        ? document.getElementById('subscribe')
-        : null;
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=2091796
+    //  Disable ability to subscribe when embedded
+    const subscribeElem = self === self.top &&
+        subscribeParams.get('subscribe') !== null &&
+        qs$('#subscribe') || null;
     if ( subscribeElem !== null && subscribeURL.hash !== '#subscribed' ) {
         const title = subscribeParams.get('title');
-        const promptElem = document.getElementById('subscribePrompt');
-        promptElem.children[0].textContent = title;
+        const promptElem = qs$('#subscribePrompt');
+        dom.text(promptElem.children[0], title);
         const a = promptElem.children[1];
-        a.textContent = assetKey;
-        a.setAttribute('href', assetKey);
-        subscribeElem.classList.remove('hide');
+        dom.text(a, assetKey);
+        dom.attr(a, 'href', assetKey);
+        dom.cl.remove(subscribeElem, 'hide');
     }
 
-    const cmEditor = new CodeMirror(document.getElementById('content'), {
+    const cmEditor = new CodeMirror(qs$('#content'), {
         autofocus: true,
         foldGutter: true,
-        gutters: [ 'CodeMirror-linenumbers', 'CodeMirror-foldgutter' ],
+        gutters: [
+            'CodeMirror-linenumbers',
+            { className: 'CodeMirror-lintgutter', style: 'width: 11px' },
+        ],
         lineNumbers: true,
-        lineWrapping: false, /* LOCAL CHANGES */
+        lineWrapping: true,
         matchBrackets: true,
         maxScanLines: 1,
+        maximizable: false,
         readOnly: true,
         styleActiveLine: {
             nonEmpty: true,
@@ -60,45 +67,45 @@
 
     uBlockDashboard.patchCodeMirrorEditor(cmEditor);
 
-    const hints = await vAPI.messaging.send('dashboard', {
+    vAPI.messaging.send('dashboard', {
         what: 'getAutoCompleteDetails'
+    }).then(hints => {
+        if ( hints instanceof Object === false ) { return; }
+        cmEditor.setOption('uboHints', hints);
     });
-    if ( hints instanceof Object ) {
-        const mode = cmEditor.getMode();
-        if ( mode.setHints instanceof Function ) {
-            mode.setHints(hints);
-        }
-    }
+
+    vAPI.messaging.send('dashboard', {
+        what: 'getTrustedTokens',
+    }).then(tokens => {
+        cmEditor.setOption('trustedTokens', tokens);
+    });
 
     const details = await vAPI.messaging.send('default', {
         what : 'getAssetContent',
         url: assetKey,
     });
+    cmEditor.setOption('trustedSource', details.trustedSource === true);
     cmEditor.setValue(details && details.content || '');
 
     if ( subscribeElem !== null ) {
-        document.getElementById('subscribeButton').addEventListener(
-            'click',
-            ( ) => {
-                subscribeElem.classList.add('hide');
+        dom.on('#subscribeButton', 'click', ( ) => {
+            dom.cl.add(subscribeElem, 'hide');
+            vAPI.messaging.send('scriptlets', {
+                what: 'applyFilterListSelection',
+                toImport: assetKey,
+            }).then(( ) => {
                 vAPI.messaging.send('scriptlets', {
-                    what: 'applyFilterListSelection',
-                    toImport: assetKey,
-                }).then(( ) => {
-                    vAPI.messaging.send('scriptlets', {
-                        what: 'reloadAllFilters'
-                    });
+                    what: 'reloadAllFilters'
                 });
-            },
-            { once: true }
-        );
+            });
+        }, { once: true });
     }
 
     if ( details.sourceURL ) {
-        const a = document.querySelector('.cm-search-widget .sourceURL');
-        a.setAttribute('href', details.sourceURL);
-        a.setAttribute('title', details.sourceURL);
+        const a = qs$('.cm-search-widget .sourceURL');
+        dom.attr(a, 'href', details.sourceURL);
+        dom.attr(a, 'title', details.sourceURL);
     }
 
-    document.body.classList.remove('loading');
+    dom.cl.remove(dom.body, 'loading');
 })();

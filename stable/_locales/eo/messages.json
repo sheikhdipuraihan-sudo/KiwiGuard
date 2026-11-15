@@ -55,6 +55,10 @@
     "message": "Pri",
     "description": "appears as tab name in dashboard"
   },
+  "supportPageName": {
+    "message": "Subteno",
+    "description": "appears as tab name in dashboard"
+  },
   "assetViewerPageName": {
     "message": "KiwiGuard — Montrilo de rimedoj",
     "description": "Title for the asset viewer page"
@@ -64,7 +68,7 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klako: malŝalti/ŝalti KiwiGuard por ĉi tiu retejo.\n\nCtrl+klako: malŝalti KiwiGuard nur en ĉi tiu paĝo.",
+    "message": "Klako: malŝalti/ŝalti KiwiGuard por ĉi tiu retejo.\n\nStir+klako: malŝalti KiwiGuard nur en ĉi tiu paĝo.",
     "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
@@ -123,6 +127,10 @@
     "message": "Malfermi la protokolilon",
     "description": "Tooltip used for the logger icon in the panel"
   },
+  "popupTipReport": {
+    "message": "Raporti problemon ĉe ĉi tiu retejo",
+    "description": "Tooltip used for the 'chat' icon in the panel"
+  },
   "popupTipNoPopups": {
     "message": "Baskuligi la blokadon de ŝprucfenestroj por ĉi tiu retejo",
     "description": "Tooltip for the no-popups per-site switch"
@@ -136,7 +144,7 @@
     "description": "Tooltip for the no-popups per-site switch"
   },
   "popupTipNoLargeMedia": {
-    "message": "Baskuligi la blokadon de grandaj aŭdvideaj elementoj por ĉi tiu retejo",
+    "message": "Baskuligi la blokadon de grandaj aŭdvidaj elementoj en tiu ĉi retejo",
     "description": "Tooltip for the no-large-media per-site switch"
   },
   "popupTipNoLargeMedia1": {
@@ -184,7 +192,7 @@
     "description": "Caption for the no-popups per-site switch"
   },
   "popupNoLargeMedia_v2": {
-    "message": "Large media elements",
+    "message": "Grandaj aŭdvidaj elementoj",
     "description": "Caption for the no-large-media per-site switch"
   },
   "popupNoCosmeticFiltering_v2": {
@@ -267,13 +275,13 @@
     "message": "Versio",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party scripts",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "skripto",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party frames",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "kadro",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Krei",
@@ -327,17 +335,25 @@
     "message": "Afabla por kolorblinduloj",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Aspekto",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Etoso",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Propra akcenta koloro",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Ŝalti subtenon por nelokdependa konservado",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Mi estas sperta uzanto (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Nepra legaĵo</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "altgradaj agordoj",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "message": "Mi estas sperta uzanto",
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Malŝalti antaŭvenigadon (por preventi ajnan konekton de blokitaj retaj petoj)",
@@ -380,8 +396,20 @@
     "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
-    "message": "Uncloak canonical names",
+    "message": "Malkaŝi ĉefnomojn",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "Altnivelaj agordoj",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Funkcioj taŭgaj nur por spertuloj",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "altgradaj agordoj",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": "Lasta restaŭro:",
@@ -400,7 +428,7 @@
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
   },
   "3pAutoUpdatePrompt1": {
-    "message": "Ĝisdatigi listojn de filtriloj aŭtomate.",
+    "message": "Ĝisdatigi listojn de filtriloj aŭtomate",
     "description": "A checkbox in the _3rd-party filters_ pane"
   },
   "3pUpdateNow": {
@@ -412,7 +440,7 @@
     "description": "A button in the in the _3rd-party filters_ pane"
   },
   "3pParseAllABPHideFiltersPrompt1": {
-    "message": "Analizi kaj eltrudi ornamajn filtrilojn.",
+    "message": "Analizi kaj eltrudi ornamajn filtrilojn",
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
@@ -424,8 +452,12 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "Generic cosmetic filters are those cosmetic filters which are meant to apply on all web sites. Enabling this option will eliminate the memory and CPU overhead added to web pages as a result of handling generic cosmetic filters.\n\nIt is recommended to enable this option on less powerful devices.",
+    "message": "Ĝenerikaj kozmetikaj filtriloj estas tiuj kozmetikaj filtriloj, kiuj estas intencitaj esti aplikitaj sur ĉiuj retejoj. Aktivigante tiun opcion, oni eliminigos la memoran kaj procesorecan ŝarĝon, kiu estas aldonita al retpaĝoj pro la pritraktado de ĝenerikaj kozmetikaj filtriloj.\n\nEstas rekomendite aktivigi tiun opcion sur aparatoj ne estas potencaj.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
+  },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Suspendu retan aktivecon ĝis ĉiuj filtraj listoj estas ŝargitaj.",
+    "description": "A checkbox in the 'Filter lists' pane"
   },
   "3pListsOfBlockedHostsHeader": {
     "message": "Lists of blocked hosts",
@@ -437,38 +469,46 @@
   },
   "3pGroupDefault": {
     "message": "Interna",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Reklamoj",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Privateco",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Domajno kun fiprogramaro",
-    "description": "English: Malware domains"
+    "message": "Protekto kontraŭ fiprogramaro, sekureco",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Socialaj fenestraĵoj",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Avizoj de kuketoj",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "Ĝenoj",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Plurcela",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Regionoj, lingvoj",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Tajlorita",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
-    "message": "Importi...",
+    "message": "Importi…",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
@@ -476,7 +516,7 @@
     "description": "Short information about how to use the textarea to import external filter lists by URL"
   },
   "3pExternalListObsolete": {
-    "message": "malaktuala",
+    "message": "Malaktuala.",
     "description": "used as a tooltip for the out-of-date icon beside a list"
   },
   "3pViewContent": {
@@ -484,28 +524,36 @@
     "description": "used as a tooltip for eye icon beside a list"
   },
   "3pLastUpdate": {
-    "message": "Lasta ĝisdatigo: {{ago}}",
+    "message": "Lasta ĝisdatigo: {{ago}}.\nKlaku por ĝisdatigi nun.",
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "Ĝisdatigo...",
+    "message": "Ĝisdatigo…",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
-    "message": "A network error prevented the resource from being updated.",
+    "message": "Reta eraro malhelpis ĝisdatigon de la resurso.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "Unu filtrilo por ĉiu linio. Filtrilo povas esti ordinara gastignomo aŭ Adblock Plus-kongrua filtrilo. Prefiksitaj linioj kun &lsquo;!&rsquo; estos ignorataj.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Ne aldonu filtrilojn el ne fidindaj fontoj.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Ŝalti miajn proprajn filtrilojn",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Permesi proprajn filtrilojn, kiuj postulas fidon",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
     "message": "Importi kaj postaldoni",
-    "description": "English: Import and append"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "Eksporti",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "miaj-statikaj-ublock-filtriloj_{{datetime}}.txt",
@@ -544,12 +592,12 @@
     "description": "Will discard manually-edited content and exit manual-edit mode"
   },
   "rulesImport": {
-    "message": "Importi el dosiero...",
+    "message": "Importi el dosiero…",
     "description": ""
   },
   "rulesExport": {
-    "message": "Eksporti al dosiero",
-    "description": ""
+    "message": "Eksporti al dosiero…",
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "miaj-dinamikaj-ublock-reguloj_{{datetime}}.txt",
@@ -564,11 +612,11 @@
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
-    "message": "Sort:",
+    "message": "Ordigi:",
     "description": "English: label for sort option."
   },
   "rulesSortByType": {
-    "message": "Rule type",
+    "message": "Speco de regulo",
     "description": "English: a sort option for list of rules."
   },
   "rulesSortBySource": {
@@ -576,20 +624,20 @@
     "description": "English: a sort option for list of rules."
   },
   "rulesSortByDestination": {
-    "message": "Destination",
+    "message": "Celo",
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
     "message": "Via listo de gastignomoj por kiuj KiwiGuard estos malŝaltata. Unu gastignomo por ĉiu linio. Nevalidaj gastignomoj estos ignorataj silente.",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "Importi kaj postaldoni",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "Eksporti",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "mia-ublock-blanklisto_{{datetime}}.txt",
@@ -636,11 +684,11 @@
     "description": "Tooltip for the DOM inspector button in the logger page"
   },
   "loggerPopupPanelTip": {
-    "message": "Toggle the popup panel",
+    "message": "Baskuligi la ŝprucpanelon",
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "KiwiGuard wiki: The logger",
+    "message": "Dokumentaro de KiwiGuard: la protokolilo",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -648,15 +696,15 @@
     "description": "Tooltip for the eraser in the logger page; used to blank the content of the logger"
   },
   "loggerPauseTip": {
-    "message": "Pause logger (discard all incoming data)",
+    "message": "Paŭzigi protokolilon (forĵeti ĉiujn envenantajn datenojn)",
     "description": "Tooltip for the pause button in the logger page"
   },
   "loggerUnpauseTip": {
-    "message": "Unpause logger",
+    "message": "Malpaŭzigi protokolilon",
     "description": "Tooltip for the play button in the logger page"
   },
   "loggerRowFiltererButtonTip": {
-    "message": "Toggle logger filtering",
+    "message": "Baskuligi filtradon de protokolilo",
     "description": "Tooltip for the row filterer button in the logger page"
   },
   "logFilterPrompt": {
@@ -664,7 +712,7 @@
     "description": "Placeholder string for logger output filtering input field"
   },
   "loggerRowFiltererBuiltinTip": {
-    "message": "Logger filtering options",
+    "message": "Opcioj pri filtrado de protokolilo",
     "description": "Tooltip for the button to bring up logger output filtering options"
   },
   "loggerRowFiltererBuiltinNot": {
@@ -684,7 +732,7 @@
     "description": "A keyword in the built-in row filtering expression"
   },
   "loggerRowFiltererBuiltinModified": {
-    "message": "modified",
+    "message": "modifita",
     "description": "A keyword in the built-in row filtering expression"
   },
   "loggerRowFiltererBuiltin1p": {
@@ -788,27 +836,27 @@
     "description": "Below this sentence, the filter list(s) in which the filter was found"
   },
   "loggerStaticFilteringFinderSentence2": {
-    "message": "Static filter could not be found in any of the currently enabled filter lists",
+    "message": "Stata filtro ne povis esti trovita en iu ajn el la nuntempe aktivigitaj filtro-listoj.",
     "description": "Message to show when a filter cannot be found in any filter lists"
   },
   "loggerSettingDiscardPrompt": {
-    "message": "Logger entries which do not fulfill all three conditions below will be automatically discarded:",
+    "message": "Logeto-enskriboj, kiuj ne plenumas ĉiujn tri kondiĉojn sube, estos aŭtomate forĵetitaj:",
     "description": "Logger setting: A sentence to describe the purpose of the settings below"
   },
   "loggerSettingPerEntryMaxAge": {
-    "message": "Preserve entries from the last {{input}} minutes",
+    "message": "Konservi enigojn ekde la lastaj {{input}} minutoj",
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxLoads": {
-    "message": "Preserve at most {{input}} page loads per tab",
+    "message": "Teni maksimume {{input}} paĝo-ŝargojn en ĉiu langeto",
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxEntries": {
-    "message": "Preserve at most {{input}} entries per tab",
+    "message": "Teni maksimume {{input}} elementojn en ĉiu langeto",
     "description": "A logger setting"
   },
   "loggerSettingPerEntryLineCount": {
-    "message": "Use {{input}} lines per entry in vertically expanded mode",
+    "message": "Uzi {{input}} liniojn en elemento en vertikale vasta reĝimo",
     "description": "A logger setting"
   },
   "loggerSettingHideColumnsPrompt": {
@@ -847,25 +895,133 @@
     "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "Malfermi",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Krei novan raporton",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Serĉi similajn raportojn",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Dokumentaro",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Legu la dokumentaron ĉe <code>uBlock/wiki</code> por lerni ĉiujn funkciojn de KiwiGuard.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Demandoj kaj subtenado",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Respondojn al demandoj kaj alian helpon provizas la subreddit <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Problemoj pri filtrilo / la retejo misfunkcias",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Raportu problemojn pri specifaj retejoj ĉe la  <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\">cimspurilo <code>uBlockOrigin/uAssets</code></span>. <u>Tio postulas konton ĉe GitHub.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Atentu:</b> eviti la uzadon de aliaj, similaj reklamoblokiloj kun KiwiGuard, ĉar tio eblas kaŭzi filtradajn problemojn en apartaj retejoj.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Konsiletoj:</b> konfirmu vian filtradajn listojn aktualaj. <span data-url=\"logger-ui.html#_\">La protokolilo</span> estas la ĉefa ilo por analizi problemojn kiuj rilatas al filtrado.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Raporto pri cimo",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Raportu problemojn pri KiwiGuard mem ĉe la <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\">cimspurilo <code>uBlockOrigin/uBlock-issue</code></span>. <u>Tio postulas konton ĉe GitHub.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Informoj pri problemsolvado",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Jen teknikaj informoj eble utilaj al tiuj volontuloj, kiuj helpas vin solvi problemon.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Raporti problemon pri filtrado",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Por eviti ŝarĝi volontulojn per duplikataj raportoj, bonvolu konfirmi ke la problemo ankoraŭ ne raportitas. <b>Noto:</b> klaki la butonon kaŭzas ke la HTTP-origino de la paĝo senditas al GitHub.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Filtradoj listoj ĝisdatiĝas tage. Konfirmu ke via problemo ankoraŭ ne riparitas per la plej novaj filtradaj listoj.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Konfirmu ke la problemo ankoraŭ ekzistas reŝarginte la probleman retpaĝon.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Adreso de la retpaĝo:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "La retpaĝo…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- Elektu ion --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Montras reklamojn aŭ restaĵojn de reklamoj",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Havas plustavolojn aŭ aliajn ĝenaĵojn",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Detektas KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Havas problemojn pri privateco",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Misfunkcias, se KiwiGuard estas ŝaltita",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Malfermas nedeziratajn langetojn aŭ fenestrojn",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Sekvas malbon-programoj, trompo-retejoj",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Marki la paĝon kiel «<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">nelabortaŭgan</a>»",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Privacy policy",
+    "message": "Reguloj pri privateco",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
     "message": "Ŝanĝoprotokolo",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Vikio",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Helpo",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Issue tracker",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Fontkodo (GPLv3)",
@@ -888,15 +1044,15 @@
     "description": "Link text to uBO's own filter lists repo"
   },
   "aboutDependencies": {
-    "message": "External dependencies (GPLv3-compatible):",
+    "message": "Eksteraj dependaĵoj (kongruaj kun GPLv3):",
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "La proprajn filtrilojn de uBO gastigas la jenaj <a href=\"https://en.wikipedia.org/wiki/Content_delivery_network\">enhavo-liverantaj retoj</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "Kiam filtrilo postulas ĝisdatigon, hazarde elektita enhavo-liveranta reto estas uzata.",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -908,11 +1064,11 @@
     "description": "English: my-ublock-backup_{{datetime}}.txt"
   },
   "aboutRestoreDataButton": {
-    "message": "Restaŭri el dosiero...",
+    "message": "Restaŭri el dosiero…",
     "description": "English: Restore from file..."
   },
   "aboutResetDataButton": {
-    "message": "Remeti normajn agordojn...",
+    "message": "Remeti normajn agordojn…",
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "{{url}} ne konekteblas",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: Ĉu vi volas aldoni la sekvan ligilon al viaj tajloritaj listoj de filtriloj?\n\nTitolo: \"{{title}}\"\nLigilo: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Sekvi",
@@ -975,6 +1127,10 @@
     "message": "ne aktiva",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Paĝo blokita",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard preventis la ŝarĝadon de la sekva paĝo:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "Fermi ĉi tiun fenestron",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Ne plu avertu min pri tiu ĉi retejo",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Malŝalti striktan blokadon por {{hostname}}",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Daŭra",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Procedi",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "La blokita paĝo volas fordirekti al alia retejo. Se vi daŭras, vi navigos senpere al {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Kialo:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Malica",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Spurilo",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Malbona reputacio",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Eksporti al nuba konservado",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1032,7 +1216,7 @@
     "description": "used as a prompt for the user to provide a custom device name"
   },
   "advancedSettingsWarning": {
-    "message": "Warning! Change these advanced settings at your own risk.",
+    "message": "Averto! Tiuj altnivelaj opcioj esta eble danĝeraj.",
     "description": "A warning to users at the top of 'Advanced settings' page"
   },
   "genericSubmit": {
@@ -1052,36 +1236,48 @@
     "description": ""
   },
   "contextMenuBlockElementInFrame": {
-    "message": "Block element in frame...",
+    "message": "Bloki elementon en kadro…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Subscribe to filter list...",
+    "message": "Aboni filtrilon…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "Permesi grandajn aŭdvideajn elementojn nedaŭre",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
   },
+  "contextMenuViewSource": {
+    "message": "Vidi fontkodon…",
+    "description": "A context menu entry, to view the source code of the target resource"
+  },
   "shortcutCapturePlaceholder": {
-    "message": "Type a shortcut",
+    "message": "Tajpu alirklavon",
     "description": "Placeholder string for input field used to capture a keyboard shortcut"
   },
   "genericMergeViewScrollLock": {
-    "message": "Toggle locked scrolling",
+    "message": "Baskuligi ŝlositan rulumadon",
     "description": "Tooltip for the button used to lock scrolling between the views in the 'My rules' pane"
   },
   "genericCopyToClipboard": {
     "message": "Kopii al tondujo",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Toggle blocking profile",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Elekti ĉiujn",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Baskuligi ornaman filtradon",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Baskuli Javascript-kodoj",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
-    "message": "Relax blocking mode",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "message": "Malstriktigi blokadan reĝimon",
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
     "message": "Uzata memoro: {{value}} {{unit}}",
@@ -1102,6 +1298,14 @@
   "clickToLoad": {
     "message": "Alklaku por ŝarĝi",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Eraroj: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Ne povas filtri ĝuste kiam la retumilo komenciĝis.\nReŝargu la paĝon por certigi ĝustan filtradon.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

@@ -12,7 +12,7 @@
     "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
-    "message": "Cảnh báo! Bạn có các thay đổi chưa được lưu",
+    "message": "Cảnh báo: Bạn có các thay đổi chưa được lưu!",
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
@@ -24,7 +24,7 @@
     "description": "Label for button to ignore unsaved changes"
   },
   "settingsPageName": {
-    "message": "Cấu hình",
+    "message": "Cài đặt",
     "description": "appears as tab name in dashboard"
   },
   "3pPageName": {
@@ -55,6 +55,10 @@
     "message": "Giới thiệu",
     "description": "appears as tab name in dashboard"
   },
+  "supportPageName": {
+    "message": "Hỗ trợ",
+    "description": "appears as tab name in dashboard"
+  },
   "assetViewerPageName": {
     "message": "KiwiGuard - Trình xem nội dung",
     "description": "Title for the asset viewer page"
@@ -68,7 +72,7 @@
     "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Nhấp chuột để tắt KiwiGuard đối với toàn bộ tên miền này (site). \n\nCtrl + nhấp chuột để tắt KiwiGuard chỉ tại trang này (page).",
+    "message": "Nhấp chuột để vô hiệu KiwiGuard cho trang này. \n\nCtrl + nhấp chuột để tắt KiwiGuard chỉ trên trang này.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
@@ -100,7 +104,7 @@
     "description": "For the new mobile-friendly popup design"
   },
   "popupBlockedSinceInstall_v2": {
-    "message": "Bị chặn kể từ khi cài đặt",
+    "message": "Đã chặn từ khi cài đặt",
     "description": "For the new mobile-friendly popup design"
   },
   "popupDomainsConnected_v2": {
@@ -123,6 +127,10 @@
     "message": "Mở nhật ký",
     "description": "Tooltip used for the logger icon in the panel"
   },
+  "popupTipReport": {
+    "message": "Báo cáo lỗi trên trang này",
+    "description": "Tooltip used for the 'chat' icon in the panel"
+  },
   "popupTipNoPopups": {
     "message": "Bật/tắt chặn popup của trang này",
     "description": "Tooltip for the no-popups per-site switch"
@@ -132,7 +140,7 @@
     "description": "Tooltip for the no-popups per-site switch"
   },
   "popupTipNoPopups2": {
-    "message": "Nhấp để hủy chặn tất cả cửa sổ bật lên trên trang này",
+    "message": "Nhấp để bỏ chặn tất cả cửa sổ bật lên trên trang này",
     "description": "Tooltip for the no-popups per-site switch"
   },
   "popupTipNoLargeMedia": {
@@ -144,7 +152,7 @@
     "description": "Tooltip for the no-large-media per-site switch"
   },
   "popupTipNoLargeMedia2": {
-    "message": "Nhấp để ngừng chặn các thành phần đa phương tiện kích thước lớn trên trang này",
+    "message": "Bấm để ngừng chặn các phần tử đa phương tiện nặng trên trang này",
     "description": "Tooltip for the no-large-media per-site switch"
   },
   "popupTipNoCosmeticFiltering": {
@@ -164,11 +172,11 @@
     "description": "Tooltip for the no-remote-fonts per-site switch"
   },
   "popupTipNoRemoteFonts1": {
-    "message": "Bấm để chặn phông từ xa trên trang này",
+    "message": "Nhấp để chặn phông từ xa trên trang này",
     "description": "Tooltip for the no-remote-fonts per-site switch"
   },
   "popupTipNoRemoteFonts2": {
-    "message": "Bấm để không chặn phông từ xa trên trang này",
+    "message": "Bấm để ngừng chặn phông từ xa trên trang này",
     "description": "Tooltip for the no-remote-fonts per-site switch"
   },
   "popupTipNoScripting1": {
@@ -176,7 +184,7 @@
     "description": "Tooltip for the no-scripting per-site switch"
   },
   "popupTipNoScripting2": {
-    "message": "Nhấn vào đây để không còn vô hiệu hóa JavaScript trên trang web này",
+    "message": "Nhấp để ngừng vô hiệu hóa JavaScript trên trang này",
     "description": "Tooltip for the no-scripting per-site switch"
   },
   "popupNoPopups_v2": {
@@ -184,11 +192,11 @@
     "description": "Caption for the no-popups per-site switch"
   },
   "popupNoLargeMedia_v2": {
-    "message": "Thành phần đa phương tiện kích thước lớn",
+    "message": "Phần tử đa phương tiện kích thước lớn",
     "description": "Caption for the no-large-media per-site switch"
   },
   "popupNoCosmeticFiltering_v2": {
-    "message": "Lọc phần tử ẩn",
+    "message": "Lọc phần tử hiển thị",
     "description": "Caption for the no-cosmetic-filtering per-site switch"
   },
   "popupNoRemoteFonts_v2": {
@@ -200,7 +208,7 @@
     "description": "Caption for the no-scripting per-site switch"
   },
   "popupMoreButton_v2": {
-    "message": "Khác",
+    "message": "Mở rộng",
     "description": "Label to be used to show popup panel sections"
   },
   "popupLessButton_v2": {
@@ -212,7 +220,7 @@
     "description": "Tooltip when hovering the top-most cell of the global-rules column."
   },
   "popupTipLocalRules": {
-    "message": "Quy tắc nội bộ: cột này dành cho quy tắc chỉ áp dụng cho trang hiện tại.\nQuy tắc nội bộ sẽ thay thế quy tắc chung.",
+    "message": "Quy tắc nội bộ: cột này dành cho quy tắc chỉ áp dụng cho trang hiện tại.",
     "description": "Tooltip when hovering the top-most cell of the local-rules column."
   },
   "popupTipSaveRules": {
@@ -236,7 +244,7 @@
     "description": ""
   },
   "popup3pPassiveRulePrompt": {
-    "message": "CSS/hình ảnh từ bên thứ ba",
+    "message": "CSS/Hình ảnh từ bên thứ ba",
     "description": ""
   },
   "popupInlineScriptRulePrompt": {
@@ -267,13 +275,13 @@
     "message": "Phiên bản",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "↑: Nhấn mạnh các hàng có tập lệnh của bên thứ 3",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "tập lệnh",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Nhấn mạnh các hàng có khung của bên thứ ba",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "khung",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Tạo",
@@ -304,7 +312,7 @@
     "description": "English: Click, Ctrl-click"
   },
   "pickerContextMenuEntry": {
-    "message": "Chặn phần tử...",
+    "message": "Chặn phần tử…",
     "description": "An entry in the browser's contextual menu"
   },
   "settingsCollapseBlockedPrompt": {
@@ -327,17 +335,25 @@
     "message": "Thân thiện với người mù màu",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Diện mạo",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Giao diện",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Tùy chọn màu nền",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Kích hoạt hỗ trợ lưu trữ trực tuyến",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Tôi là một người dùng có kinh nghiệm (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Yêu cầu đọc qua</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "cài đặt nâng cao",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "message": "Tôi là một người dùng có kinh nghiệm",
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Vô hiệu tải trước (để chặn bất kỳ kết nối với những yêu cầu mạng đã chặn)",
@@ -364,7 +380,7 @@
     "description": ""
   },
   "settingsNoLargeMediaPrompt": {
-    "message": "Chặn yếu tố đa phương tiện lớn hơn {{input}} KB",
+    "message": "Chặn phần tử đa phương tiện kich thước lớn hơn {{input}} KB",
     "description": ""
   },
   "settingsNoRemoteFontsPrompt": {
@@ -380,8 +396,20 @@
     "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
-    "message": "Bỏ sót tên chuẩn",
+    "message": "Chặn tên miền theo dõi mạo danh từ bên thứ ba (CNAME Trackers)",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "Nâng cao",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Các tính năng chỉ phù hợp với kỹ thuật viên",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "cài đặt nâng cao",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": "Lần phục hồi trước:",
@@ -416,7 +444,7 @@
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
-    "message": "Bộ lọc thẩm mỹ dùng để ẩn các phần tử trong một trang web được coi là gây phiền toái cho thị giác và không thể bị chặn bởi các công cụ lọc dựa trên yêu cầu mạng.",
+    "message": "Bộ lọc phần tử dùng để ẩn các yếu tố trong một trang web mà gây khó chịu cho người dùng và những yếu tố không thể chặn bằng cách dùng bộ lọc mạng.",
     "description": "Describes the purpose of the 'Parse and enforce cosmetic filters' feature."
   },
   "3pIgnoreGenericCosmeticFilters": {
@@ -424,8 +452,12 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "<p>Bộ lọc phần tử ẩn chung là là những bộ lọc phần tử ẩn áp dụng cho tất cả các website.<p>Mặc dù được xử lý hiệu quả bởi KiwiGuard, các bộ lọc phần tử ẩn chung vẫn chiếm dụng bộ nhớ và CPU quá mức trên một số trang web, đặc biệt là các trang lớn và lâu năm.<p>Kích hoạt tuỳ chọn này sẽ loại bỏ sử dụng bộ nhớ và CPU quá mức thêm vào trang web nhờ khả năng xử lý các bộ lọc phần tử ẩn chung và cũng làm giảm sử dụng bộ nhớ của KiwiGuard.<p>Chúng tôi khuyến cáo bạn nên kích hoạt tuỳ chọn này trên các thiết bị không quá mạnh.",
+    "message": "Bộ lọc phần tử chung là những bộ lọc phần tử áp dụng trên mọi trang web. Kích hoạt tùy chọn này để giảm bớt sức nặng lên CPU và bộ nhớ do không còn phải xử lí các bộ lọc phần tử chung.\n\nNên kích hoạt tùy chọn này trên thiết bị cấu hình thấp.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
+  },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Ngắt kết nối mạng cho đến khi tất cả các bộ lọc đã được tải",
+    "description": "A checkbox in the 'Filter lists' pane"
   },
   "3pListsOfBlockedHostsHeader": {
     "message": "Danh sách những máy chủ bị chặn",
@@ -437,42 +469,50 @@
   },
   "3pGroupDefault": {
     "message": "Dựng sẵn",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Quảng cáo",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Riêng tư",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Các tên miền nguy hiểm",
-    "description": "English: Malware domains"
+    "message": "Chặn mã độc, bảo mật",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Tiện ích xã hội",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Các thông báo cookie",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "Phiền toái",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Đa chức năng",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Khu vực, ngôn ngữ",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Tuỳ chỉnh",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
-    "message": "Nhập...",
+    "message": "Nhập…",
     "description": "The label for the checkbox used to import external filter lists"
   },
   "3pExternalListsHint": {
-    "message": "Một URL cho mỗi dòng. Các URL không hợp lệ sẽ được bỏ qua âm thầm.",
+    "message": "Một URL trên dòng. URL không hợp lệ sẽ âm thầm bỏ qua.",
     "description": "Short information about how to use the textarea to import external filter lists by URL"
   },
   "3pExternalListObsolete": {
@@ -484,28 +524,36 @@
     "description": "used as a tooltip for eye icon beside a list"
   },
   "3pLastUpdate": {
-    "message": "Cập nhật lần cuối: {{ago}}.\nBấm để buộc cập nhật.",
+    "message": "Cập nhật lần cuối: {{ago}}.\nNhấn để cập nhật ngay.",
     "description": "used as a tooltip for the clock icon beside a list"
   },
   "3pUpdating": {
-    "message": "Đang cập nhật...",
+    "message": "Đang cập nhật…",
     "description": "used as a tooltip for the spinner icon beside a list"
   },
   "3pNetworkError": {
     "message": "Lỗi mạng ngăn tài nguyên được cập nhật.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "Một bộ lọc cho mỗi dòng. Bộ lọc có thể là tên máy chủ thuần hoặc bộ lọc tương thích với EasyList. Các dòng có tiền tố <code>!</code> sẽ bị bỏ qua.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Không thêm các bộ lọc từ các nguồn không đáng tin cậy.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Bật bộ lọc tùy chỉnh của tôi",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Cho phép các bộ lọc tùy chỉnh yêu cầu sự tin cậy",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
-    "message": "Nhập và thêm vào",
-    "description": "English: Import and append"
+    "message": "Nhập và thêm vào…",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
-    "message": "Xuất",
-    "description": "English: Export"
+    "message": "Xuất…",
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "my-ublock-static-filters_{{datetime}}.txt",
@@ -544,12 +592,12 @@
     "description": "Will discard manually-edited content and exit manual-edit mode"
   },
   "rulesImport": {
-    "message": "Nhập từ tập tin...",
+    "message": "Nhập từ tập tin…",
     "description": ""
   },
   "rulesExport": {
-    "message": "Xuất ra tập tin",
-    "description": ""
+    "message": "Xuất ra tập tin…",
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "my-ublock-dynamic-rules_{{datetime}}.txt",
@@ -580,19 +628,19 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Danh sách tên các máy chủ mà KiwiGuard sẽ bị chặn. Một mục nhập trên mỗi dòng. Tên máy chủ không hợp lệ sẽ được tự động bỏ qua.",
-    "description": "The name of the trusted sites pane."
+    "message": "Các đường dẫn trang web đáng tin cậy cố định vô hiệu hóa KiwiGuard. Một mục trên dòng.",
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
-    "message": "Nhập và thêm vào",
-    "description": "English: Import and append"
+    "message": "Nhập và thêm vào…",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
-    "message": "Xuất",
-    "description": "English: Export"
+    "message": "Xuất…",
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
-    "message": "my-ublock-whitelist_{{datetime}}.txt",
+    "message": "my-ublock-trusted-sites_{{datetime}}.txt",
     "description": "The default filename to use for import/export purpose"
   },
   "whitelistApply": {
@@ -620,7 +668,7 @@
     "description": "Appears in the logger's tab selector"
   },
   "logBehindTheScene": {
-    "message": "Tabless",
+    "message": "Không thuộc thẻ",
     "description": "Pretty name for behind-the-scene network requests"
   },
   "loggerCurrentTab": {
@@ -640,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "KiwiGuard wiki: Các logger",
+    "message": "KiwiGuard wiki: Các nhật ký",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -656,7 +704,7 @@
     "description": "Tooltip for the play button in the logger page"
   },
   "loggerRowFiltererButtonTip": {
-    "message": "Đóng/mở lọc tác vụ log",
+    "message": "Đóng/mở lọc tác vụ nhật ký",
     "description": "Tooltip for the row filterer button in the logger page"
   },
   "logFilterPrompt": {
@@ -664,7 +712,7 @@
     "description": "Placeholder string for logger output filtering input field"
   },
   "loggerRowFiltererBuiltinTip": {
-    "message": "Lựa chọn lọc tác vụ log",
+    "message": "Lựa chọn lọc tác vụ nhật ký",
     "description": "Tooltip for the button to bring up logger output filtering options"
   },
   "loggerRowFiltererBuiltinNot": {
@@ -720,7 +768,7 @@
     "description": "Label to identify a root context field (typically a hostname)"
   },
   "loggerEntryDetailsPartyness": {
-    "message": "Nguồn khác bên thứ nhất",
+    "message": "Phân loại nguồn",
     "description": "Label to identify a field providing partyness information"
   },
   "loggerEntryDetailsType": {
@@ -784,7 +832,7 @@
     "description": "Used in the static filtering wizard"
   },
   "loggerStaticFilteringFinderSentence1": {
-    "message": "Bộ lọc tĩnh <code>{{filter}}</code> phát hiện trong:",
+    "message": "Đã phát hiện bộ lọc tĩnh <code>{{filter}}</code> trong:",
     "description": "Below this sentence, the filter list(s) in which the filter was found"
   },
   "loggerStaticFilteringFinderSentence2": {
@@ -796,19 +844,19 @@
     "description": "Logger setting: A sentence to describe the purpose of the settings below"
   },
   "loggerSettingPerEntryMaxAge": {
-    "message": "Bảo tồn các mục từ {{input}} phút trước",
+    "message": "Giữ lại các mục từ {{input}} phút trước",
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxLoads": {
-    "message": "Bảo tồn nhiều nhất {{input}} trang được tải trên mỗi thẻ",
+    "message": "Giữ lại nhiều nhất {{input}} trang được tải trên mỗi thẻ",
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxEntries": {
-    "message": "Bảo tồn nhiều nhất {{input}} mục trên mỗi tab",
+    "message": "Giữ lại tối đa {{input}} mục trên mỗi thẻ",
     "description": "A logger setting"
   },
   "loggerSettingPerEntryLineCount": {
-    "message": "Sử dụng {{input}} dòng trên mỗi entry trong chế độ mở rộng theo chiều dọc",
+    "message": "Sử dụng {{input}} dòng trên mỗi mục trong chế độ mở rộng theo chiều dọc",
     "description": "A logger setting"
   },
   "loggerSettingHideColumnsPrompt": {
@@ -828,7 +876,7 @@
     "description": "A label for the context column"
   },
   "loggerSettingHideColumnPartyness": {
-    "message": "{{input}} Partyness",
+    "message": "{{input}} Phân loại nguồn",
     "description": "A label for the partyness column"
   },
   "loggerExportFormatList": {
@@ -840,32 +888,140 @@
     "description": "Label for radio-button to pick export format"
   },
   "loggerExportEncodePlain": {
-    "message": "Không có định dạng",
+    "message": "Không có đánh dấu",
     "description": "Label for radio-button to pick export text format"
   },
   "loggerExportEncodeMarkdown": {
-    "message": "Đánh dấu",
+    "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
+  },
+  "supportOpenButton": {
+    "message": "Mở",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Tạo báo cáo mới trên Github",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Tìm các báo cáo tương tự trên Github",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Tài liệu hướng dẫn",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Đọc tài liệu tại <code>uBlock/wiki</code> để tìm hiểu về các tính năng của KiwiGuard.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Hỗ trợ và giải đáp thắc mắc",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Bạn có thể tìm thấy câu trả lời cho các thắc mắc của mình hoặc sự trợ giúp cho các vấn đề khác tại subreddit <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Lỗi bộ lọc/ Trang web lỗi",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Báo cáo lỗi bộ lọc với tên miền cụ thể cho <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>. <u>Cần tài khoản GitHub</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Lưu ý quan trọng:<b> Tránh sử dụng các bộ chặn có chức năng tương tự song song KiwiGuard vì có thể gây ra lỗi bộ lọc trên nhiều trang web.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Mẹo:</b> Hãy đảm bảo các bộ lọc của bạn được cập nhật đầy đủ. <span data-url=\"logger-ui.html#_\">Nhật ký</span> là một công cụ hữu hiệu để chẩn đoán các lỗi bộ lọc.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Báo cáo lỗi",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Báo cáo lỗi cho KiwiGuard cho <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> issue tracker</span>. <u>Cần tài khoản GitHub</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Thông tin chẩn đoán lỗi",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Đây là các thông tin kỹ thuật có thể giúp ích khi khắc phục lỗi.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Báo cáo lỗi bộ lọc cụ thể",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Để tránh tạo thêm gánh nặng cho các tình nguyện viên, hãy chắc chắn rằng chưa từng có vấn đề tương tự được báo cáo.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Danh sách bộ lọc được cập nhật hàng ngày. Hãy đảm bảo vấn đề của bạn chưa được giải quyết trong danh sách bộ lọc gần đây nhất.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Xác nhận rằng sự cố vẫn tồn tại kể cả sau khi đã tải lại trong web có vấn đề.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Địa chỉ trang web:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "Trang web…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- Chọn một lỗi --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Vẫn hiện quảng cáo hoặc vùng chứa quảng cáo",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Xuất hiện lớp phủ hoặc các phần tử phiền toái khác",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Phát hiện KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Có các cấn đề về quyền riêng tư",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Trục trặc khi bật KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Xuất hiện các tab và cửa sổ ngoài mong muốn",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Dẫn đến phần mềm độc hại, lừa đảo",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Đánh dấu trang web là \"NSFW\" (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">\"Not Safe For Work\"</a>, \"Không xem nơi đông người\")",
+    "description": "A checkbox to use for NSFW sites"
   },
   "aboutPrivacyPolicy": {
     "message": "Chính sách bảo mật",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
-    "message": "Thay đổi",
+    "message": "Nhật ký thay đổi",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Wiki",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Hỗ trợ",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Theo dõi vấn đề",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Mã nguồn (GPLv3)",
@@ -892,15 +1048,15 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "danh sách bộ lọc riêng của uBO được lưu trữ miễn phí trên <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "CDN được chọn ngẫu nhiên khi cần cập nhật danh sách bộ lọc.",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
-    "message": "Sao lưu vào tập tin...",
+    "message": "Sao lưu vào tệp…",
     "description": "Text for button to create a backup of all settings"
   },
   "aboutBackupFilename": {
@@ -908,11 +1064,11 @@
     "description": "English: my-ublock-backup_{{datetime}}.txt"
   },
   "aboutRestoreDataButton": {
-    "message": "Khôi phục từ tập tin...",
+    "message": "Khôi phục từ tệp…",
     "description": "English: Restore from file..."
   },
   "aboutResetDataButton": {
-    "message": "Đặt lại cấu hình mặc định...",
+    "message": "Đặt lại cài đặt mặc định…",
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "Lỗi kết nối: {{msg}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: Thêm URL dưới đây vào bộ lọc tuỳ biến của bạn?\n\nTên: \"{{title}}\"\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Đăng ký",
@@ -975,8 +1127,12 @@
     "message": "tắt",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Trang bị chặn",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
-    "message": "uBloc Origin đã chặn tải trang sau:",
+    "message": "KiwiGuard đã chặn tải trang sau:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {
@@ -999,6 +1155,10 @@
     "message": "Đóng cửa sổ này",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Đừng cảnh báo tôi lần nữa về trang web này",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Vô hiệu chặn nghiêm ngặt cho {{hostname}}",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Vĩnh viễn",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Tiếp tục",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "Trang đã chặn muốn chuyển hướng sang trang khác. Nếu đồng ý, bạn sẽ được chuyển hướng sang {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Lý do:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Độc hại",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Có bộ theo dõi",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Không đáng tin cậy",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Xuất ra lưu trữ trực tuyến",
@@ -1052,16 +1236,20 @@
     "description": ""
   },
   "contextMenuBlockElementInFrame": {
-    "message": "Chặn phần tử trong khung ...",
+    "message": "Chặn phần tử trong khung…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Đăng ký danh sách bộ lọc ...",
+    "message": "Đăng ký danh sách bộ lọc…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "Tạm thời cho phép yếu tố đa phương tiện lớn",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
+  },
+  "contextMenuViewSource": {
+    "message": "Xem mã nguồn…",
+    "description": "A context menu entry, to view the source code of the target resource"
   },
   "shortcutCapturePlaceholder": {
     "message": "Nhập phím tắt",
@@ -1072,19 +1260,27 @@
     "description": "Tooltip for the button used to lock scrolling between the views in the 'My rules' pane"
   },
   "genericCopyToClipboard": {
-    "message": "Sao chép vào bảng tạm",
+    "message": "Sao chép vào khay nhớ tạm",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Bật tắt hồ sơ chặn",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Chọn tất cả",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Bật/tắt lọc phần tử",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Cho phép/Vô hiệu hoá JavaScript",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
     "message": "Nới lỏng chế độ chặn",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
-    "message": "Bộ nhớ đã dùng: {{value}} byte",
+    "message": "Bộ nhớ đã dùng: {{value}} {{unit}}",
     "description": " In Setting pane, renders as (example): Storage used: 13.2 MB"
   },
   "KB": {
@@ -1100,8 +1296,16 @@
     "description": "short for 'gigabytes'"
   },
   "clickToLoad": {
-    "message": "Bấm để tải",
+    "message": "Nhấp để nạp",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Lỗi: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Không thể lọc đúng cách khi khởi chạy trình duyệt. Tải lại trang để đảm bảo lọc thích hợp.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "Đây là mục cuối",

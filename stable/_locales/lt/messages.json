@@ -16,7 +16,7 @@
     "description": "A warning in the dashboard when navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningStay": {
-    "message": "Pasilikti",
+    "message": "Pasilikti čia",
     "description": "Label for button to prevent navigating away from unsaved changes"
   },
   "dashboardUnsavedWarningIgnore": {
@@ -53,6 +53,10 @@
   },
   "aboutPageName": {
     "message": "Apie",
+    "description": "appears as tab name in dashboard"
+  },
+  "supportPageName": {
+    "message": "Pagalba",
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
@@ -122,6 +126,10 @@
   "popupTipLog": {
     "message": "Atverti žurnalą",
     "description": "Tooltip used for the logger icon in the panel"
+  },
+  "popupTipReport": {
+    "message": "Pranešti apie problemą šioje svetainėje",
+    "description": "Tooltip used for the 'chat' icon in the panel"
   },
   "popupTipNoPopups": {
     "message": "Perjungti visų iškylančiųjų langų blokavimą šiame puslapyje",
@@ -212,7 +220,7 @@
     "description": "Tooltip when hovering the top-most cell of the global-rules column."
   },
   "popupTipLocalRules": {
-    "message": "Vietinės taisyklės: ši skiltis skirta dabartiniam puslapiui taikomoms taisyklėms.\nVietinės taisyklės nustelbia globalias.",
+    "message": "Vietinės taisyklės: ši skiltis skirta dabartiniam puslapiui taikomoms taisyklėms.",
     "description": "Tooltip when hovering the top-most cell of the local-rules column."
   },
   "popupTipSaveRules": {
@@ -267,13 +275,13 @@
     "message": "Versija",
     "description": "Example of use: Version 1.26.4"
   },
-  "popup3pScriptFilterTip": {
-    "message": "Paryškinti eilutes, kurios turi trečiųjų šalių rašmenų",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party scripts' cell"
+  "popup3pScriptFilter": {
+    "message": "Skriptas",
+    "description": "Appears as an option to filter out firewall rows"
   },
-  "popup3pFrameFilterTip": {
-    "message": "↑: Emphasize rows which have 3rd-party frames",
-    "description": "Tooltip shown when hovering small filtering widget in '3rd-party frames' cell"
+  "popup3pFrameFilter": {
+    "message": "kadras",
+    "description": "Appears as an option to filter out firewall rows"
   },
   "pickerCreate": {
     "message": "Sukurti",
@@ -327,17 +335,25 @@
     "message": "Draugiškas neskiriantiems spalvų",
     "description": "English: Color-blind friendly"
   },
+  "settingsAppearance": {
+    "message": "Išvaizda",
+    "description": "Section for controlling user interface appearance"
+  },
+  "settingsThemeLabel": {
+    "message": "Tema",
+    "description": "Label for checkbox to enable a custom dark theme"
+  },
+  "settingsThemeAccent0Label": {
+    "message": "Pasirinktinis akcentinė spalva",
+    "description": "Label for checkbox to pick an accent color"
+  },
   "settingsCloudStorageEnabledPrompt": {
     "message": "Įjungti nuotolinės saugyklos palaikymą",
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
     "message": "Aš esu patyręs naudotojas (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>privaloma perskaityti</a>)",
-    "description": ""
-  },
-  "settingsAdvancedUserSettings": {
-    "message": "sudėtingesni nustatymai",
-    "description": "For the tooltip of a link which gives access to advanced settings"
+    "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
     "message": "Išjungti išankstinį gavimą (visiems blokuotų tinklo užklausų prisijungimams išvengti)",
@@ -380,8 +396,20 @@
     "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
-    "message": "Uncloak canonical names",
+    "message": "Atskleisti kanoninius vardus",
     "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+  },
+  "settingsAdvanced": {
+    "message": "Papildomi nustatymai",
+    "description": "Section for controlling advanced-user settings"
+  },
+  "settingsAdvancedSynopsis": {
+    "message": "Funkcijos, tinkamos tik techniniams vartotojams",
+    "description": "Description of section controlling advanced-user settings"
+  },
+  "settingsAdvancedUserSettings": {
+    "message": "sudėtingesni nustatymai",
+    "description": "For the tooltip of a link which gives access to advanced settings"
   },
   "settingsLastRestorePrompt": {
     "message": "Paskutinis atkūrimas:",
@@ -427,6 +455,10 @@
     "message": "<p>Daugybiniai kosmetiniai filtrai yra tokie kosmetiniai filtrai, kurie taikomi visoms svetainėms.<p>Nors KiwiGuard juos apdoroja efektyviai, daugybiniai kosmetiniai filtrai vis tiek gali prisidėti prie pamatuojamo atminties ir procesoriaus panaudojimo kai kuriose svetainėse, ypač didelėse ir ilgai gyvuojančiose.<p>Šio nustatymo įjungimas sumažins atminties ir procesoriaus naudojimą, kurį sukelia svetainės dėl daugybinių kosmetinių filtrų apdorojimo, bei sumažins bendrą KiwiGuard atminties naudojimą.<p>Rekomenduojama įjungti šį nustatymą mažiau galinguose įrenginiuose.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
+  "3pSuspendUntilListsAreLoaded": {
+    "message": "Pristabdyti tinklo veiklą, kol bus įkelti visi filtrų sąrašai",
+    "description": "A checkbox in the 'Filter lists' pane"
+  },
   "3pListsOfBlockedHostsHeader": {
     "message": "Blokuotų serverių sąrašas",
     "description": "English: Lists of blocked hosts"
@@ -437,35 +469,43 @@
   },
   "3pGroupDefault": {
     "message": "Įtaisyti",
-    "description": "Header for the uBlock filters section in 'Filter lists pane'"
+    "description": "Filter lists section name"
   },
   "3pGroupAds": {
     "message": "Reklamos",
-    "description": "English: Ads"
+    "description": "Filter lists section name"
   },
   "3pGroupPrivacy": {
     "message": "Privatumas",
-    "description": "English: Privacy"
+    "description": "Filter lists section name"
   },
   "3pGroupMalware": {
-    "message": "Kenksmingos sritys",
-    "description": "English: Malware domains"
+    "message": "Apsauga nuo kenkėjiškų programų, saugumas",
+    "description": "Filter lists section name"
+  },
+  "3pGroupSocial": {
+    "message": "Socialiniai valdikliai",
+    "description": "Filter lists section name"
+  },
+  "3pGroupCookies": {
+    "message": "Slapukų pranešimai",
+    "description": "Filter lists section name"
   },
   "3pGroupAnnoyances": {
     "message": "Erzinimas",
-    "description": "The header identifying the filter lists in the category 'annoyances'"
+    "description": "Filter lists section name"
   },
   "3pGroupMultipurpose": {
     "message": "Univarsalūs",
-    "description": "English: Multipurpose"
+    "description": "Filter lists section name"
   },
   "3pGroupRegions": {
     "message": "Regionai, kalbos",
-    "description": "English: Regions, languages"
+    "description": "Filter lists section name"
   },
   "3pGroupCustom": {
     "message": "Adaptuoti",
-    "description": "English: Custom"
+    "description": "Filter lists section name"
   },
   "3pImport": {
     "message": "Importuoti...",
@@ -495,17 +535,25 @@
     "message": "Tinklo klaida sutrukdė atnaujinti resursą.",
     "description": "used as a tooltip for error icon beside a list"
   },
-  "1pFormatHint": {
-    "message": "Vienas filtras eilutėje. Filtras gali būti paprastas serverio adresas, arba su Adblock Plus suderinamas filtras. Eilutės pradėtos <code>!</code> bus ignoruotos.",
-    "description": "Short information about how to create custom filters"
+  "1pTrustWarning": {
+    "message": "Nepridėkite filtrų iš nepatikimų šaltinių.",
+    "description": "Warning against copy-pasting filters from random sources"
+  },
+  "1pEnableMyFiltersLabel": {
+    "message": "Įjungti mano pasirinktinius filtrus",
+    "description": "Label for the checkbox use to enable/disable 'My filters' list"
+  },
+  "1pTrustMyFiltersLabel": {
+    "message": "Leisti pasirinktinius filtrus, kuriems reikia pasitikėjimo",
+    "description": "Label for the checkbox use to trust the content of 'My filters' list"
   },
   "1pImport": {
     "message": "Importuoti ir papildyti",
-    "description": "English: Import and append"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExport": {
     "message": "Eksportuoti",
-    "description": "English: Export"
+    "description": "Button in the 'My filters' pane"
   },
   "1pExportFilename": {
     "message": "mano-ublock-statiniai-filtrai_{{datetime}}.txt",
@@ -549,7 +597,7 @@
   },
   "rulesExport": {
     "message": "Eksportuoti į failą",
-    "description": ""
+    "description": "Button in the 'My rules' pane"
   },
   "rulesDefaultFileName": {
     "message": "mano-ublock-dinaminės-taisyklės_{{datetime}}.txt",
@@ -581,15 +629,15 @@
   },
   "whitelistPrompt": {
     "message": "Baltojo sąrašo direktyvos nurodo, kurioms svetainėms KiwiGuard turėtų būti išjungtas. Vienas įrašas eilutėje. Neteisingos direktyvos bus tyliai ignoruotos ir užkomentuotos.",
-    "description": "The name of the trusted sites pane."
+    "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
     "message": "Importuoti ir papildyti",
-    "description": "English: Import and append"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExport": {
     "message": "Eksportuoti",
-    "description": "English: Export"
+    "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
     "message": "mano-ublock-išimtys_{{datetime}}.txt",
@@ -640,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "„KiwiGuard“ vikis: žurnalas",
+    "message": "„KiwiGuard“ viki: žurnalas",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -720,7 +768,7 @@
     "description": "Label to identify a root context field (typically a hostname)"
   },
   "loggerEntryDetailsPartyness": {
-    "message": "Partyness",
+    "message": "Šališkumas",
     "description": "Label to identify a field providing partyness information"
   },
   "loggerEntryDetailsType": {
@@ -800,35 +848,35 @@
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxLoads": {
-    "message": "Preserve at most {{input}} page loads per tab",
+    "message": "Išsaugoti ne daugiau kaip {{input}} puslapio įkėlimų kiekvienai kortelei",
     "description": "A logger setting"
   },
   "loggerSettingPerTabMaxEntries": {
-    "message": "Preserve at most {{input}} entries per tab",
+    "message": "Išsaugoti ne daugiau kaip {{input}} įrašų kiekvienai kortelei",
     "description": "A logger setting"
   },
   "loggerSettingPerEntryLineCount": {
-    "message": "Use {{input}} lines per entry in vertically expanded mode",
+    "message": "Naudoti {{input}} eilutes kiekvienam įrašui vertikaliai išplėstame režime",
     "description": "A logger setting"
   },
   "loggerSettingHideColumnsPrompt": {
-    "message": "Hide columns:",
+    "message": "Slėpti stulpelius:",
     "description": "Logger settings: a sentence to describe the purpose of the checkboxes below"
   },
   "loggerSettingHideColumnTime": {
-    "message": "{{input}} Time",
+    "message": "{{input}} Laikas",
     "description": "A label for the time column"
   },
   "loggerSettingHideColumnFilter": {
-    "message": "{{input}} Filter/rule",
+    "message": "{{input}} Filtras/taisyklė",
     "description": "A label for the filter or rule column"
   },
   "loggerSettingHideColumnContext": {
-    "message": "{{input}} Context",
+    "message": "{{input}} Kontekstas",
     "description": "A label for the context column"
   },
   "loggerSettingHideColumnPartyness": {
-    "message": "{{input}} Partyness",
+    "message": "{{input}} Šališkumas",
     "description": "A label for the partyness column"
   },
   "loggerExportFormatList": {
@@ -847,25 +895,133 @@
     "message": "Markdown",
     "description": "Label for radio-button to pick export text format"
   },
+  "supportOpenButton": {
+    "message": "Atidaryti",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportReportSpecificButton": {
+    "message": "Sukurti naują ataskaitą",
+    "description": "Text for button which open an external web page in Support pane"
+  },
+  "supportFindSpecificButton": {
+    "message": "Rasti panašias ataskaitas",
+    "description": "A clickable link in the filter issue reporter section"
+  },
+  "supportS1H": {
+    "message": "Dokumentacija",
+    "description": "Header of 'Documentation' section in Support pane"
+  },
+  "supportS1P1": {
+    "message": "Skaitykite dokumentaciją adresu <code>uBlock/wiki</code>, kad sužinotumėte apie visas KiwiGuard funkcijas.",
+    "description": "First paragraph of 'Documentation' section in Support pane"
+  },
+  "supportS2H": {
+    "message": "Klausimai ir pagalba",
+    "description": "Header of 'Questions and support' section in Support pane"
+  },
+  "supportS2P1": {
+    "message": "Atsakymai į klausimus ir kitokia pagalba teikiama subreddit <code>/r/uBlockOrigin</code>.",
+    "description": "First paragraph of 'Questions and support' section in Support pane"
+  },
+  "supportS3H": {
+    "message": "Filtrų problemos / svetainė neveikia",
+    "description": "Header of 'Filter issues' section in Support pane"
+  },
+  "supportS3P1": {
+    "message": "Praneškite apie filtrų problemas su konkrečiomis svetainėmis <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> problemų sekimo sistemoje</span>. <u>Reikia GitHub paskyros.</u>",
+    "description": "First paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P2": {
+    "message": "<b>Svarbu:</b> Venkite naudoti kitus panašios paskirties blokuoklius kartu su KiwiGuard, nes tai gali sukelti filtrų problemų konkrečiose svetainėse.",
+    "description": "Second paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS3P3": {
+    "message": "<b>Patarimai:</b> Įsitikinkite, kad jūsų filtrų sąrašai yra atnaujinti. <span data-url=\"logger-ui.html#_\">Žurnalas</span> yra pagrindinis įrankis diagnozuojant su filtrais susijusias problemas.",
+    "description": "Third paragraph of 'Filter issues' section in Support pane"
+  },
+  "supportS4H": {
+    "message": "Klaidos pranešimas",
+    "description": "Header of 'Bug report' section in Support pane"
+  },
+  "supportS4P1": {
+    "message": "Praneškite apie problemas su pačiu KiwiGuard <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> problemų sekimo sistemoje</span>. <u>Reikia GitHub paskyros.</u>",
+    "description": "First paragraph of 'Bug report' section in Support pane"
+  },
+  "supportS5H": {
+    "message": "Triktčių šalinimo informacija",
+    "description": "Header of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS5P1": {
+    "message": "Žemiau pateikiama techninė informacija, kuri gali būti naudinga, kai savanoriai bando padėti jums išspręsti problemą.",
+    "description": "First paragraph of 'Troubleshooting Information' section in Support pane"
+  },
+  "supportS6H": {
+    "message": "Pranešti apie filtro problemą",
+    "description": "Header of 'Report a filter issue' section in Support pane"
+  },
+  "supportS6P1S1": {
+    "message": "Kad neapkrautumėte savanorių dubliavimosi pranešimais, patikrinkite, ar ši problema jau nebuvo pranešta. <b>Pastaba:</b> paspaudus mygtuką, puslapio kilmė bus išsiųsta į GitHub.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S1": {
+    "message": "Filtrų sąrašai atnaujinami kasdien. Įsitikinkite, kad jūsų problema jau nebuvo išspręsta naujausiuose filtrų sąrašuose.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6P2S2": {
+    "message": "Patikrinkite, ar problema vis dar egzistuoja po probleminio tinklalapio perkrovimo.",
+    "description": "A paragraph in the filter issue reporter section"
+  },
+  "supportS6URL": {
+    "message": "Tinklalapio adresas:",
+    "description": "Label for the URL of the page"
+  },
+  "supportS6Select1": {
+    "message": "Tinklalapis…",
+    "description": "Label for widget to select type of issue"
+  },
+  "supportS6Select1Option0": {
+    "message": "-- Pasirinkite įrašą --",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option1": {
+    "message": "Rodo skelbimus arba skelbimų likučius",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option2": {
+    "message": "Turi perdangas ar kitus trukdžius",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option3": {
+    "message": "Aptinka KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option4": {
+    "message": "Turi su privatumu susijusių problemų",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option5": {
+    "message": "Veikia netinkamai, kai įjungtas KiwiGuard",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option6": {
+    "message": "Atidaro nepageidaujamas korteles ar langus",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Select1Option7": {
+    "message": "Veda prie kenkėjiškų programų, sukčiavimo (phishing)",
+    "description": "An entry in the widget used to select the type of issue"
+  },
+  "supportS6Checkbox1": {
+    "message": "Pažymėti tinklalapį kaip „NSFW“ (<a href=\"https://wikipedia.org/wiki/Not_safe_for_work\">„Netinkama darbui“</a>)",
+    "description": "A checkbox to use for NSFW sites"
+  },
   "aboutPrivacyPolicy": {
-    "message": "Privacy policy",
+    "message": "Privatumo politika",
     "description": "Link to privacy policy on GitHub (English)"
   },
   "aboutChangelog": {
     "message": "Pakeitimų žurnalas",
     "description": ""
-  },
-  "aboutWiki": {
-    "message": "Viki",
-    "description": "English: project' wiki on GitHub"
-  },
-  "aboutSupport": {
-    "message": "Palaikymas",
-    "description": "A link for where to get support"
-  },
-  "aboutIssues": {
-    "message": "Klaidų sekimo sistema",
-    "description": "Text for a link to official issue tracker"
   },
   "aboutCode": {
     "message": "Pirminis tekstas (GPLv3)",
@@ -884,7 +1040,7 @@
     "description": "Link text to translations repo"
   },
   "aboutFilterLists": {
-    "message": "Filter lists",
+    "message": "Filtrų sąrašai",
     "description": "Link text to uBO's own filter lists repo"
   },
   "aboutDependencies": {
@@ -892,11 +1048,11 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBO's own filter lists are freely hosted on the following <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDNs</a>:",
+    "message": "uBO nuosavi filtrų sąrašai yra nemokamai talpinami šiuose <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
-    "message": "A randomly picked CDN is used when a filter list needs to be updated",
+    "message": "Kai reikia atnaujinti filtrų sąrašą, naudojamas atsitiktinai parinktas CDN.",
     "description": "Shown in the About pane"
   },
   "aboutBackupDataButton": {
@@ -930,10 +1086,6 @@
   "errorCantConnectTo": {
     "message": "Tinklo klaida: {{msg}}",
     "description": "English: Network error: {{msg}}"
-  },
-  "subscriberConfirm": {
-    "message": "KiwiGuard: Pridėti šį URL į jūsų adaptuotų filtrų sąrašą?\n\nPavadinimas: „{{title}}“\nURL: {{url}}",
-    "description": "No longer used"
   },
   "subscribeButton": {
     "message": "Prenumeruoti",
@@ -975,6 +1127,10 @@
     "message": "išjungta",
     "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
+  "docblockedTitle": {
+    "message": "Puslapis užblokuotas",
+    "description": "Used as a title for the document-blocked page"
+  },
   "docblockedPrompt1": {
     "message": "KiwiGuard neleido įkelti šio puslapio:",
     "description": "Used in the strict-blocking page"
@@ -999,6 +1155,10 @@
     "message": "Užverti langą",
     "description": "English: Close this window"
   },
+  "docblockedDontWarn": {
+    "message": "Daugiau neįspėti manęs apie šią svetainę",
+    "description": "Label for checkbox in document-blocked page"
+  },
   "docblockedProceed": {
     "message": "Išjungti griežtą {{hostname}} blokavimą",
     "description": "English: Disable strict blocking for {{hostname}} ..."
@@ -1010,6 +1170,30 @@
   "docblockedDisablePermanent": {
     "message": "Negrįžtamai",
     "description": "English: Permanently"
+  },
+  "docblockedDisable": {
+    "message": "Tęsti",
+    "description": "Button text to navigate to the blocked page"
+  },
+  "docblockedRedirectPrompt": {
+    "message": "Užblokuotas puslapis nori nukreipti į kitą svetainę. Jei nuspręsite tęsti, būsite tiesiogiai nukreipti į: {{url}}",
+    "description": "Text warning about an incoming redirect"
+  },
+  "docblockedReasonLabel": {
+    "message": "Priežastis:",
+    "description": "The label which prepend the actual reason why a page was blocked"
+  },
+  "docblockedReasonMalicious": {
+    "message": "Kenkėjiška",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonTracker": {
+    "message": "Sekimo priemonė",
+    "description": "An actual reason why a page was blocked"
+  },
+  "docblockedReasonDisreputable": {
+    "message": "Abejotina",
+    "description": "An actual reason why a page was blocked"
   },
   "cloudPush": {
     "message": "Eksportuoti į nuotolinę saugyklą",
@@ -1024,7 +1208,7 @@
     "description": "tooltip"
   },
   "cloudNoData": {
-    "message": "...\n...",
+    "message": "…\n…",
     "description": ""
   },
   "cloudDeviceNamePrompt": {
@@ -1052,39 +1236,51 @@
     "description": ""
   },
   "contextMenuBlockElementInFrame": {
-    "message": "Block element in frame...",
+    "message": "Blokuoti elementą kadre…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuSubscribeToList": {
-    "message": "Subscribe to filter list...",
+    "message": "Prenumeruoti filtrų sąrašą…",
     "description": "An entry in the browser's contextual menu"
   },
   "contextMenuTemporarilyAllowLargeMediaElements": {
     "message": "Laikinai leisti didelius medijos elementus",
     "description": "A context menu entry, present when large media elements have been blocked on the current site"
   },
+  "contextMenuViewSource": {
+    "message": "Peržiūrėti šaltinio kodą…",
+    "description": "A context menu entry, to view the source code of the target resource"
+  },
   "shortcutCapturePlaceholder": {
     "message": "Įveskite nuorodą",
     "description": "Placeholder string for input field used to capture a keyboard shortcut"
   },
   "genericMergeViewScrollLock": {
-    "message": "Toggle locked scrolling",
+    "message": "Perjungti užrakintą slinkimą",
     "description": "Tooltip for the button used to lock scrolling between the views in the 'My rules' pane"
   },
   "genericCopyToClipboard": {
     "message": "Kopijuoti į iškarpinę",
     "description": "Label for buttons used to copy something to the clipboard"
   },
-  "toggleBlockingProfile": {
-    "message": "Toggle blocking profile",
-    "description": "Label for keyboard shortcut used to toggle blocking profile"
+  "genericSelectAll": {
+    "message": "Žymėti viską",
+    "description": "Label for buttons used to select all text in editor"
+  },
+  "toggleCosmeticFiltering": {
+    "message": "Perjungti kosmetinį filtravimą",
+    "description": "Label for keyboard shortcut used to toggle cosmetic filtering"
+  },
+  "toggleJavascript": {
+    "message": "Perjungti JavaScript",
+    "description": "Label for keyboard shortcut used to toggle no-scripting switch"
   },
   "relaxBlockingMode": {
-    "message": "Relax blocking mode",
-    "description": "Label for keyboard shortcut used to relax blocking mode (meant to replace 'Toggle blocking profile')"
+    "message": "Sumažinti blokavimo režimą",
+    "description": "Label for keyboard shortcut used to relax blocking mode"
   },
   "storageUsed": {
-    "message": "Storage used: {{value}} {{unit}}",
+    "message": "Naudojama atmintis: {{value}} {{unit}}",
     "description": " In Setting pane, renders as (example): Storage used: 13.2 MB"
   },
   "KB": {
@@ -1100,8 +1296,16 @@
     "description": "short for 'gigabytes'"
   },
   "clickToLoad": {
-    "message": "Click to load",
+    "message": "Spustelėkite, kad įkeltumėte",
     "description": "Message used in frame placeholders"
+  },
+  "linterMainReport": {
+    "message": "Klaidos: {{count}}",
+    "description": "Summary of number of errors as reported by the linter "
+  },
+  "unprocessedRequestTooltip": {
+    "message": "Nepavyko tinkamai filtruoti paleidus naršyklę. Įkelkite puslapį iš naujo, kad užtikrintumėte tinkamą filtravimą.",
+    "description": "A warning which will appear in the popup panel if needed"
   },
   "dummy": {
     "message": "This entry must be the last one",

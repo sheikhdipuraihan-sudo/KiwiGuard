@@ -1,5 +1,6 @@
 #domInspector {
     display: none;
+    overflow: hidden;
     }
 #inspectors.dom #domInspector {
     display: flex;
@@ -7,18 +8,22 @@
 #domInspector .permatoolbar .highlightMode.invert {
     transform: rotate(180deg);
     }
+#domInspector button.vExpandToggler > .fa-icon {
+    transform: scaleY(-1)
+    }
+#domInspector button.vCompactToggler > .fa-icon {
+    transform: scaleY(1)
+    }
 #domInspector .vscrollable {
     overflow-x: auto;
-    background-color: var(--default-surface); /* LOCAL CHANGES */
     }
 #domInspector > ul:first-of-type {
     padding-left: 0.5em;
     }
 #domInspector ul {
-    background-color: var(--default-surface);
+    background-color: var(--surface-1);
     margin: 0;
     padding-left: 1em;
-    width: 120vw; /* LOCAL CHANGES */
     }
 #domInspector li {
     list-style-type: none;
@@ -27,7 +32,7 @@
 #domInspector li.isCosmeticHide,
 #domInspector li.isCosmeticHide ul,
 #domInspector li.isCosmeticHide li {
-    background-color: #fee;
+    background-color: var(--surface-2);
     }
 #domInspector li > * {
     display: inline-block;
@@ -39,7 +44,7 @@
     color: #aaa;
     }
 #domInspector li > span:first-child {
-    color: var(--default-ink);
+    color: var(--ink-1);
     cursor: default;
     font-size: 1rem;
     margin-right: 0;
@@ -76,7 +81,7 @@
     text-decoration: line-through;
     }
 #domInspector li > code.filter {
-    color: red;
+    color: var(--cm-negative);
     }
 
 #domInspector li > ul {
@@ -86,7 +91,7 @@
     display: none;
     }
 
-#domInspector:not(.vExpanded) li:not(.hasCosmeticHide):not(.isCosmeticHide) {
+#domInspector li:not(.hasCosmeticHide):not(.isCosmeticHide):not(.show) {
     display: none;
     }
 #domInspector #domTree > li {

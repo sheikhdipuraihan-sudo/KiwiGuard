@@ -1,5 +1,6 @@
 html {
     height: 100vh;
+        height: 100svh;
     overflow: hidden;
     width: 100vw;
     }
@@ -18,14 +19,9 @@ body {
     flex-grow: 1;
     }
 #advancedSettings {
-    border-top: 1px solid #ddd;
+    border: var(--default-gap-xxsmall) solid var(--surface-2);
     text-align: left;
     }
 .CodeMirror-wrap pre {
     word-break: break-all;
     }
-/* LOCAL CHANGES */
-.CodeMirror-sizer {
-    min-width: 650px !important;
-}
-/* LOCAL CHANGES */

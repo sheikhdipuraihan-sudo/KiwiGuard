@@ -20,15 +20,28 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    padding: 40px;
-    text-align: center;
+    padding: var(--default-gap-xxlarge) var(--default-gap-small);
+    justify-content: center;
     }
-body > div {
-    margin: 0 0 var(--default-gap-large) 0;
+body.loading {
+    opacity: 0;
     }
-body > div > * {
-    margin: 0 0 var(--default-gap-xsmall) 0;
+:root.mobile body {
+    padding: var(--default-gap-small);
+    }
+
+#rootContainer {
+    width: min(100%, 640px);
+    }
+#rootContainer > * {
+    margin: 0 0 var(--default-gap-xxlarge) 0;
+    }
+:root.mobile #rootContainer > * {
+    margin-bottom: var(--default-gap-xlarge);
+    }
+
+p {
+    margin: 0.5em 0;
     }
 a {
     text-decoration: none;
@@ -38,13 +51,17 @@ a {
     word-break: break-all;
     }
 #warningSign {
+    color: var(--accent-surface-1);
+        fill: var(--accent-surface-1);
+    font-size: 96px;
+    line-height: 1;
     width: 100%;
     }
-#warningSign > a {
-    fill: var(--yellow-50);
-    font-size: 96px;
+:root.mobile #warningSign {
+    font-size: 64px;
     }
 #theURL {
+    color: var(--ink-2);
     padding: 0;
     }
 #theURL > * {
@@ -54,39 +71,44 @@ a {
     position: relative;
     z-index: 10;
     }
-#theURL > p > span:last-of-type {
+#theURL > p > span:first-of-type {
+    display: block;
+    max-height: 3lh;
+    overflow-y: auto;
+    }
+:root.mobile #theURL > p > span:first-of-type {
+    max-height: 3lh;
+    }
+#theURL #toggleParse {
     background-color: transparent;
     top: 100%;
     box-sizing: border-box;
-    color: var(--fg-0-60);
+    color: var(--ink-3);
+        fill: var(--ink-3);
     cursor: pointer;
-    fill: var(--fg-0-60);
     font-size: 1.2rem;
     padding: var(--default-gap-xxsmall);
     position: absolute;
     transform: translate(0, -50%);
     }
-#theURL:not(.collapsed) > p > span:last-of-type > span:first-of-type {
+#theURL:not(.collapsed) #toggleParse > span:first-of-type {
     display: none;
     }
-#theURL.collapsed > p > span:last-of-type > span:last-of-type {
+#theURL.collapsed #toggleParse > span:last-of-type {
     display: none;
     }
-body[dir="ltr"] #theURL > p > span:last-of-type {
+body[dir="ltr"] #toggleParse {
     right: 0;
     }
-body[dir="rtl"] #theURL > p > span:last-of-type {
+body[dir="rtl"] #toggleParse {
     left: 0;
     }
-#theURL > p:hover > span {
-    color: var(--default-ink);
-    fill: var(--default-ink);
+#theURL > p:hover #toggleParse {
+    transform: translate(0, -50%) scale(1.15);
     }
 #parsed {
-    background-color: var(--bg-1);
-    border: 1px solid var(--bg-code);
-    border-top: none;
-    color: var(--fg-0-80);
+    background-color: var(--surface-1);
+    border: 4px solid var(--surface-2);
     font-size: small;
     overflow-x: auto;
     padding: var(--default-gap-xxsmall);
@@ -108,27 +130,51 @@ body[dir="rtl"] #theURL > p > span:last-of-type {
 #parsed span:first-of-type {
     font-weight: bold;
     }
-#whyex a {
+
+.why-extra a {
     white-space: nowrap;
 }
-#proceed {
-    margin-bottom: var(--default-gap);
+.why-extra ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-inline-start: var(--default-gap-xsmall);
     }
-:root.mobile .proceedButtons {
+details > *:not(summary) {
+    margin-inline-start: 1em;
+    }
+
+#urlskip a {
+    display: block;
+    max-height: 3lh;
+    overflow-y: auto;
+    word-break: break-all;
+    }
+:root.mobile #urlskip a {
+    max-height: 3lh;
+    }
+
+#actionContainer {
+    display: flex;
+    justify-content: space-between;
+    }
+:root.mobile #actionContainer {
     justify-content: center;
     display: flex;
     flex-direction: column;
     }
-.proceedButtons > button {
-    margin-inline-end: var(--default-gap);
-    margin-block-end: var(--default-gap-xsmall);
+#actionContainer > button {
+    margin-bottom: 2rem
     }
 
-.filterList:first-child .filterListSeparator {
+.filterList {
+    white-space: nowrap;
+    }
+.filterList .filterListSupport[href="#"] {
     display: none;
     }
-.filterList .filterListSupport[href=""] {
-    display: none;
+.filterList .filterListSupport:not([href="#"]) {
+    margin-inline-start: 0.25em;
     }
 
 /* Small-screen devices */

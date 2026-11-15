@@ -1,23 +1,19 @@
 # KiwiGuard for Kiwi Browser
 
-KiwiGuard is a Kiwi Browser-focused, mobile-first content blocker based on the uBlock Origin codebase and released under the GNU General Public License v3. It blocks advertising, tracking, malware, abusive resources, cookie prompts, and other page annoyances while keeping the mature dynamic filtering, logger, element picker, and backup/restore workflows.
+KiwiGuard is a Kiwi Browser-focused, mobile-first content blocker based on the current uBlock Origin Chromium Manifest V2 engine and released under the GNU General Public License v3. It blocks advertising, tracking, malware, abusive resources, cookie prompts, and other page annoyances while keeping uBlock Origin's mature dynamic filtering, logger, element picker, scriptlets, and backup/restore workflows.
 
-## What changed in this fork
+## KiwiGuard engine rebase
 
-- Rebranded user-facing UI as **KiwiGuard** while retaining upstream attribution and licensing.
-- Corrected the automatic update feed to this repository.
-- Updated the extension version to `1.38.0.0`.
-- Strengthened fresh-install defaults with mobile ads, tracking protection, URL tracking protection, and cookie-annoyance coverage.
-- Added a polished, compact Kiwi Browser popup header and touch-friendly visual treatment.
+This release rebases the extension package on the current upstream uBlock Origin Chromium MV2 build. Kiwi-specific changes are layered on top: the KiwiGuard name and popup treatment, Kiwi update metadata, and a curated mobile/privacy first-run filter profile.
 
-## Install on Kiwi Browser
+KiwiGuard is designed for Kiwi Browser on Android. It is not a replacement for the upstream project on desktop browsers. Filter lists and the blocking engine retain upstream attribution and licensing.
+
+## Install
 
 1. Download the latest release package from the [Releases](https://github.com/sheikhdipuraihan-sudo/uBlock-Kiwi/releases) page.
 2. In Kiwi Browser, open the extensions page and enable Developer mode.
 3. Load the unpacked `stable` directory, or install the packaged extension supplied in the release.
 4. Open KiwiGuard and refresh filter lists after installation.
-
-KiwiGuard is designed for Kiwi Browser on Android. It is not a replacement for the full upstream uBlock Origin project on desktop browsers. Filter lists are maintained by their respective upstream authors; KiwiGuard only selects and bundles compatible sources.
 
 ## License and attribution
 

@@ -1,19 +1,25 @@
 html, body {
+    background-color: var(--surface-0);
     display: flex;
     flex-direction: column;
-    height: 100%; /* LOCAL CHANGES */
+    height: 100vh;
+        height: 100svh;
     justify-content: stretch;
     overflow: hidden;
     position: relative;
     width: 100vw;
     }
+body.notReady {
+    display: none;
+    }
 #dashboard-nav {
-    background-color: var(--default-surface);
+    align-items: center;
+    background-color: var(--surface-1);
     border: 0;
-    box-shadow: var(--dashboard-bar-shadow);
+    border-bottom: 1px solid var(--border-1);
     display: flex;
     flex-shrink: 0;
-    flex-wrap: wrap;
+    justify-content: space-between;
     overflow-x: hidden;
     padding: 0;
     position: sticky;
@@ -21,24 +27,39 @@ html, body {
     width: 100%;
     z-index: 10;
     }
+#dashboard-nav > span {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    }
 .tabButton {
+    background-color: transparent;
     border: 0;
-    border-bottom: 3px solid var(--bg-1);
-    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
     color: var(--dashboard-tab-ink);
-    fill: var(--dashboard-tab-ink);
-    padding: 0.5em 1.4em calc(0.5em - 3px);
+        fill: var(--dashboard-tab-ink);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    padding: 0.7em 1.4em calc(0.7em - 3px);
     text-decoration: none;
-    user-select: none;
     white-space: nowrap;
     }
 .tabButton:focus {
     outline: 0;
     }
+/* 
+ * TODO: support keyboard-driven navigation
+ * 
+.tabButton:not(:active):focus {
+    background-color: var(--dashboard-tab-focus-surface);
+    }
+ */
 .tabButton.selected {
+    background-color: var(--dashboard-tab-active-surface);
     border-bottom: 3px solid var(--dashboard-tab-active-ink);
     color: var(--dashboard-tab-active-ink);
-    fill: var(--dashboard-tab-active-ink);
+        fill: var(--dashboard-tab-active-ink);
     }
 iframe {
     background-color: transparent;
@@ -49,7 +70,6 @@ iframe {
     width: 100%;
     }
 #unsavedWarning {
-    box-shadow: rgba(128,128,128,0.4) 0 4px 4px;
     display: none;
     left: 0;
     position: absolute;
@@ -60,32 +80,21 @@ iframe {
     display: initial;
     }
 #unsavedWarning > div:first-of-type {
-    background-color: var(--bg-transient-notice);
     padding: 0.5em;
     }
 #unsavedWarning > div:last-of-type {
     height: 100vh;
+        height: 100svh;
     position: absolute;
     width: 100vw;
     }
 
-body:not(.canUpdateShortcuts) .tabButton[data-pane="shortcuts.html"] {
-    display: none;
-    }
 body .tabButton[data-pane="no-dashboard.html"] {
     display: none;
     }
 body.noDashboard #dashboard-nav {
     display: none;
     }
-/*  LOCAL CHANGES 
-    ================> */
-.warning-text {
-    display: block;
-    margin-bottom: 15px;
-}
-/* <================ 
-    LOCAL CHANGES */
 
 /* high dpi devices */
 :root.hidpi .tabButton {
@@ -102,15 +111,10 @@ body.noDashboard #dashboard-nav {
     cursor: pointer;
     }
 :root.desktop .tabButton:not(.selected):hover {
-    background-color: var(--dashboard-tab-surface-hover);
-    border-bottom-color: var(--dashboard-tab-surface-hover);
+    background-color: var(--dashboard-tab-hover-surface);
+    border-bottom-color: var(--dashboard-tab-hover-border);
     }
 
-/* touch-screen devices */
-:root.mobile #dashboard-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    }
 :root.mobile #dashboard-nav .logo {
     display: none;
     }
