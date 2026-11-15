@@ -35,3 +35,15 @@ body.off .brandBar { background: linear-gradient(135deg, #2a2028 0%, #3b2930 100
 @media (max-width: 360px) {
     #switch::after { font-size: 9px; padding: 6px 8px; }
 }
+
+/* Low-power mode: keep the original UI responsive on weaker phones. */
+.brandBar { background: #17383a; }
+.brandMark { background: #84f4bf; box-shadow: none; clip-path: none; }
+#switch { transition: none; }
+#switch:focus-visible { box-shadow: none; outline: 3px solid rgba(62, 203, 154, .45); outline-offset: 2px; }
+#switch:active { transform: none; }
+#extraTools .tool { transition: none; }
+body.off .brandBar { background: #3b2930; }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0s !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0s !important; }
+}
