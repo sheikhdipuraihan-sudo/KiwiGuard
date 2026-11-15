@@ -1,0 +1,85 @@
+name: Build and release KiwiGuard
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  NODE_VERSION: '22'
+  CRX_NAME: KiwiGuard-Kiwi.crx
+
+jobs:
+  release:
+    name: Build CRX and publish GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Validate release version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag_version="${GITHUB_REF_NAME#v}"
+          manifest_version="$(node -p "require('./stable/manifest.json').version")"
+          if [[ "$tag_version" != "$manifest_version" ]]; then
+            echo "Tag version $tag_version does not match stable/manifest.json version $manifest_version" >&2
+            exit 1
+          fi
+          echo "version=$tag_version" >> "$GITHUB_OUTPUT"
+
+      - name: Restore extension signing key
+        shell: bash
+        env:
+          CRX_PRIVATE_KEY_B64: ${{ secrets.CRX_PRIVATE_KEY_B64 }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${CRX_PRIVATE_KEY_B64:-}" ]]; then
+            echo 'Missing repository secret CRX_PRIVATE_KEY_B64. Add the base64-encoded CRX signing key so extension updates keep the same ID.' >&2
+            exit 1
+          fi
+          printf '%s' "$CRX_PRIVATE_KEY_B64" | base64 --decode > signing-key.pem
+          chmod 600 signing-key.pem
+
+      - name: Build CRX3 and ZIP packages
+        shell: bash
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          crx_url="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${VERSION}/${CRX_NAME}"
+          npx --yes crx3@2.0.0 \
+            --key signing-key.pem \
+            --crx "dist/${CRX_NAME}" \
+            --zip "dist/KiwiGuard-Kiwi.zip" \
+            --xml "dist/update.xml" \
+            --appVersion "$VERSION" \
+            --crxURL "$crx_url" \
+            stable
+          test -s "dist/${CRX_NAME}"
+          test -s dist/KiwiGuard-Kiwi.zip
+          test -s dist/update.xml
+          rm -f signing-key.pem
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: KiwiGuard v${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: |
+            dist/KiwiGuard-Kiwi.crx
+            dist/KiwiGuard-Kiwi.zip
+            dist/update.xml
