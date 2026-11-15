@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock₀",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Табло",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Табло",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Внимание! Има незапазени промени",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Дневник",
+    "message": "KiwiGuard — Дневник",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Активи",
+    "message": "KiwiGuard — Активи",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Щракване: изключва/включва uBlock₀ за този сайт.\n\nCtrl + щракване: изключва uBlock₀ само за тази страница.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Щракване: изключва/включва KiwiGuard за този сайт.\n\nCtrl + щракване: изключва KiwiGuard само за тази страница.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Щракване: изключва uBlock₀ за този сайт.\n\nCtrl + щракване: изключва uBlock₀ само за тази страница.",
+    "message": "Щракване: изключва KiwiGuard за този сайт.\n\nCtrl + щракване: изключва KiwiGuard само за тази страница.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Щракнете, за да включите uBlock₀ за този сайт.",
+    "message": "Щракнете, за да включите KiwiGuard за този сайт.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -416,7 +416,7 @@
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
-    "message": "<p>Настройката разрешава синтактично обособяване и налагане на <a href=\"https://adblockplus.org/en/faq_internal#elemhide\"> съвместими с Adblock Plus филтри за &ldquo;скриване на елементи&rdquo;</a>. Козметични по същество, филтрите скриват визуално неприятни елементи в страницата, които иначе не се блокират от системата за филтриране по мрежова заявка.</p><p>Разрешаването ѝ ще увеличи ползваната от uBlock₀ памет.</p>",
+    "message": "<p>Настройката разрешава синтактично обособяване и налагане на <a href=\"https://adblockplus.org/en/faq_internal#elemhide\"> съвместими с Adblock Plus филтри за &ldquo;скриване на елементи&rdquo;</a>. Козметични по същество, филтрите скриват визуално неприятни елементи в страницата, които иначе не се блокират от системата за филтриране по мрежова заявка.</p><p>Разрешаването ѝ ще увеличи ползваната от KiwiGuard памет.</p>",
     "description": "Describes the purpose of the 'Parse and enforce cosmetic filters' feature."
   },
   "3pIgnoreGenericCosmeticFilters": {
@@ -424,7 +424,7 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "<p>Общокозметични са филтрите, предназначени за прилагане във всички сайтове.<p>И макар че се ползват ефективно в uBlock₀, те могат съществено да увеличат натоварването на паметта и процесора в определени страници, особено в такива обемисти и дългозареждащи се.<p>Разрешаването ѝ ще премахне натоварването им в тях, поради начина на боравене с общокозметични филтри, както и ще намали ползваната от uBlock₀ памет.<p>Ползването на настройката се препоръчва при по-слаби устройства.",
+    "message": "<p>Общокозметични са филтрите, предназначени за прилагане във всички сайтове.<p>И макар че се ползват ефективно в KiwiGuard, те могат съществено да увеличат натоварването на паметта и процесора в определени страници, особено в такива обемисти и дългозареждащи се.<p>Разрешаването ѝ ще премахне натоварването им в тях, поради начина на боравене с общокозметични филтри, както и ще намали ползваната от KiwiGuard памет.<p>Ползването на настройката се препоръчва при по-слаби устройства.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
   "3pListsOfBlockedHostsHeader": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Списък на адресите, за които uBlock Origin ще бъде изключен. Един елемент на ред. Недействителните адреси ще бъдат пренебрегнати.",
+    "message": "Списък на адресите, за които KiwiGuard ще бъде изключен. Един елемент на ред. Недействителните адреси ще бъдат пренебрегнати.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Дневникът със заявки",
+    "message": "KiwiGuard wiki: Дневникът със заявки",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Всички настройки ще бъдат презаписани с данни, архивирани на {{time}} и uBlock₀ ще се рестартира.\n\nПрезаписване на съществуващите настройки, използвайки архивираните данни?",
+    "message": "Всички настройки ще бъдат презаписани с данни, архивирани на {{time}} и KiwiGuard ще се рестартира.\n\nПрезаписване на съществуващите настройки, използвайки архивираните данни?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Всички настройки ще бъдат премахнати и uBlock₀ ще се рестартира.\n\nВръщане на uBlock₀ към стандартните настройки?",
+    "message": "Всички настройки ще бъдат премахнати и KiwiGuard ще се рестартира.\n\nВръщане на KiwiGuard към стандартните настройки?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: Добавяне на следния адрес към потребителският списък с филтри?\n\nИме: \"{{title}}\"\nURL адрес: {{url}}",
+    "message": "KiwiGuard: Добавяне на следния адрес към потребителският списък с филтри?\n\nИме: \"{{title}}\"\nURL адрес: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "изключен",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin предотврати зареждането на страницата:",
+    "message": "KiwiGuard предотврати зареждането на страницата:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

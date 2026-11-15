@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Panel de control",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Panel de control",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "¡Atención! Tienes cambios sin guardar",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Registro de peticiones",
+    "message": "KiwiGuard — Registro de peticiones",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Visor de recursos",
+    "message": "KiwiGuard — Visor de recursos",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Clic: deshabilitar/habilitar uBlock₀ en este sitio.\n\nCtrl+clic: deshabilitar uBlock₀ solo en esta página.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Clic: deshabilitar/habilitar KiwiGuard en este sitio.\n\nCtrl+clic: deshabilitar KiwiGuard solo en esta página.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Clic para deshabilitar uBlock₀ en este sitio.\n\nCtrl+clic para deshabilitar uBlock₀ solo en esta página.",
+    "message": "Clic para deshabilitar KiwiGuard en este sitio.\n\nCtrl+clic para deshabilitar KiwiGuard solo en esta página.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Clic para habilitar uBlock₀ en este sitio.",
+    "message": "Clic para habilitar KiwiGuard en este sitio.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Sitios de confianza para los cuales se deshabilitará uBlock Origin. Una entrada por línea. Las entradas no válidas serán ignoradas.",
+    "message": "Sitios de confianza para los cuales se deshabilitará KiwiGuard. Una entrada por línea. Las entradas no válidas serán ignoradas.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Registro de peticiones",
+    "message": "KiwiGuard wiki: Registro de peticiones",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Toda la configuración se sobrescribirá utilizando datos respaldados en {{time}} y uBlock₀ se reiniciará.\n\n¿Sobrescribir toda la configuración existente utilizando los datos de respaldo?",
+    "message": "Toda la configuración se sobrescribirá utilizando datos respaldados en {{time}} y KiwiGuard se reiniciará.\n\n¿Sobrescribir toda la configuración existente utilizando los datos de respaldo?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Se borrará todas tus configuraciones y uBlock₀ se reiniciará.\n\n¿Restablecer uBlock₀ a la configuración predeterminada?",
+    "message": "Se borrará todas tus configuraciones y KiwiGuard se reiniciará.\n\n¿Restablecer KiwiGuard a la configuración predeterminada?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "deshabilitado",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin impidió la carga de la página:",
+    "message": "KiwiGuard impidió la carga de la página:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

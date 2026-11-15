@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ – Dashboard",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard – Dashboard",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Waarschuwing! Niet-opgeslagen wijzigingen",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ – Logger",
+    "message": "KiwiGuard – Logger",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ – Middelenviewer",
+    "message": "KiwiGuard – Middelenviewer",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klikken: uBlock₀ voor deze website in- of uitschakelen.\n\nCtrl+klikken: uBlock₀ alleen voor deze pagina uitschakelen.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Klikken: KiwiGuard voor deze website in- of uitschakelen.\n\nCtrl+klikken: KiwiGuard alleen voor deze pagina uitschakelen.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Klik om uBlock₀ voor deze website uit te schakelen.\n\nCtrl+klik om uBlock₀ alleen op deze pagina uit te schakelen.",
+    "message": "Klik om KiwiGuard voor deze website uit te schakelen.\n\nCtrl+klik om KiwiGuard alleen op deze pagina uit te schakelen.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Klik om uBlock₀ voor deze website in te schakelen.",
+    "message": "Klik om KiwiGuard voor deze website in te schakelen.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "De vertrouwde-website-instructies schrijven voor op welke webpagina’s uBlock Origin dient te worden uitgeschakeld. Eén vermelding per regel. Ongeldige instructies worden zonder mededeling genegeerd en uitgecommentarieerd.",
+    "message": "De vertrouwde-website-instructies schrijven voor op welke webpagina’s KiwiGuard dient te worden uitgeschakeld. Eén vermelding per regel. Ongeldige instructies worden zonder mededeling genegeerd en uitgecommentarieerd.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin-wiki: de logger",
+    "message": "KiwiGuard-wiki: de logger",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Al uw instellingen zullen met back-upgegevens van {{time}} worden overschreven, en uBlock₀ zal worden herstart.\n\nWilt u alle bestaande instellingen met back-upgegevens overschrijven?",
+    "message": "Al uw instellingen zullen met back-upgegevens van {{time}} worden overschreven, en KiwiGuard zal worden herstart.\n\nWilt u alle bestaande instellingen met back-upgegevens overschrijven?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Al uw instellingen zullen worden verwijderd, waarna uBlock₀ wordt herstart.\n\nStandaardinstellingen van uBlock₀ terugzetten?",
+    "message": "Al uw instellingen zullen worden verwijderd, waarna KiwiGuard wordt herstart.\n\nStandaardinstellingen van KiwiGuard terugzetten?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "uitgeschakeld",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock₀ heeft het laden van de volgende pagina voorkomen:",
+    "message": "KiwiGuard heeft het laden van de volgende pagina voorkomen:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

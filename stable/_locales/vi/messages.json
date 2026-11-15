@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Bảng điều khiển",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Bảng điều khiển",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Cảnh báo! Bạn có các thay đổi chưa được lưu",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Nhật ký các yêu cầu",
+    "message": "KiwiGuard — Nhật ký các yêu cầu",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ - Trình xem nội dung",
+    "message": "KiwiGuard - Trình xem nội dung",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Nhấp chuột: vô hiệu/kích hoạt uBlock₀ cho trang này.\nCtrl + nhấp chuột: chỉ vô hiệu uBlock₀ trên trang này.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Nhấp chuột: vô hiệu/kích hoạt KiwiGuard cho trang này.\nCtrl + nhấp chuột: chỉ vô hiệu KiwiGuard trên trang này.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Nhấp chuột để tắt uBlock₀ đối với toàn bộ tên miền này (site). \n\nCtrl + nhấp chuột để tắt uBlock₀ chỉ tại trang này (page).",
+    "message": "Nhấp chuột để tắt KiwiGuard đối với toàn bộ tên miền này (site). \n\nCtrl + nhấp chuột để tắt KiwiGuard chỉ tại trang này (page).",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Nhấp để bật uBlock₀ trên trang này.",
+    "message": "Nhấp để bật KiwiGuard trên trang này.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -424,7 +424,7 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "<p>Bộ lọc phần tử ẩn chung là là những bộ lọc phần tử ẩn áp dụng cho tất cả các website.<p>Mặc dù được xử lý hiệu quả bởi uBlock₀, các bộ lọc phần tử ẩn chung vẫn chiếm dụng bộ nhớ và CPU quá mức trên một số trang web, đặc biệt là các trang lớn và lâu năm.<p>Kích hoạt tuỳ chọn này sẽ loại bỏ sử dụng bộ nhớ và CPU quá mức thêm vào trang web nhờ khả năng xử lý các bộ lọc phần tử ẩn chung và cũng làm giảm sử dụng bộ nhớ của uBlock₀.<p>Chúng tôi khuyến cáo bạn nên kích hoạt tuỳ chọn này trên các thiết bị không quá mạnh.",
+    "message": "<p>Bộ lọc phần tử ẩn chung là là những bộ lọc phần tử ẩn áp dụng cho tất cả các website.<p>Mặc dù được xử lý hiệu quả bởi KiwiGuard, các bộ lọc phần tử ẩn chung vẫn chiếm dụng bộ nhớ và CPU quá mức trên một số trang web, đặc biệt là các trang lớn và lâu năm.<p>Kích hoạt tuỳ chọn này sẽ loại bỏ sử dụng bộ nhớ và CPU quá mức thêm vào trang web nhờ khả năng xử lý các bộ lọc phần tử ẩn chung và cũng làm giảm sử dụng bộ nhớ của KiwiGuard.<p>Chúng tôi khuyến cáo bạn nên kích hoạt tuỳ chọn này trên các thiết bị không quá mạnh.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
   "3pListsOfBlockedHostsHeader": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Danh sách tên các máy chủ mà uBlock Origin sẽ bị chặn. Một mục nhập trên mỗi dòng. Tên máy chủ không hợp lệ sẽ được tự động bỏ qua.",
+    "message": "Danh sách tên các máy chủ mà KiwiGuard sẽ bị chặn. Một mục nhập trên mỗi dòng. Tên máy chủ không hợp lệ sẽ được tự động bỏ qua.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Các logger",
+    "message": "KiwiGuard wiki: Các logger",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Các thiết lập của bạn sẽ bị ghi đè bởi dữ liệu đã lưu vào lúc {{time}}, và uBlock₀ sẽ khởi động lại. \n\nGhi đè các thiết lập hiện tại bằng dữ liệu đã lưu?",
+    "message": "Các thiết lập của bạn sẽ bị ghi đè bởi dữ liệu đã lưu vào lúc {{time}}, và KiwiGuard sẽ khởi động lại. \n\nGhi đè các thiết lập hiện tại bằng dữ liệu đã lưu?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Các thiết lập sẽ bị xóa và uBlock₀ sẽ khởi động lại. \n\nThiết lập uBlock₀ về cấu hình ban đầu?",
+    "message": "Các thiết lập sẽ bị xóa và KiwiGuard sẽ khởi động lại. \n\nThiết lập KiwiGuard về cấu hình ban đầu?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: Thêm URL dưới đây vào bộ lọc tuỳ biến của bạn?\n\nTên: \"{{title}}\"\nURL: {{url}}",
+    "message": "KiwiGuard: Thêm URL dưới đây vào bộ lọc tuỳ biến của bạn?\n\nTên: \"{{title}}\"\nURL: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,7 +973,7 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "tắt",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
     "message": "uBloc Origin đã chặn tải trang sau:",

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock₀",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Dashboard",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Dashboard",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Warnung! Nicht gespeicherte Änderungen",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Protokoll der Netzwerkanfragen",
+    "message": "KiwiGuard — Protokoll der Netzwerkanfragen",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Ressourcenbetrachter",
+    "message": "KiwiGuard — Ressourcenbetrachter",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klick: uBlock₀ für diese Website aktivieren/deaktivieren.\n\nStrg+Klick: uBlock₀ nur für die aktuelle Seite deaktivieren.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Klick: KiwiGuard für diese Website aktivieren/deaktivieren.\n\nStrg+Klick: KiwiGuard nur für die aktuelle Seite deaktivieren.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Klicken, um uBlock₀ für diese Website zu deaktivieren. \n\nStrg+Klick, um uBlock₀ nur auf dieser Webseite zu deaktivieren.",
+    "message": "Klicken, um KiwiGuard für diese Website zu deaktivieren. \n\nStrg+Klick, um KiwiGuard nur auf dieser Webseite zu deaktivieren.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Klicken Sie hier, um uBlock₀ für diese Website zu aktivieren.",
+    "message": "Klicken Sie hier, um KiwiGuard für diese Website zu aktivieren.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Ausnahmeregeln bestimmen, auf welchen Webseiten uBlock Origin nicht aktiv sein soll. Ein Eintrag pro Zeile. Ungültige Regeln werden ignoriert und auskommentiert.",
+    "message": "Ausnahmeregeln bestimmen, auf welchen Webseiten KiwiGuard nicht aktiv sein soll. Ein Eintrag pro Zeile. Ungültige Regeln werden ignoriert und auskommentiert.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin Wiki: Protokollierung",
+    "message": "KiwiGuard Wiki: Protokollierung",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Alle Einstellungen werden gelöscht und uBlock₀ wird neu gestartet.\n\nSoll uBlock₀ auf Werkseinstellungen zurückgesetzt werden?",
+    "message": "Alle Einstellungen werden gelöscht und KiwiGuard wird neu gestartet.\n\nSoll KiwiGuard auf Werkseinstellungen zurückgesetzt werden?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: Folgende Adresse Ihrer benutzerdefinierten Filterliste hinzufügen?\n\nTitel: »{{title}}«\nAdresse: {{url}}",
+    "message": "KiwiGuard: Folgende Adresse Ihrer benutzerdefinierten Filterliste hinzufügen?\n\nTitel: »{{title}}«\nAdresse: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "aus",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin hat das Laden der folgenden Seite verhindert:",
+    "message": "KiwiGuard hat das Laden der folgenden Seite verhindert:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

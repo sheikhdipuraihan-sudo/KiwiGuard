@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Ovládací panel",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Ovládací panel",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Upozornenie! Máte neuložené zmeny",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Zaznamenávač",
+    "message": "KiwiGuard — Zaznamenávač",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Zobrazenie zdrojov",
+    "message": "KiwiGuard — Zobrazenie zdrojov",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Kliknutie: zakázať/povoliť uBlock pre túto stránku.\n\nCtrl+kliknutie: zakázať uBlock₀ len pre túto stránku.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Kliknutie: zakázať/povoliť uBlock pre túto stránku.\n\nCtrl+kliknutie: zakázať KiwiGuard len pre túto stránku.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Kliknutím zakážete uBlock₀ pre túto stránku.\n\nCtrl+kliknutie zakáže uBlock₀ len pre túto stránku.",
+    "message": "Kliknutím zakážete KiwiGuard pre túto stránku.\n\nCtrl+kliknutie zakáže KiwiGuard len pre túto stránku.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Kliknutím povolíte uBlock₀ pre túto stránku.",
+    "message": "Kliknutím povolíte KiwiGuard pre túto stránku.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -416,7 +416,7 @@
     "description": "English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo": {
-    "message": "<p>Táto možnosť povoľuje analyzovanie a vynútenie <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">filtrov &ldquo;skrývajúcich prvky&rdquo; a kompatibilných s Adblock Plus</a>. Tieto filtre sú prevažne kozmetické. Skrývajú prvky webových stránok, ktoré sú vizuálne otravné a nemôžu byť zablokované filtrovaním sieťových požiadavkov.</p><p>Povolenie tejto funkcie zvyšujte nároky <i>uBlock₀</i> na pamäť.</p>",
+    "message": "<p>Táto možnosť povoľuje analyzovanie a vynútenie <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">filtrov &ldquo;skrývajúcich prvky&rdquo; a kompatibilných s Adblock Plus</a>. Tieto filtre sú prevažne kozmetické. Skrývajú prvky webových stránok, ktoré sú vizuálne otravné a nemôžu byť zablokované filtrovaním sieťových požiadavkov.</p><p>Povolenie tejto funkcie zvyšujte nároky <i>KiwiGuard</i> na pamäť.</p>",
     "description": "Describes the purpose of the 'Parse and enforce cosmetic filters' feature."
   },
   "3pIgnoreGenericCosmeticFilters": {
@@ -424,7 +424,7 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "<p>Generické kozmetické filtre sú tie kozmetické filtre, ktoré sú určené na použitie na všetkých webových stránkach.<p>Aj keď ich uBlock₀ používa efektívne, generické kozmetické filtre môžu stále prispievať k zaťaženiu pamäte a procesora na niektorých webových stránkach, a to najmä na veľkých a zložitých.<p>Zapnutím tejto možnosti sa zníži zaťaženie pamäte a procesora v dôsledku použitia generických kozmetických filtrov pre webové stránky, a taktiež sa znížia nároky samotného rozšírenia uBlock₀ na pamäť.<p>Odporúča sa povoliť túto možnosť na menej výkonných zariadeniach.",
+    "message": "<p>Generické kozmetické filtre sú tie kozmetické filtre, ktoré sú určené na použitie na všetkých webových stránkach.<p>Aj keď ich KiwiGuard používa efektívne, generické kozmetické filtre môžu stále prispievať k zaťaženiu pamäte a procesora na niektorých webových stránkach, a to najmä na veľkých a zložitých.<p>Zapnutím tejto možnosti sa zníži zaťaženie pamäte a procesora v dôsledku použitia generických kozmetických filtrov pre webové stránky, a taktiež sa znížia nároky samotného rozšírenia KiwiGuard na pamäť.<p>Odporúča sa povoliť túto možnosť na menej výkonných zariadeniach.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
   "3pListsOfBlockedHostsHeader": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Zoznam hostiteľov, pre ktoré webové stránky bude uBlock Origin zakázaný. Jedna položka na riadok. Neplatní hostitelia budú ignorovaní a zakomentovaní.",
+    "message": "Zoznam hostiteľov, pre ktoré webové stránky bude KiwiGuard zakázaný. Jedna položka na riadok. Neplatní hostitelia budú ignorovaní a zakomentovaní.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Zaznamenávač",
+    "message": "KiwiGuard wiki: Zaznamenávač",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: Pridať nasledujúcu URL do zoznamu vlastných filtrov?\n\nNázov: \"{{title}}\"\nURL: {{url}}",
+    "message": "KiwiGuard: Pridať nasledujúcu URL do zoznamu vlastných filtrov?\n\nNázov: \"{{title}}\"\nURL: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "vypnutý",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin zabránil načítaniu nasledujúcej stránky:",
+    "message": "KiwiGuard zabránil načítaniu nasledujúcej stránky:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Орнату",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Орнату",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Сізде сақталмаған параметрлер бар!",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Журналшы",
+    "message": "KiwiGuard — Журналшы",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Активтерді қарау",
+    "message": "KiwiGuard — Активтерді қарау",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Жай басу: осы сайт үшін uBlock₀ өшіріңіз / қосыңыз.\n\nCtrl+басу: тек осы бетте uBlock₀ өшіріңіз.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Жай басу: осы сайт үшін KiwiGuard өшіріңіз / қосыңыз.\n\nCtrl+басу: тек осы бетте KiwiGuard өшіріңіз.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Осы сайт үшін uBlock₀ өшіру үшін басыңыз\n\nТек осы бетте uBlock₀ өшіру үшін Ctrl+Басу.",
+    "message": "Осы сайт үшін KiwiGuard өшіру үшін басыңыз\n\nТек осы бетте KiwiGuard өшіру үшін Ctrl+Басу.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Осы сайт үшін uBlock₀ қосу үшін басыңыз.",
+    "message": "Осы сайт үшін KiwiGuard қосу үшін басыңыз.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -108,7 +108,7 @@
     "description": "For the new mobile-friendly popup design"
   },
   "popupTipDashboard": {
-    "message": "uBlock₀-ты орнату",
+    "message": "KiwiGuard-ты орнату",
     "description": "English: Click to open the dashboard"
   },
   "popupTipZapper": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "The trusted site directives dictate on which web pages uBlock Origin should be disabled. One entry per line. Invalid directives will be silently ignored and commented out.",
+    "message": "The trusted site directives dictate on which web pages KiwiGuard should be disabled. One entry per line. Invalid directives will be silently ignored and commented out.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: The logger",
+    "message": "KiwiGuard wiki: The logger",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Барлық параметрлер {{time}} күні сақтық көшірмесі жасалған деректерді пайдаланып жазылады және uBlock₀ қайта іске қосылады.\n\nСақтық көшірме жасалған деректерді пайдаланып, барлық қолданыстағы параметрлерді қайта жазу керек пе?",
+    "message": "Барлық параметрлер {{time}} күні сақтық көшірмесі жасалған деректерді пайдаланып жазылады және KiwiGuard қайта іске қосылады.\n\nСақтық көшірме жасалған деректерді пайдаланып, барлық қолданыстағы параметрлерді қайта жазу керек пе?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Барлық параметрлер жойылып, uBlock₀ қайта қосылады.\n\nUBlock₀ зауыттық параметрлерге қайтарылсын ба?",
+    "message": "Барлық параметрлер жойылып, KiwiGuard қайта қосылады.\n\nUBlock₀ зауыттық параметрлерге қайтарылсын ба?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "сөнд.",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin келесі парақтың жүктелуіне жол бермеді:",
+    "message": "KiwiGuard келесі парақтың жүктелуіне жол бермеді:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

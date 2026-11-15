@@ -647,3 +647,66 @@ body:not([data-more~="e"]) [data-more="e"] {
 :root.desktop #moreOrLess > span:hover {
     background-color: var(--default-surface-hover);
     }
+
+/* KiwiGuard mobile-first brand layer */
+.brandBar {
+    align-items: center;
+    background: linear-gradient(135deg, #102326 0%, #17383a 100%);
+    color: #f1fff9;
+    display: flex;
+    gap: 10px;
+    min-height: 58px;
+    padding: 10px 14px;
+}
+.brandMark {
+    align-items: center;
+    background: linear-gradient(145deg, #84f4bf, #3ecb9a);
+    border-radius: 12px 12px 14px 14px;
+    box-shadow: 0 5px 14px rgba(33, 212, 155, .22);
+    clip-path: polygon(50% 0, 94% 16%, 87% 70%, 50% 100%, 13% 70%, 6% 16%);
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    width: 34px;
+}
+.brandMark span {
+    border: 2px solid #123435;
+    border-radius: 50%;
+    height: 11px;
+    position: relative;
+    width: 15px;
+}
+.brandMark span::after {
+    background: #123435;
+    border-radius: 50%;
+    content: '';
+    height: 3px;
+    left: 4px;
+    position: absolute;
+    top: 2px;
+    width: 3px;
+}
+.brandCopy { display: flex; flex: 1; flex-direction: column; line-height: 1.05; }
+.brandCopy strong { font-family: Metropolis, Inter, sans-serif; font-size: 16px; letter-spacing: -.02em; }
+.brandCopy small { color: #a9d8ca; font-size: 10px; margin-top: 4px; }
+.brandStatus {
+    background: rgba(132, 244, 191, .14);
+    border: 1px solid rgba(132, 244, 191, .32);
+    border-radius: 999px;
+    color: #9cf5ca;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .11em;
+    padding: 5px 7px;
+}
+#stickyTools { margin-top: 12px; }
+#basicStats > [data-i18n] { color: var(--fg-0-60); letter-spacing: .02em; text-transform: uppercase; }
+#basicStats > [data-i18n] + span { color: var(--default-ink); font-family: Metropolis, Inter, sans-serif; font-weight: 600; }
+#extraTools { background: rgba(62, 203, 154, .08); padding: 2px 0; }
+#extraTools .tool { border-radius: 10px; transition: background-color .16s ease, transform .16s ease; }
+#extraTools .tool:active { background: rgba(62, 203, 154, .16); transform: scale(.96); }
+#moreOrLess { color: var(--fg-0-60); font-size: 12px; }
+@media (max-width: 360px) {
+    .brandBar { padding-inline: 11px; }
+    .brandStatus { display: none; }
+}

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Kontrol paneli",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Kontrol paneli",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Uyarı! Kaydedilmemiş değişiklikleriniz var",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Günlükçü",
+    "message": "KiwiGuard — Günlükçü",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Kaynak görüntüleyici",
+    "message": "KiwiGuard — Kaynak görüntüleyici",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Tıklama: uBlock₀'i bu site için devre dışı bırak/etkinleştir.\n\nCtrl+tıklama: uBlock₀'i yalnızca bu sayfada devre dışı bırak.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Tıklama: KiwiGuard'i bu site için devre dışı bırak/etkinleştir.\n\nCtrl+tıklama: KiwiGuard'i yalnızca bu sayfada devre dışı bırak.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "uBlock₀'i bu sitede devre dışı bırakmak için tıklayın.\n\nuBlock₀'i yalnızca bu sayfada devre dışı bırakmak için Ctrl+tıklayın.",
+    "message": "KiwiGuard'i bu sitede devre dışı bırakmak için tıklayın.\n\nKiwiGuard'i yalnızca bu sayfada devre dışı bırakmak için Ctrl+tıklayın.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "uBlock₀'i bu sitede etkinleştirmek için tıklayın.",
+    "message": "KiwiGuard'i bu sitede etkinleştirmek için tıklayın.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Güvenilen site yönergeleri, uBlock Origin'in devre dışı bırakılması gerektiği web sayfalarını belirler. Her satırda bir girdi. Geçersiz yönergeler sessizce yok sayılacak ve yoruma dönüştürülecektir.",
+    "message": "Güvenilen site yönergeleri, KiwiGuard'in devre dışı bırakılması gerektiği web sayfalarını belirler. Her satırda bir girdi. Geçersiz yönergeler sessizce yok sayılacak ve yoruma dönüştürülecektir.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin viki: Günlükçü",
+    "message": "KiwiGuard viki: Günlükçü",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Tüm ayarlarınız {{time}} tarihinde yedeklenmiş veriler kullanarak değiştirilecek ve uBlock₀ yeniden başlayacak. \n\nYedeklenmiş verileriniz kullanılarak var olan tüm ayarlarınız değiştirilsin mi?",
+    "message": "Tüm ayarlarınız {{time}} tarihinde yedeklenmiş veriler kullanarak değiştirilecek ve KiwiGuard yeniden başlayacak. \n\nYedeklenmiş verileriniz kullanılarak var olan tüm ayarlarınız değiştirilsin mi?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Tüm ayarlarınızı silinecek, ve uBlock₀ yeniden başlayacak.\n\nuBlock₀ fabrika ayarlarına sıfırlansın mı?",
+    "message": "Tüm ayarlarınızı silinecek, ve KiwiGuard yeniden başlayacak.\n\nKiwiGuard fabrika ayarlarına sıfırlansın mı?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "kapalı",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin aşağıdaki sayfanın yüklenmesini engelledi:",
+    "message": "KiwiGuard aşağıdaki sayfanın yüklenmesini engelledi:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

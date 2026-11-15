@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -9,7 +9,7 @@
   },
   "dashboardName": {
     "message": "म्यूब्लॉक — डैशबोर्ड",
-    "description": "English: uBlock₀ — Dashboard"
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Warning! You have unsaved changes",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — लॉगर",
+    "message": "KiwiGuard — लॉगर",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Asset viewer",
+    "message": "KiwiGuard — Asset viewer",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -65,7 +65,7 @@
   },
   "popupPowerSwitchInfo": {
     "message": "क्लिक करा : या साइटसाठी म्यूब्लॉक अक्षम/सक्षम.\n\nCtrl+क्लिक करा: फक्त या पृष्ठावर म्यूब्लॉक अक्षम.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
     "message": "Ctrl क्लिक करा फक्त या साइटवर म्यूब्लॉक बंद करण्यासाठी.",
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: The logger",
+    "message": "KiwiGuard wiki: The logger",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "off",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin has prevented the following page from loading:",
+    "message": "KiwiGuard has prevented the following page from loading:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

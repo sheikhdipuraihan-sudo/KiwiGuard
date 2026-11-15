@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Papanmuka",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Papanmuka",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Amaran! Anda mempunyai perubahan yang tidak disimpan",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Catatan",
+    "message": "KiwiGuard — Catatan",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Pertonton aset",
+    "message": "KiwiGuard — Pertonton aset",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klik: tutup/aktifkan uBlock₀ untuk laman web ini.\n\nCtrl+klik: tutupkan uBlock₀ pada halaman ini sahaja.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Klik: tutup/aktifkan KiwiGuard untuk laman web ini.\n\nCtrl+klik: tutupkan KiwiGuard pada halaman ini sahaja.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Kilk untuk nyahdayakan uBlock₀ untuk laman web ini.\n\nCtrl+klik untuk nyahdayakan uBlock₀ hanya di halaman ini.",
+    "message": "Kilk untuk nyahdayakan KiwiGuard untuk laman web ini.\n\nCtrl+klik untuk nyahdayakan KiwiGuard hanya di halaman ini.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Klik untuk mendayakan uBlock₀ untuk laman web ini.",
+    "message": "Klik untuk mendayakan KiwiGuard untuk laman web ini.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Arahan laman web yang dipercayai menentukan halaman web mana uBlock Origin harus dilumpuhkan. Satu penyertaan setiap baris. Arahan tidak sah akan diam-diam diabaikan dan dikomentari.",
+    "message": "Arahan laman web yang dipercayai menentukan halaman web mana KiwiGuard harus dilumpuhkan. Satu penyertaan setiap baris. Arahan tidak sah akan diam-diam diabaikan dan dikomentari.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Catatan",
+    "message": "KiwiGuard wiki: Catatan",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Semua tetapan anda akan ditimpa menggunakan data yang disandarkan pada {{time}}, dan uBlock₀ akan dimulakan semula.\n\nMenimpa semua tetapan yang ada menggunakan data yang disandarkan?",
+    "message": "Semua tetapan anda akan ditimpa menggunakan data yang disandarkan pada {{time}}, dan KiwiGuard akan dimulakan semula.\n\nMenimpa semua tetapan yang ada menggunakan data yang disandarkan?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Semua tetapan anda akan dikeluarkan, dan uBlock₀ akan dimulakan semula.\n\nTetapkan semula uBlock₀ ke tetapan kilang?",
+    "message": "Semua tetapan anda akan dikeluarkan, dan KiwiGuard akan dimulakan semula.\n\nTetapkan semula KiwiGuard ke tetapan kilang?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "mati",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin menghalang halaman berikut memuatkan:",
+    "message": "KiwiGuard menghalang halaman berikut memuatkan:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — სამართავი დაფა",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — სამართავი დაფა",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "გაფრთხილება! ცვლილებები არ შენახულა",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — აღმრიცხავი",
+    "message": "KiwiGuard — აღმრიცხავი",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — რესურსები",
+    "message": "KiwiGuard — რესურსები",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -65,14 +65,14 @@
   },
   "popupPowerSwitchInfo": {
     "message": "დაწკაპუნება: ამ საიტისთვის uBlock-ის ჩართვა/გამორთვა.\n\nCtrl+დაწკაპუნება: uBlock-ის მხოლოდ ამ გვერდზე გამორთვა.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "დააწკაპეთ uBlock₀-ის გამოსართავად ამ საიტზე.\n\nCtrl+დაწკაპებით uBlock₀ მხოლოდ ამ გვერდზე გამოირთვება.",
+    "message": "დააწკაპეთ KiwiGuard-ის გამოსართავად ამ საიტზე.\n\nCtrl+დაწკაპებით KiwiGuard მხოლოდ ამ გვერდზე გამოირთვება.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "დააწკაპეთ uBlock₀-ის ჩასართავად ამ საიტზე.",
+    "message": "დააწკაპეთ KiwiGuard-ის ჩასართავად ამ საიტზე.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "მითითებული გამონაკლისები განსაზღვრავს, თუ რომელ ვებგვერდზე უნდა გამოირთოს uBlock Origin. თითოეული ჩანაწერი ცალკეულ ხაზზე უნდა იყოს. არასწორი მითითებები უგულებელყოფილი იქნება გაფრთხილების გარეშე და აღინიშნება კომენტარად.",
+    "message": "მითითებული გამონაკლისები განსაზღვრავს, თუ რომელ ვებგვერდზე უნდა გამოირთოს KiwiGuard. თითოეული ჩანაწერი ცალკეულ ხაზზე უნდა იყოს. არასწორი მითითებები უგულებელყოფილი იქნება გაფრთხილების გარეშე და აღინიშნება კომენტარად.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin-ის ვიკი: აღმრიცხავი",
+    "message": "KiwiGuard-ის ვიკი: აღმრიცხავი",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "თქვენს ყველა პარამეტრს გადაეწერება {{time}} დროინდელი დამარქაფებული მონაცემები და uBlock₀ გაეშვება ხელახლა.\n\nნამდვილად გსურთ არსებული პარამეტრების დამარქაფებული მონაცემებით ჩანაცვლება?",
+    "message": "თქვენს ყველა პარამეტრს გადაეწერება {{time}} დროინდელი დამარქაფებული მონაცემები და KiwiGuard გაეშვება ხელახლა.\n\nნამდვილად გსურთ არსებული პარამეტრების დამარქაფებული მონაცემებით ჩანაცვლება?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "თქვენ მიერ მითითებული ყველა პარამეტრი წაიშლება და uBlock₀ გაეშვება ხელახლა.\n\nნამდვილად გსურთ uBlock₀-ის ნაგულისხმევ პარამეტრებზე დაბრუნება?",
+    "message": "თქვენ მიერ მითითებული ყველა პარამეტრი წაიშლება და KiwiGuard გაეშვება ხელახლა.\n\nნამდვილად გსურთ KiwiGuard-ის ნაგულისხმევ პარამეტრებზე დაბრუნება?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: გსურთ შემდეგი URL ბმულის საკუთარ ფილტრის წესებში ჩამატება?\n\nდასახელება: „{{title}}“\nURL: {{url}}",
+    "message": "KiwiGuard: გსურთ შემდეგი URL ბმულის საკუთარ ფილტრის წესებში ჩამატება?\n\nდასახელება: „{{title}}“\nURL: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "გამორთული",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin-მა შეზღუდა მოცემული გვერდის ჩატვირთვა:",
+    "message": "KiwiGuard-მა შეზღუდა მოცემული გვერდის ჩატვირთვა:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

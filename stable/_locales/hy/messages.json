@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Կառավահան",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Կառավահան",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Ուշադրությո՛ւն։ Դուք ունեք չպահպանված փոփոխություններ։",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Մատյան",
+    "message": "KiwiGuard — Մատյան",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Ակտիվների դիտակ",
+    "message": "KiwiGuard — Ակտիվների դիտակ",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Կտտոց՝ անջատել/միացնել uBlock₀-ն այս կայքի համար։\n\nCtrl+կտտոց՝ անջատել uBlock₀-ը միայն այս էջում։",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Կտտոց՝ անջատել/միացնել KiwiGuard-ն այս կայքի համար։\n\nCtrl+կտտոց՝ անջատել KiwiGuard-ը միայն այս էջում։",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Կտտացրեք՝ uBlock₀֊ն այս կայքի համար անջատելու համար։\n\nCtrl+կտտոց՝ uBlock₀֊ն միայն այս էջում անջատելու համար։",
+    "message": "Կտտացրեք՝ KiwiGuard֊ն այս կայքի համար անջատելու համար։\n\nCtrl+կտտոց՝ KiwiGuard֊ն միայն այս էջում անջատելու համար։",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "կտտացրեք՝ uBlock₀֊ն այս կայքի համար միացնելու համար։",
+    "message": "կտտացրեք՝ KiwiGuard֊ն այս կայքի համար միացնելու համար։",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Վստահված կայքերի ցուցակը սահմանում է, թե որ կայքերում uBlock Origin-ը պիտի անջատված լինի։ Մեկ տողում մեկ գրառում։ Անճիշտ կանոններն առանց նախազգուշացման անտեսվելու և մեկնաբանվելու են։",
+    "message": "Վստահված կայքերի ցուցակը սահմանում է, թե որ կայքերում KiwiGuard-ը պիտի անջատված լինի։ Մեկ տողում մեկ գրառում։ Անճիշտ կանոններն առանց նախազգուշացման անտեսվելու և մեկնաբանվելու են։",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin վիքի. Մատյան",
+    "message": "KiwiGuard վիքի. Մատյան",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Ընթացիկ կարգավորումները կփոխարինվեն տվյալներով {{time}}-ին ստեղծված պահուստային պատճենից, և uBlock₀-ը կվերագործարկվի։\n\nՓոխարինե՞լ առկա բոլոր կարգավորումները պահուստավորված տվյալներով։",
+    "message": "Ընթացիկ կարգավորումները կփոխարինվեն տվյալներով {{time}}-ին ստեղծված պահուստային պատճենից, և KiwiGuard-ը կվերագործարկվի։\n\nՓոխարինե՞լ առկա բոլոր կարգավորումները պահուստավորված տվյալներով։",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Ձեր բոլոր կարգավորումները կջնջվեն, uBlock₀֊ը կվերագործարկվի։\n\nՎերականգնե՞լ լռելյայն կարգավորումները։",
+    "message": "Ձեր բոլոր կարգավորումները կջնջվեն, KiwiGuard֊ը կվերագործարկվի։\n\nՎերականգնե՞լ լռելյայն կարգավորումները։",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "անջատված է",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin֊ը կանխել է հետևյալ էջի բեռնումը՝",
+    "message": "KiwiGuard֊ը կանխել է հետևյալ էջի բեռնումը՝",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

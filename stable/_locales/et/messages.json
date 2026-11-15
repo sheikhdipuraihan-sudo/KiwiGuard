@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Töölaud",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Töölaud",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Hoiatus! Sul on salvestamata muutusi",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Logija",
+    "message": "KiwiGuard — Logija",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — vara vaatur",
+    "message": "KiwiGuard — vara vaatur",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klõps: keela/luba uBlock₀ sellel saidil.\n\nCtrl+klõps: keela uBlock₀ ainult sellel lehel.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Klõps: keela/luba KiwiGuard sellel saidil.\n\nCtrl+klõps: keela KiwiGuard ainult sellel lehel.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Klõpsa, et keelata uBlock₀ sellel saidil.\n\nCtrl+klõps, et keelata uBlock₀ ainult sellel lehel.",
+    "message": "Klõpsa, et keelata KiwiGuard sellel saidil.\n\nCtrl+klõps, et keelata KiwiGuard ainult sellel lehel.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Klõpsa, et lubada uBlock₀ sellel saidil.",
+    "message": "Klõpsa, et lubada KiwiGuard sellel saidil.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Usaldatud saitide direktiivid määravad, millistel veebilehtedel peaks uBlock Origin keelatud olema. Üks kirje rea kohta. Sobimatuid direktiive vaikselt ignoreeritakse ja kommenteeritakse välja.",
+    "message": "Usaldatud saitide direktiivid määravad, millistel veebilehtedel peaks KiwiGuard keelatud olema. Üks kirje rea kohta. Sobimatuid direktiive vaikselt ignoreeritakse ja kommenteeritakse välja.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin'i viki: Logija",
+    "message": "KiwiGuard'i viki: Logija",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Kõik seaded kirjutatakse üle, kasutades varundust kuupäevast {{time}} ning uBlock₀ taaskäivitatakse.\n\nKirjutan üle kõik praegused seaded varundusandmetega?",
+    "message": "Kõik seaded kirjutatakse üle, kasutades varundust kuupäevast {{time}} ning KiwiGuard taaskäivitatakse.\n\nKirjutan üle kõik praegused seaded varundusandmetega?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "Kõik seaded kustutatakse ning uBlock₀ taaskäivitatakse.\n\nTaastan uBlock₀'i algseadetele?",
+    "message": "Kõik seaded kustutatakse ning KiwiGuard taaskäivitatakse.\n\nTaastan KiwiGuard'i algseadetele?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "väljas",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin on keelanud järgneva lehe laadimise:",
+    "message": "KiwiGuard on keelanud järgneva lehe laadimise:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

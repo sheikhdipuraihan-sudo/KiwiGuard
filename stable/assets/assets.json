@@ -3,14 +3,14 @@
         "content": "internal",
         "updateAfter": 7,
         "contentURL": [
-            "https://raw.githubusercontent.com/reforget-id/uBlock-Kiwi/main/stable/assets/assets.json",
+            "https://raw.githubusercontent.com/sheikhdipuraihan-sudo/uBlock-Kiwi/main/stable/assets/assets.json",
             "assets/assets.json"
         ],
         "cdnURLs": [
-            "https://gitcdn.xyz/repo/reforget-id/uBlock-Kiwi/main/stable/assets/assets.json",
-            "https://cdn.jsdelivr.net/gh/reforget-id/uBlock-Kiwi@main/stable/assets/assets.json",
-            "https://cdn.statically.io/gh/reforget-id/uBlock-Kiwi/main/stable/assets/assets.json",
-            "https://raw.githubusercontent.com/reforget-id/uBlock-Kiwi/main/stable/assets/assets.json"
+            "https://gitcdn.xyz/repo/sheikhdipuraihan-sudo/uBlock-Kiwi/main/stable/assets/assets.json",
+            "https://cdn.jsdelivr.net/gh/sheikhdipuraihan-sudo/uBlock-Kiwi@main/stable/assets/assets.json",
+            "https://cdn.statically.io/gh/sheikhdipuraihan-sudo/uBlock-Kiwi/main/stable/assets/assets.json",
+            "https://raw.githubusercontent.com/sheikhdipuraihan-sudo/uBlock-Kiwi/main/stable/assets/assets.json"
         ]
     },
     "public_suffix_list.dat": {
@@ -136,7 +136,6 @@
     "adguard-mobile": {
         "content": "filters",
         "group": "ads",
-        "off": true,
         "title": "AdGuard Mobile Ads",
         "ua": "mobile",
         "contentURL": "https://filters.adtidy.org/extension/ublock/filters/11.txt",
@@ -167,7 +166,6 @@
     "adguard-spyware": {
         "content": "filters",
         "group": "privacy",
-        "off": true,
         "title": "AdGuard Tracking Protection",
         "contentURL": "https://filters.adtidy.org/extension/ublock/filters/3.txt",
         "supportURL": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters",
@@ -176,7 +174,6 @@
     "adguard-spyware-url": {
         "content": "filters",
         "group": "privacy",
-        "off": true,
         "title": "AdGuard URL Tracking Protection",
         "contentURL": "https://filters.adtidy.org/extension/ublock/filters/17.txt",
         "supportURL": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters",
@@ -307,7 +304,6 @@
     "fanboy-cookiemonster": {
         "content": "filters",
         "group": "social",
-        "off": true,
         "title": "EasyList Cookie",
         "contentURL": "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
         "supportURL": "https://github.com/easylist/easylist/issues"

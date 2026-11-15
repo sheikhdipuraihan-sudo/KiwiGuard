@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Контролна табла",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Контролна табла",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Упозорење! Имате промене које нису сачуване",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Евиденција",
+    "message": "KiwiGuard — Евиденција",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Прегледач ресурса",
+    "message": "KiwiGuard — Прегледач ресурса",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -65,7 +65,7 @@
   },
   "popupPowerSwitchInfo": {
     "message": "Клик: онемогући/омогући µBlock₀ за овај сајт.\n\nCtrl+клик: онемогући/омогући µBlock₀ само за ову страницу.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
     "message": "Кликните да бисте онемогућили µBlock₀ за овај сајт.\n\nCtrl+клик да бисте онемогућили µBlock₀ само на овој страници.",
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Смернице поузданих сајтова диктирају на којим веб страницама би uBlock Origin требало бити онемогућен. Један унос по реду. Неисправне смернице ће бити тихо занемарене.",
+    "message": "Смернице поузданих сајтова диктирају на којим веб страницама би KiwiGuard требало бити онемогућен. Један унос по реду. Неисправне смернице ће бити тихо занемарене.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Евиденција",
+    "message": "KiwiGuard wiki: Евиденција",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Сва ваша подешавања ће бити прегажена резервном копијом података сачуваним {{time}} и uBlock₀ ће се поново покренути.\n\nПрегазити сва постојећа подешавања резервном копијом података?",
+    "message": "Сва ваша подешавања ће бити прегажена резервном копијом података сачуваним {{time}} и KiwiGuard ће се поново покренути.\n\nПрегазити сва постојећа подешавања резервном копијом података?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "искључен",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin је спречио учитавање следеће странице:",
+    "message": "KiwiGuard је спречио учитавање следеће странице:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

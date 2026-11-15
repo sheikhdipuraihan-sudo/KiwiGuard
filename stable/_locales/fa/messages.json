@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — داشبورد",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — داشبورد",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "هشدار! شما تنطیمات ذخیره نشده دارید",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — واقعه‌نگار",
+    "message": "KiwiGuard — واقعه‌نگار",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — نماینگر دارایی",
+    "message": "KiwiGuard — نماینگر دارایی",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "کلیک: غیر فعال/ فعال کردن uBlock₀ برای این سایت.\n\nکنترل+کلیک: غیر فعال کردن uBlock₀ فقط برای همین صفحه.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "کلیک: غیر فعال/ فعال کردن KiwiGuard برای این سایت.\n\nکنترل+کلیک: غیر فعال کردن KiwiGuard فقط برای همین صفحه.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "کلیک کنید تا uBlock₀ برای این سایت غیر فعال شود.\n\nهمزمان کلیدکنترل را نگهدارید و کلیک کنید تا uBlock₀ فقط برای این صفحه غیر فعال شود.",
+    "message": "کلیک کنید تا KiwiGuard برای این سایت غیر فعال شود.\n\nهمزمان کلیدکنترل را نگهدارید و کلیک کنید تا KiwiGuard فقط برای این صفحه غیر فعال شود.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "کلیک کنید تا uBlock₀ برای این سایت فعال شود.",
+    "message": "کلیک کنید تا KiwiGuard برای این سایت فعال شود.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -424,7 +424,7 @@
     "description": "This will cause uBO to ignore all generic cosmetic filters."
   },
   "3pIgnoreGenericCosmeticFiltersInfo": {
-    "message": "<p>فیلترهای زیبا سازی عمومی، آن دسته از فیلترهای زیبا سازی هستند که در همه وب سایت ها کاربرد دارند.\n<p>اگر چه بصورت موثر توسط uBlock₀ انجام شده، ولی فیلترهای عمومی زیبا سازی هنوز هم ممکن است سربار حافظه قابل اندازه گیری و سربار پردازنده در برخی از صفحات وب به جای بگذارد، به ویژه برای صفحات وب بزرگ و طولانی مدت.<p>فعال کردن این گزینه سربارهای حافظه و پردازنده را که به صفحات اضافه شده به عنوان نتیجۀ اجرای فیلترهای عمومی زیبا سازی برطرف می‌کند، و همچنین ردپای حافظۀ خود uBlock₀ را کمتر می‌کند<p>توصیه می شود این گزینه را در دستگاه های با قدرت کمتر فعال کنید.",
+    "message": "<p>فیلترهای زیبا سازی عمومی، آن دسته از فیلترهای زیبا سازی هستند که در همه وب سایت ها کاربرد دارند.\n<p>اگر چه بصورت موثر توسط KiwiGuard انجام شده، ولی فیلترهای عمومی زیبا سازی هنوز هم ممکن است سربار حافظه قابل اندازه گیری و سربار پردازنده در برخی از صفحات وب به جای بگذارد، به ویژه برای صفحات وب بزرگ و طولانی مدت.<p>فعال کردن این گزینه سربارهای حافظه و پردازنده را که به صفحات اضافه شده به عنوان نتیجۀ اجرای فیلترهای عمومی زیبا سازی برطرف می‌کند، و همچنین ردپای حافظۀ خود KiwiGuard را کمتر می‌کند<p>توصیه می شود این گزینه را در دستگاه های با قدرت کمتر فعال کنید.",
     "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature."
   },
   "3pListsOfBlockedHostsHeader": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "دستور العمل‌های لیست سفید حکم می‌کند که uBlock₀ باید بر روی کدام یک از صفحات وب غیر فعال باشد. در هر خط فقط یک مورد. دستور العمل‌های نامعتبر بدون اشاره ای نادیده گرفته شده و بیرون انداخته می‌شوند.",
+    "message": "دستور العمل‌های لیست سفید حکم می‌کند که KiwiGuard باید بر روی کدام یک از صفحات وب غیر فعال باشد. در هر خط فقط یک مورد. دستور العمل‌های نامعتبر بدون اشاره ای نادیده گرفته شده و بیرون انداخته می‌شوند.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "ویکی uBlock Origin: ثبت‌کننده رویداد‌ها",
+    "message": "ویکی KiwiGuard: ثبت‌کننده رویداد‌ها",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -892,7 +892,7 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "لیست‌های فیلتر اصلی uBlock Origin به صورت آزاد در <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">این شبکه‌های تحویل محتوا</a> میزبانی می‌شوند.",
+    "message": "لیست‌های فیلتر اصلی KiwiGuard به صورت آزاد در <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">این شبکه‌های تحویل محتوا</a> میزبانی می‌شوند.",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "تمام تنظیمات با استفاده از پشتیبان گیری در {{time}}،  رونویسی شده و uBlock₀ مجدد راه اندازی میشود.\n\nتمام تنظیمات موجود با استفاده از داده های پشتیبانی رونویسی شود؟",
+    "message": "تمام تنظیمات با استفاده از پشتیبان گیری در {{time}}،  رونویسی شده و KiwiGuard مجدد راه اندازی میشود.\n\nتمام تنظیمات موجود با استفاده از داده های پشتیبانی رونویسی شود؟",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "تمام تنظیمات شما حذف شده و uBlock₀ دوباره راه اندازی خواهد شد.\n\nتنظیم مجدد uBlock₀ به تنظیمات کارخانه؟",
+    "message": "تمام تنظیمات شما حذف شده و KiwiGuard دوباره راه اندازی خواهد شد.\n\nتنظیم مجدد KiwiGuard به تنظیمات کارخانه؟",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -932,7 +932,7 @@
     "description": "English: Network error: {{msg}}"
   },
   "subscriberConfirm": {
-    "message": "uBlock₀: آدرس اینترنتی زیر به فهرست فیلتر های سفارشی شما اضافه شود؟\n\nعنوان: \"{{title}}\"\nآدرس: {{url}}",
+    "message": "KiwiGuard: آدرس اینترنتی زیر به فهرست فیلتر های سفارشی شما اضافه شود؟\n\nعنوان: \"{{title}}\"\nآدرس: {{url}}",
     "description": "No longer used"
   },
   "subscribeButton": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "خاموش",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock₀ از بارگذاری این صفحات جلوگیری کرده:",
+    "message": "KiwiGuard از بارگذاری این صفحات جلوگیری کرده:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

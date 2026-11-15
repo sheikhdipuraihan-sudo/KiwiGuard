@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — Kontrolna ploča",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — Kontrolna ploča",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "Upozorenje! Imate nesačuvane promjene",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — Logiranje",
+    "message": "KiwiGuard — Logiranje",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — Pregled sadržaja",
+    "message": "KiwiGuard — Pregled sadržaja",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "Klik: onemogućite/omogućite uBlock₀  za ovaj sajt.\n\nCtrl+klik: onemogućite µBlock₀  samo za ovu stranicu.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "Klik: onemogućite/omogućite KiwiGuard  za ovaj sajt.\n\nCtrl+klik: onemogućite µBlock₀  samo za ovu stranicu.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "Kliknite da onemogućite uBlock₀ za ovaj sajt.\n\nCtrl+klik da onemogućite uBlock₀ samo za ovu stranicu.",
+    "message": "Kliknite da onemogućite KiwiGuard za ovaj sajt.\n\nCtrl+klik da onemogućite KiwiGuard samo za ovu stranicu.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "Kliknite da omogućite uBlock₀ za ovaj sajt.",
+    "message": "Kliknite da omogućite KiwiGuard za ovaj sajt.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "Direktive pouzdanih sajtova kažu na kojim sajtovima bi uBlock Origin trebao biti isključen. Jedna stavka po redu. Netočne direktive će biti ignorisane i odkomentirane.",
+    "message": "Direktive pouzdanih sajtova kažu na kojim sajtovima bi KiwiGuard trebao biti isključen. Jedna stavka po redu. Netočne direktive će biti ignorisane i odkomentirane.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: bilježak",
+    "message": "KiwiGuard wiki: bilježak",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "Sve vaše postavke će je biti prebrisane koristeći rezervnu kopiju sa postavkama sačuvanim {{time}}, i uBlock₀ će se ponovno pokrenuti. \n\nPrepisati sve postojeće postavke sa rezervnom kopijom postavkih?",
+    "message": "Sve vaše postavke će je biti prebrisane koristeći rezervnu kopiju sa postavkama sačuvanim {{time}}, i KiwiGuard će se ponovno pokrenuti. \n\nPrepisati sve postojeće postavke sa rezervnom kopijom postavkih?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "isključen",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin je onemogućio učitavanje sljedeće stranice:",
+    "message": "KiwiGuard je onemogućio učitavanje sljedeće stranice:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

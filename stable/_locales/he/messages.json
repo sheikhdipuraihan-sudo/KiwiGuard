@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock₀",
+    "message": "KiwiGuard",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -8,8 +8,8 @@
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "dashboardName": {
-    "message": "uBlock₀ — לוח מחוונים",
-    "description": "English: uBlock₀ — Dashboard"
+    "message": "KiwiGuard — לוח מחוונים",
+    "description": "English: KiwiGuard — Dashboard"
   },
   "dashboardUnsavedWarning": {
     "message": "אזהרה! יש לך שינויים שלא שמרת עדיין",
@@ -48,7 +48,7 @@
     "description": "appears as tab name in dashboard"
   },
   "statsPageName": {
-    "message": "uBlock₀ — מתעד הבקשות",
+    "message": "KiwiGuard — מתעד הבקשות",
     "description": "Title for the logger window"
   },
   "aboutPageName": {
@@ -56,7 +56,7 @@
     "description": "appears as tab name in dashboard"
   },
   "assetViewerPageName": {
-    "message": "uBlock₀ — מציג הנכסים",
+    "message": "KiwiGuard — מציג הנכסים",
     "description": "Title for the asset viewer page"
   },
   "advancedSettingsPageName": {
@@ -64,15 +64,15 @@
     "description": "Title for the advanced settings page"
   },
   "popupPowerSwitchInfo": {
-    "message": "לחיצה: כבה/הפעל את uBlock₀ לאתר זה לצמיתות.\n\nCtrl+לחיצה: כבה את uBlock₀ רק בדף זה.",
-    "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message": "לחיצה: כבה/הפעל את KiwiGuard לאתר זה לצמיתות.\n\nCtrl+לחיצה: כבה את KiwiGuard רק בדף זה.",
+    "description": "English: Click: disable/enable KiwiGuard for this site.\n\nCtrl+click: disable KiwiGuard only on this page."
   },
   "popupPowerSwitchInfo1": {
-    "message": "לחיצה: כבה את uBlock₀ לאתר זה.\n\nCtrl+לחיצה: כבה את uBlock₀ רק בדף זה.",
+    "message": "לחיצה: כבה את KiwiGuard לאתר זה.\n\nCtrl+לחיצה: כבה את KiwiGuard רק בדף זה.",
     "description": "Message to be read by screen readers"
   },
   "popupPowerSwitchInfo2": {
-    "message": "לחץ על מנת להפעיל את uBlock₀ באתר זה.",
+    "message": "לחץ על מנת להפעיל את KiwiGuard באתר זה.",
     "description": "Message to be read by screen readers"
   },
   "popupBlockedRequestPrompt": {
@@ -580,7 +580,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "הרשומות באתרים המהימנים מציינות באילו דפי אינטרנט uBlock Origin לא יהיה פעיל. רשומה אחת בכל שורה. רשומות לא חוקיות תתעלמנה בשקט ויסומנו כהערות.",
+    "message": "הרשומות באתרים המהימנים מציינות באילו דפי אינטרנט KiwiGuard לא יהיה פעיל. רשומה אחת בכל שורה. רשומות לא חוקיות תתעלמנה בשקט ויסומנו כהערות.",
     "description": "The name of the trusted sites pane."
   },
   "whitelistImport": {
@@ -640,7 +640,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin וויקי: מתעד הבקשות",
+    "message": "KiwiGuard וויקי: מתעד הבקשות",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -916,7 +916,7 @@
     "description": "English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm": {
-    "message": "כל ההגדרות שלך יוחלפו בנתונים שגובו ב {{time}}, ו uBlock₀ יופעל מחדש.\n\nהאם להחליף את כל ההגדרות הקיימות בנתונים המגובים?",
+    "message": "כל ההגדרות שלך יוחלפו בנתונים שגובו ב {{time}}, ו KiwiGuard יופעל מחדש.\n\nהאם להחליף את כל ההגדרות הקיימות בנתונים המגובים?",
     "description": "Message asking user to confirm restore"
   },
   "aboutRestoreDataError": {
@@ -924,7 +924,7 @@
     "description": "Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm": {
-    "message": "כל ההגדרות שלך יימחקו, ו uBlock₀ יופעל מחדש.\n\nלאפס את uBlock₀ להגדרות ברירת מחדל?",
+    "message": "כל ההגדרות שלך יימחקו, ו KiwiGuard יופעל מחדש.\n\nלאפס את KiwiGuard להגדרות ברירת מחדל?",
     "description": "Message asking user to confirm reset"
   },
   "errorCantConnectTo": {
@@ -973,10 +973,10 @@
   },
   "fennecMenuItemBlockingOff": {
     "message": "מכובה",
-    "description": "Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description": "Firefox-specific: appears as 'KiwiGuard (off)'"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin מנע מהעמוד הבא להיטען:",
+    "message": "KiwiGuard מנע מהעמוד הבא להיטען:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {
